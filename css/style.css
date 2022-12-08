@@ -54,7 +54,7 @@ section{
 }
 .header.active{
     background: #fff;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 10%);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 .header .logo{
     margin-right: auto;
@@ -412,25 +412,6 @@ form label:hover{
   .footer .credit span {
     color: #219150;
   }
-
-  .footer .btn2 {
-    margin-top: 1rem;
-    display: none;
-    border:0.2rem solid rgb(255, 255, 255);
-    color:rgb(255, 255, 255);
-    cursor:pointer;
-    background:none;
-    font-size:1.7rem;
-    padding:1rem 2rem;
-    position: fixed;
-    bottom: 1.3rem;
-    right: 1.9rem;
-    z-index: 99;
-  }
-  .btn2:hover{
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-  }
   
 
 
@@ -505,6 +486,7 @@ form label:hover{
       width: 100%;
     }
   }
+   
 
 @media (max-width:450px){
     html{
