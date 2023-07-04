@@ -197,7 +197,7 @@ i {
 }
 
 form {
-  width: 70rem;
+  width: 90vw;
   margin: 0 2rem;
   padding-bottom: 2rem;
   border-bottom: 0.2rem solid white;
@@ -494,6 +494,16 @@ form label:hover {
   .msg {
     width: 100%;
   }
+  .input, textarea {
+    width: 60vw !important;
+  }
+  .msg {
+    margin-left: -20px;
+  }
+  form {
+    flex-direction: column;
+    width: 70vw;
+  }
 }
 
 @media (max-width: 450px) {
@@ -502,5 +512,14 @@ form label:hover {
   }
   .heading {
     font-size: 3rem;
+  }
+    .input, textarea {
+    width: 70vw !important;
+  }
+  form {
+    width: 50vw;
+  }
+  .wrapper1 {
+    padding: 10px;
   }
 }
