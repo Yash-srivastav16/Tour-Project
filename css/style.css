@@ -290,6 +290,10 @@ form label:hover {
   background: #eee;
 }
 
+#packages {
+  padding-top: 10em;
+}
+
 .packages .box-container {
   display: -ms-grid;
   display: grid;
