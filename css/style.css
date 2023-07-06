@@ -85,6 +85,17 @@ section {
   display: flex;
 }
 
+.package-section {
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 45px;
+}
+
+.package-link {
+  color: #219150;
+}
+
 .uil {
   height: 50px;
   width: 50px;
@@ -139,6 +150,7 @@ i {
 .header .navbar a {
   margin-left: 2rem;
   font-size: 1.7rem;
+  font-weight: 500;
   color: black;
 }
 .header .navbar a:hover {
