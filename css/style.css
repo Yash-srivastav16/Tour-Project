@@ -158,6 +158,11 @@ i {
 .header .navbar a:hover {
   color: green;
 }
+
+#search-btn:hover {
+  color: green;
+}
+
 .header .navbar #nav-close {
   font-size: 5rem;
   cursor: pointer;
