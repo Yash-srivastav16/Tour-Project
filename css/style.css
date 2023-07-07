@@ -90,10 +90,11 @@ section {
   font-weight: 700;
   text-align: center;
   padding-top: 45px;
+  color: #219150;
 }
 
-.package-link {
-  color: #219150;
+.package-section:hover {
+  color: #026e2f;
 }
 
 .uil {
@@ -124,7 +125,7 @@ section {
 }
 
 .msg textarea {
-  height: 189px;
+  height: 166px;
 }
 .msg .btn1 {
   margin-top: 1rem;
@@ -137,6 +138,7 @@ section {
   border-radius: 40px;
   background: none;
 }
+
 .btn1 button[type="submit"] {
   background-color: transparent;
   font-size: 15px;
@@ -150,7 +152,7 @@ i {
 .header .navbar a {
   margin-left: 2rem;
   font-size: 1.7rem;
-  font-weight: 500;
+  font-weight: 600;
   color: black;
 }
 .header .navbar a:hover {
