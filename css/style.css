@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,600&display=swap');
 
 * {
   font-family: "Poppins", sans-serif;
@@ -105,7 +105,7 @@ section {
 .msg textarea {
   margin: 10px 0;
   background: transparent;
-  border: 0px;
+  border: 0;
   border-bottom: 2px solid #5f66618f;
   padding: 10px;
   color: black;
@@ -260,29 +260,55 @@ form label:hover {
 .category .box-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(29rem, 1fr)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  -ms-grid-columns: minmax(29rem, 1fr) auto;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1.5rem;
 }
 
 .category .box-container .box {
+  display: block;
+  position: relative;
   text-align: center;
-  padding: 1rem;
+  margin: 1rem;
 }
 .category .box-container .box img {
-  height: 20rem;
-  width: 20rem;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+  position: relative;
+  display: block;
+  max-width: 100%;
+  border-radius: 20px;
+}
+.category .box-container .box .content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 32px;
+  border-radius: 20px;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(9,9,121,0) 0%, rgba(0,0,0,0.7) 50%);
+}
+.category .box-container .box .content a.btn {
+  color: white;
+  border-color:white;
+}
+.category .box-container .box .content a.btn:hover {
+  background: white;
+  color: black;
 }
 .category .box-container .box h3 {
-  font-size: 2rem;
-  color: #219150;
+  position: absolute;
+  top: 0;
+  margin: 32px;
+  font-size: 5rem;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  /*color: #219150;*/
 }
 
 .category .box-container .box p {
-  font-size: 1.5rem;
-  color: #10221b;
+  font-size:1.75rem;
+  text-shadow: 1px 1px 2px black;
+  /* color: #10221b; */
+  color: white;
   padding: 1rem 0;
   line-height: 2;
 }
@@ -293,7 +319,7 @@ form label:hover {
 .packages .box-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(32rem, 1fr)) [auto-fit];
+  -ms-grid-columns: minmax(32rem, 1fr) auto;
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   gap: 1.5rem;
 }
@@ -327,8 +353,7 @@ form label:hover {
 .packages .box-container .box .image {
   height: 25rem;
   overflow: hidden;
-  padding: 2rem;
-  padding-bottom: 0;
+  padding: 2rem 2rem 0 2rem;
   border-radius: 0.5rem;
 }
 
@@ -362,25 +387,14 @@ form label:hover {
 }
 
 .footer {
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.5)),
-      to(rgba(0, 0, 0, 0.5))
-    ),
-    url(../images/footer-bg.jpg) no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/footer.jpg) no-repeat;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footer.jpg) no-repeat fixed center;
 }
 
 .footer .box-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
+  -ms-grid-columns: minmax(25rem, 1fr) auto;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
 }
@@ -414,8 +428,7 @@ form label:hover {
 .footer .credit {
   text-align: center;
   margin-top: 2.5rem;
-  padding: 1rem;
-  padding-top: 2.5rem;
+  padding: 2.5rem 1rem 1rem 1rem;
   font-size: 2rem;
   color: #fff;
 }
@@ -442,13 +455,13 @@ form label:hover {
     justify-content: center;
     background-position: right !important;
   }
-  .home .box .conent {
+  .home .box .content {
     text-align: center;
   }
-  .home .box .conent span {
+  .home .box .content span {
     font-size: 3rem;
   }
-  .home .box .conent h3 {
+  .home .box .content h3 {
     font-size: 4rem;
   }
 }
