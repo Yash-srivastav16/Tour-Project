@@ -148,7 +148,7 @@ section {
 .btn1 button[type="submit"] {
   background-color: transparent;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 550;
 }
 
 i {
@@ -334,6 +334,7 @@ form label:hover {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
+  margin-top: 2.8rem;
 }
 
 .packages .box-container .box:hover {
