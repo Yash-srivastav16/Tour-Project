@@ -32,6 +32,9 @@ section {
   padding: 1rem 3rem;
   border-radius: 40px;
 }
+.btn2 {
+  margin-top: 3.8rem;
+}
 .btn:hover {
   background: black;
   color: white;
@@ -529,6 +532,9 @@ form label:hover {
   form {
     flex-direction: column;
     width: 70vw;
+  }
+  .btn2 {
+    margin-top: 0.7em;
   }
 }
 
