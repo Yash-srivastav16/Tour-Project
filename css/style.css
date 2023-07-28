@@ -52,7 +52,7 @@ section {
   display: flex;
   align-items: center;
 }
-.header.active {
+.header.active, .package-navbar {
   background: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -290,6 +290,19 @@ form label:hover {
   background: #eee;
 }
 
+.package-image {
+  width: 100%;
+}
+
+.package-box {
+  width: 35%;
+  margin-top: 6rem;
+}
+
+.package-heading {
+  margin-top: 6rem;
+}
+
 .packages .box-container {
   display: -ms-grid;
   display: grid;
@@ -340,8 +353,21 @@ form label:hover {
   border-radius: 0.5rem;
 }
 
+/* .packages .package-box .box .content .package-price {
+  transform: translateX(53rem);
+  margin-top: -17rem;
+} */
+
 .packages .box-container .box .content {
   padding: 2rem;
+}
+
+.package-box .package-details {
+  font-size: 2.5rem;
+  transform: translateX(50rem);
+  margin-top: -31rem;
+  line-height: 3rem;
+  color: #118a44;
 }
 
 .packages .box-container .box .content h3 {
@@ -357,7 +383,7 @@ form label:hover {
 }
 
 .packages .box-container .box .content .price {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #219150;
 }
 
