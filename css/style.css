@@ -312,12 +312,12 @@ form label:hover {
 }
 
 .packages .box-container .box {
-  text-align: center;
-  background: #fff;
+  background: transparent;
   border: 0.2rem solid #10221b;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
+  padding-bottom: 1.8rem;
 }
 
 .packages .box-container .box:hover {
@@ -353,21 +353,29 @@ form label:hover {
   border-radius: 0.5rem;
 }
 
-/* .packages .package-box .box .content .package-price {
-  transform: translateX(53rem);
-  margin-top: -17rem;
-} */
-
 .packages .box-container .box .content {
   padding: 2rem;
 }
 
+.packages .box-container .package-price h2 {
+  font-size: 3.6rem;
+  color: #21664d;
+  position: absolute;
+  right: 30rem;
+  top: 33rem;
+}
+
 .package-box .package-details {
   font-size: 2.5rem;
-  transform: translateX(50rem);
+  padding-top: 32.2rem;
+  width: 80vw;
   margin-top: -31rem;
-  line-height: 3rem;
-  color: #118a44;
+  line-height: 3.2rem;
+  color: #21664d;
+}
+
+.package-box .package-details p {
+  margin-top: 2rem;
 }
 
 .packages .box-container .box .content h3 {
