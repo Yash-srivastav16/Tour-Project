@@ -358,10 +358,10 @@ form label:hover {
 }
 
 .packages .box-container .package-price h2 {
-  font-size: 3.6rem;
+  font-size: 4rem;
   color: #21664d;
   position: absolute;
-  right: 30rem;
+  right: 20rem;
   top: 33rem;
 }
 
@@ -485,6 +485,10 @@ form label:hover {
   .home .box .conent h3 {
     font-size: 4rem;
   }
+  .packages .package-box .package-details {
+    width: 90vw;
+    padding-left: 0.5rem;
+  }
 }
 @media (max-width: 768px) {
   .header #menu-btn {
@@ -537,6 +541,9 @@ form label:hover {
   form {
     flex-direction: column;
     width: 70vw;
+  }
+  .packages .package-box .package-price {
+    display: none;
   }
 }
 
