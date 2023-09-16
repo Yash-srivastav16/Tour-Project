@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Iconscout Link  -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
@@ -83,83 +86,104 @@
     <section class="packages" id="packages">
 
         <h1 class="heading">popular packages</h1>
-    
-        <div class="box-container">
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-1.jpg" alt="">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item box active">
+                    <div class="d-flex flex-row">
+                        <div class="image" style="width:100%; height:55vh;">
+                            <img src="images/img-2.jpg" alt="" style="height:100%;width:100%;">
+                        </div>
+                        <div class="content text-center nan">
+                            <h3 style="font-size:40px;font-weight:bold;">Goa Package</h3>
+                            <p style="font-size:18px; color:#8B7D6B;">The most popular beach of Goa, Baga is located close to Calangute beach, around 30 Km North of Panaji. Baga is popular for its nightlife with some very famous clubs such as Brittos, Titos and Mambos.There is also a range of water sports that you can try your hands at.</p>
+                            <div class="price" style="font-size:20px; font-weight:bold;font-family:'Verdana'">Rs 7,999 - Rs 12,999</div>
+                            <a href="#contact" class="btn" style="font-size:20px; color:#8B7D6B; border-radius:10px;">explore now</a>
+                        </div>
+                    </div>
+                  </div> 
+              <div class="carousel-item box ">
+                <div class="d-flex flex-row">
+                    <div class="image" style="width:100%; height:55vh;">
+                        <img src="images/img-1.jpg" alt="" style="height:100%;width:100%;">
+                    </div>
+                    <div class="content text-center nan" >
+                        <h3  style="font-size:40px;font-weight:bold;">Manali Package</h3>
+                        <p style="font-size:18px;">Kullu Manali Shimla has always been a very popular destination for the old, young travelers as well as newly married couples who look for cheapest Manali tour packages & Manali Honeymoon Packages to experience the perfect solitude and calmness at its best.</p>
+                        <div class="price" style="font-size:20px; font-weight:bold; font-family:'Verdana'">Rs 5,999 - Rs 8,999</div>
+                        <a href="#contact" class="btn" style="font-size:20px;color:#8B7D6B; border-radius:10px;" >explore now</a>
+                    </div>
                 </div>
-                <div class="content">
-                    <h3>Manali Package</h3>
-                    <p>Kullu Manali Shimla has always been a very popular destination for the old, young travelers as well as newly married couples who look for cheapest Manali tour packages & Manali Honeymoon Packages to experience the perfect solitude and calmness at its best.</p>
-                    <div class="price">Rs 5,999 - Rs 8,999</div>
-                    <a href="#contact" class="btn">explore now</a>
+              </div>
+              <div class="carousel-item box ">
+                <div class="d-flex flex-row">
+                    <div class="image" style="width:100%; height:55vh;">
+                        <img src="images/img-3.jpg" alt="" style="height:100%;width:100%;">
+                    </div>
+                    <div class="content text-center nan">
+                        <h3 style="font-size:40px;font-weight:bold;">Delhi Package</h3>
+                        <p style="font-size:18px;">Boasting cultural diversity and rich heritage, Delhi is home to several temples, tombs, gardens, forts, museums, markets and more. We take you to some of the best spots in the city. Pick the best packages from here and enjoy the tour of Delhi with guide.</p>
+                        <div class="price" style="font-size:20px; font-weight:bold; font-family:'Verdana'">Rs 2,999 - Rs 8,999</div>
+                        <a href="#contact" class="btn" style="font-size:20px;color:#8B7D6B; border-radius:10px;">explore now</a>
+                    </div>
                 </div>
+              </div>
+              <div class="carousel-item box ">
+                <div class="d-flex flex-row">
+                    <div class="image" style="width:100%; height:55vh;">
+                        <img src="images/img-4.jpg" alt="" style="height:100%;width:100%;">
+                    </div>
+                    <div class="content text-center nan">
+                        <h3 style="font-size:40px;font-weight:bold;">Jaipur Package</h3>
+                        <p style="font-size:18px;">We organise Jaipur & Rajasthan tours that offer incredible attractions like Forts and Palaces, Deserts, Traditional Villages, colorful cattle fairs, sacred places, camel safaris, beautiful lakes, hill stations and the people. </p>
+                        <div  class="price" style="font-size:20px; font-weight:bold; font-family:'Verdana'">Rs 11,999 - Rs15,999</div>
+                        <a href="#contact"  class="btn" style="font-size:20px; color:#8B7D6B; border-radius:10px;">explore now</a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item box ">
+                <div class="d-flex flex-row">
+                    <div class="image" style="width:100%; height:55vh;">
+                        <img src="images/img-5.jpg" alt="" style="height:100%;width:100%;">
+                    </div>
+                    <div class="content text-center nan">
+                        <h3 style="font-size:40px;font-weight:bold;">Kerala Package</h3>
+                        <p style="font-size:18px;">A trip to Kerala is always an experience through greenery to the hills and its climate. Browse through our hand-picked Kerala tour packages prepared for you. Our experts are also available to prepare customised tourism packages</p>
+                        <div class="price"  style="font-size:20px; font-weight:bold; font-family:'Verdana'">Rs 4,999 - Rs 9,999</div>
+                        <a href="#contact" class="btn" style="font-size:20px; color:#8B7D6B; border-radius:10px;">explore now</a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item box ">
+                <div class="d-flex flex-row">
+                    <div class="image" style="width:100%; height:55vh;">
+                        <img src="images/img-6.jpg" alt="" style="height:100%;width:100%;">
+                    </div>
+                    <div class="content text-center nan">
+                        <h3 style="font-size:40px;font-weight:bold;">Darjeeling</h3>
+                        <p style="font-size:18px;">A trip to Darjeeling will include a ride on the famous Himalayan Railway, a visit to Tiger Hill, or a tour of the stunning landscaped gardens here. Activities like hiking and boating. Do not miss out on a trip to Darjeeling Is famous Mall Road</p>
+                        <div class="price"  style="font-size:20px; font-weight:bold; font-family:'Verdana'">Rs 20,000 - Rs 25,000</div>
+                        <a href="#contact" class="btn" style="font-size:20px;color:#8B7D6B; border-radius:10px;">explore now</a>
+                    </div>
+                </div>
+              </div>
             </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-2.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Goa Package</h3>
-                    <p>The most popular beach of Goa, Baga is located close to Calangute beach, around 30 Km North of Panaji. Baga is popular for its nightlife with some very famous clubs such as Brittos, Titos and Mambos.There is also a range of water sports that you can try your hands at.</p>
-                    <div class="price">Rs 7,999 - Rs 12,999</div>
-                    <a href="#contact" class="btn">explore now</a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-3.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Delhi Package</h3>
-                    <p>Boasting cultural diversity and rich heritage, Delhi is home to several temples, tombs, gardens, forts, museums, markets and more. We take you to some of the best spots in the city. Pick the best packages from here and enjoy the tour of Delhi with guide.</p>
-                    <div class="price">Rs 2,999 - Rs 8,999</div>
-                    <a href="#contact" class="btn">explore now</a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-4.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Jaipur Package</h3>
-                    <p>We organise Jaipur & Rajasthan tours that offer incredible attractions like Forts and Palaces, Deserts, Traditional Villages, colorful cattle fairs, sacred places, camel safaris, beautiful lakes, hill stations and the people. </p>
-                    <div class="price">Rs 11,999 - Rs15,999</div>
-                    <a href="#contact" class="btn">explore now</a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-5.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Kerala Package</h3>
-                    <p>A trip to Kerala is always an experience through greenery to the hills and its climate. Browse through our hand-picked Kerala tour packages prepared for you. Our experts are also available to prepare customised tourism packages</p>
-                    <div class="price">Rs 4,999 - Rs 9,999</div>
-                    <a href="#contact" class="btn">explore now</a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-6.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Darjeeling</h3>
-                    <p>A trip to Darjeeling will include a ride on the famous Himalayan Railway, a visit to Tiger Hill, or a tour of the stunning landscaped gardens here. Activities like hiking and boating. Do not miss out on a trip to Darjeeling Is famous Mall Road</p>
-                    <div class="price">Rs 20,000 - Rs 25,000</div>
-                    <a href="#contact" class="btn">explore now</a>
-                </div>
-            </div>
-    
-        </div>
-    
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
     </section>
     <section class="contact" id="contact">
     
