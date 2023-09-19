@@ -17,7 +17,13 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
 }
-
+.contanier {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  padding: 10px;
+  text-align: center;
+}
 section {
   padding: 5rem 9%;
 }
@@ -30,7 +36,11 @@ section {
   background: none;
   font-size: 1.7rem;
   padding: 1rem 3rem;
-  border-radius: 40px;
+  height:60px; 
+  width:200px; 
+  
+
+   align-self:center;
 }
 .btn:hover {
   background: black;
@@ -195,7 +205,15 @@ i {
 #close-search:hover {
   color: green;
 }
-
+.nan{
+  padding:20px;
+  width:100%; 
+  height:55vh;
+   background-color:#E8E2DA	;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+}
 form {
   width: 90vw;
   margin: 0 2rem;
