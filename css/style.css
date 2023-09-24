@@ -21,8 +21,15 @@ html {
 section {
   padding: 5rem 9%;
 }
+
+.box-container {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed to control button spacing */
+  align-items: center; /* Align buttons vertically in the center */
+}
+
+
 .btn {
-  margin-top: 1rem;
   display: inline-block;
   border: 0.2rem solid black;
   color: black;
