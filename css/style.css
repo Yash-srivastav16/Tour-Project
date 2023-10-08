@@ -274,10 +274,14 @@ form label:hover {
   width: 20rem;
   border-radius: 50%;
   margin-bottom: 1rem;
+  box-shadow: 1px 2px 6px 3px grey;
 }
 .category .box-container .box h3 {
   font-size: 2rem;
-  color: #219150;
+  background: linear-gradient(to right, #2545fc,
+  #0de3eb, #100a2e, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .category .box-container .box p {
