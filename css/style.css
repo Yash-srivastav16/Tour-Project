@@ -365,6 +365,56 @@ form label:hover {
   color: #219150;
 }
 
+.section-contributors{
+  width: 100%;
+}
+
+.contributors{
+  display: flex;
+}
+
+.contributors-img{
+  width: 50%;
+  border-radius: 50%;
+}
+
+.our-contributors{
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.contributor-box{
+  padding: 3.2rem;
+}
+
+.contributor-name{
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: green;
+}
+
+.social-links:link,
+.social-links:visited{
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.social-links:hover,
+.social-links:active{
+  color: #888;
+}
+
+.social-icons{
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.social-links-box{
+  display: flex;
+  gap: 1.2rem;
+}
+
 .footer {
   background: -webkit-gradient(
       linear,
