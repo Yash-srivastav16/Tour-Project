@@ -1,14 +1,16 @@
+
 <?php
-    $db_hostname="127.0.0.1";
+$isinserted=false;
+if(isset($_POST['name'])){
+    $db_hostname="localhost";
     $db_username="root";
     $db_password="";
     $db_name="tour";
 
-    $conn=mysqli_connect($db_hostname,$db_username,$db_password,$db_name);
+    $conn=mysqli_connect($db_hostname,$db_username,$db_password);
     if(!$conn)
     {
-        echo"Connection Failed:",mysqli_connect_error();
-        exit;
+        die("Connection to data base failed due to " . mysqli_connect_error());
     }
 
     $name=$_POST['name'];
@@ -17,14 +19,14 @@
     $subject=$_POST['subject'];
     $message=$_POST['message'];
 
-    $sql="Insert into contact(Name,Email,Phone,Subject,Message) values ('$name','$email','$phone','$subject','$message')";
+    $sql="INSERT INTO `tour`.`contact`(`Name`,`Email`,`Phone`,`Subject`,`Message`) values ('$name','$email','$phone','$subject','$message')";
     $result=mysqli_query($conn,$sql);
-    if(!$result)
-    {
-        echo "error: ",mysqli_error($conn);
-        exit;
-    }
+    if($conn->query($sql) == true){
+        $isinserted = true;
+      }else{
+        echo "ERROR : $sql <br> $con->error";
+      }
     echo "We will contact you soon";
-    mysqli_close($conn);
- 
+    $conn->close();
+    }
 ?>
