@@ -21,8 +21,24 @@ html {
 section {
   padding: 5rem 9%;
 }
+
+.box-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
 .btn {
-  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid black;
+  color: black;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+  border-radius: 40px;
+}
+.btn3 {
+  margin-top: 36px;
   display: inline-block;
   border: 0.2rem solid black;
   color: black;
@@ -33,6 +49,10 @@ section {
   border-radius: 40px;
 }
 .btn:hover {
+  background: black;
+  color: white;
+}
+.btn3:hover {
   background: black;
   color: white;
 }
