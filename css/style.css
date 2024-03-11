@@ -334,6 +334,7 @@ form label:hover {
   padding: 2rem;
   padding-bottom: 0;
   border-radius: 0.5rem;
+  /* border:1px solid ; */
 }
 
 .packages .box-container .box .image img {
@@ -509,7 +510,9 @@ form label:hover {
     width: 70vw;
   }
 }
-
+.wrapper{
+  text-align:center;
+}
 @media (max-width: 450px) {
   html {
     font-size: 50%;
