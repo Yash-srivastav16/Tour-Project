@@ -12,7 +12,7 @@
   transition: 0.2s linear;
 }
 html {
-  font-size: 62.5%;
+  font-size: 72.5%; 
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
@@ -53,7 +53,7 @@ section {
   align-items: center;
 }
 .header.active {
-  background: #fff;
+  background: #e50505;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 .header .logo {
