@@ -12,7 +12,7 @@
   transition: 0.2s linear;
 }
 html {
-  font-size: 62.5%;
+  font-size: 72.5%; 
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
