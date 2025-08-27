@@ -140,7 +140,7 @@ i {
 
 /*-------------- NavBar updated------------- */
 .header .navbar a {
-  color: #fff;
+  color: #10221b;/* Dark color instead of white */
   font-size: 16px;
   text-transform: capitalize;
   margin: 0 10px;
@@ -529,10 +529,13 @@ form label:hover {
   .header .navbar.active {
     left: 0;
     box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    
+
   }
   .header .navbar a {
     margin: 1rem 0;
     font-size: 3rem;
+    color: #0a1611; /* Ensure visible against white background */
   }
   .header .navbar #nav-close {
     display: block;
