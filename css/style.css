@@ -103,6 +103,14 @@ section {
   width: 60%;
 }
 
+.form-label {
+  display: block;
+  margin-top: 15px;
+  font-size: 1.6rem;
+  color: #10221b;
+  font-weight: 500;
+}
+
 .input-fields .input,
 .msg textarea {
   margin: 10px 0;
@@ -120,6 +128,10 @@ section {
 .msg .btn1 {
   margin-top: 1rem;
   display: inline-block;
+}
+
+.btn1 button[type="submit"] {
+  display: inline-block;
   border: 0.2rem solid green;
   color: black;
   cursor: pointer;
@@ -127,11 +139,14 @@ section {
   padding: 1rem 3rem;
   border-radius: 40px;
   background: none;
-}
-.btn1 button[type="submit"] {
-  background-color: transparent;
-  font-size: 15px;
+  transition: 0.3s;
   font-weight: 500;
+}
+
+.btn1 button[type="submit"]:hover {
+  background-color: green;
+  color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 i {
@@ -142,7 +157,7 @@ i {
 
 /*-------------- NavBar updated------------- */
 .header .navbar a {
-  color: black;
+  color: #000000;
   font-size: 16px;
   text-transform: capitalize;
   margin: 0 10px;
@@ -212,27 +227,37 @@ i {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
+  position: relative;
 }
+
 .search-form input[type="search"] {
   width: 100%;
-  padding: 10px;
+  padding: 12px 15px;
   font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 5px;
   outline: none;
   margin-right: 10px;
   color: #0056b3;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-form input[type="search"]:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
 }
 
 .search-form label {
   color: #007BFF;
   font-size: 20px;
   cursor: pointer;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.2s;
+  padding: 8px;
 }
 
 .search-form label:hover {
   color: #0056b3;
+  transform: scale(1.1);
 }
 
 .search-form #close-search {
@@ -242,11 +267,13 @@ i {
   font-size: 30px;
   color: #fff;
   cursor: pointer;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.2s;
+  z-index: 1001;
 }
 
 .search-form #close-search:hover {
   color: #ff6347;
+  transform: scale(1.1);
 }
 
 
@@ -335,7 +362,9 @@ form label:hover {
   background: linear-gradient(to right, #2545fc,
   #0de3eb, #100a2e, #eedd44);
   -webkit-text-fill-color: transparent;
+  color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .category .box-container .box p {
@@ -396,6 +425,14 @@ form label:hover {
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 0.5rem;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.packages .box-container .box .image img:hover {
+  transform: scale(1.03);
 }
 
 .packages .box-container .box .content {
@@ -553,14 +590,22 @@ form label:hover {
     width: 100%;
   }
   .input, textarea {
-    width: 60vw !important;
+    width: 100% !important;
+    box-sizing: border-box;
   }
   .msg {
-    margin-left: -20px;
+    margin-left: 0;
+  }
+  .form-label {
+    font-size: 1.4rem;
+  }
+  .wrapper1 {
+    padding: 15px;
+    max-width: 90%;
   }
   form {
     flex-direction: column;
-    width: 70vw;
+    width: 100%;
   }
 }
 
