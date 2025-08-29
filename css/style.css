@@ -51,6 +51,8 @@ section {
   z-index: 1000;
   display: flex;
   align-items: center;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(235, 231, 231, 0.15);
 }
 .header.active {
   background: #fff;
@@ -140,7 +142,7 @@ i {
 
 /*-------------- NavBar updated------------- */
 .header .navbar a {
-  color: #fff;
+  color: black;
   font-size: 16px;
   text-transform: capitalize;
   margin: 0 10px;
@@ -579,3 +581,230 @@ form label:hover {
     padding: 10px;
   }
 }
+
+/* --- Surfing Page Styles (added by Copilot, 2025-08-29) --- */
+.surfing-main-title {
+  font-size: 4.8rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #219150;
+  letter-spacing: 1px;
+}
+.surfing-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+.surfing-img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  flex-shrink: 0;
+}
+.surfing-text {
+  max-width: 700px;
+  text-align: justify;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #333;
+  flex: 1;
+}
+.surfing-title {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #0066cc;
+}
+.surfing-highlight {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #444;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .surfing-main-title {
+    font-size: 3rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .surfing-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .surfing-img {
+    width: 90vw;
+    max-width: 350px;
+    margin-bottom: 1.5rem;
+  }
+  .surfing-text {
+    max-width: 95vw;
+    font-size: 1.6rem;
+  }
+  .surfing-title {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .surfing-main-title {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .surfing-flex {
+    margin: 10px 0;
+    gap: 10px;
+  }
+  .surfing-img {
+    width: 100%;
+    max-width: 220px;
+  }
+  .surfing-text {
+    font-size: 1.2rem;
+    padding: 0 5px;
+  }
+  .surfing-title {
+    font-size: 1.2rem;
+  }
+  .surfing-highlight {
+    font-size: 1rem;
+  }
+}
+/* --- End Surfing Page Styles --- */
+
+/* --- Modern Surfing Page Styles (added by Copilot, 2025-08-29) --- */
+.surf-hero {
+  position: relative;
+  min-height: 60vh;
+  background: linear-gradient(rgba(33,145,80,0.3), rgba(13,227,235,0.2)), url('../images/surfingnew1.jpg') center/cover no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.surf-hero-overlay {
+  /*background: rgba(0,0,0,0.25);*/
+  padding: 3rem 2rem;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(173, 166, 166, 0.18);
+  animation: fadeInDown 1.5s;
+  
+}
+.surf-hero-title {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+.surf-hero-desc {
+  font-size: 2rem;
+  color: #eedd44;
+  font-weight: 500;
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.surf-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 0;
+  background: #f8f9fa;
+}
+.surf-card {
+  display: flex;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  overflow: hidden;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 2rem;
+  animation: fadeInUp 1.2s;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.surf-card-img-wrap {
+  flex: 1 1 350px;
+  min-height: 400px;
+  background: linear-gradient(rgba(238,221,68,0.1), rgba(13,227,235,0.1)), url('../images/surfing.jpg') center/cover no-repeat;
+  border-radius: 18px 0 0 18px;
+  position: relative;
+}
+.surf-card-img {
+  
+  display: none; /* Hidden since we're using background image now */
+}
+.surf-card-img:hover {
+  transform: scale(1.04) rotate(-2deg);
+}
+.surf-card-content {
+  flex: 2 1 500px;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.surf-card-title {
+  font-size: 2.6rem;
+  color: #219150;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.surf-card-content p {
+  font-size: 1.7rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+.surf-card-highlight {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0de3eb;
+  margin-top: 2rem;
+  background: #eedd44;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+@media (max-width: 900px) {
+  .surf-hero { min-height: 50vh; }
+  .surf-hero-title { font-size: 2.5rem; }
+  .surf-hero-desc { font-size: 1.3rem; }
+  .surf-main { padding: 2rem 0; }
+  .surf-card { flex-direction: column; max-width: 98vw; }
+  .surf-card-img-wrap { 
+    min-height: 250px; 
+    border-radius: 18px 18px 0 0;
+  }
+  .surf-card-content { padding: 2rem 1rem; }
+  .surf-card-title { font-size: 2rem; }
+  .surf-card-content p { font-size: 1.3rem; }
+  .surf-card-highlight { font-size: 1.2rem; }
+}
+@media (max-width: 600px) {
+  .surf-hero { min-height: 40vh; }
+  .surf-hero-title { font-size: 1.5rem; }
+  .surf-hero-desc { font-size: 1rem; }
+  .surf-main { padding: 1rem 0; }
+  .surf-card-img-wrap { 
+    min-height: 200px; 
+    border-radius: 18px 18px 0 0;
+  }
+  .surf-card-content { padding: 1rem 0.5rem; }
+  .surf-card-title { font-size: 1.1rem; }
+  .surf-card-content p { font-size: 1rem; }
+  .surf-card-highlight { font-size: 1rem; padding: 0.5rem 0.7rem; }
+}
+/* --- End Modern Surfing Page Styles --- */
