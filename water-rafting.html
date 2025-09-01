@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
+
 <body>
   <header class="header">
     <a href="#" class="logo"><i class="fas fa-hiking"></i> travel.com</a>
@@ -18,7 +20,7 @@
       <a href="index.html#contact">contact</a>
     </nav>
     <div class="icons">
-      <div id="menu-btn" class="fas fa-bars"></div> 
+      <div id="menu-btn" class="fas fa-bars"></div>
       <div id="search-btn" class="fas fa-search"></div>
     </div>
   </header>
@@ -30,59 +32,68 @@
     </form>
   </div>
   <main class="detail-page">
-    <section class="hero" style="background:linear-gradient(#00000055,#00000055),url('images/water-rafting.jpg') center/cover no-repeat;">
-      <div class="inner">
-        <h1>White Water Rafting – Kitulgala</h1>
-        <p>Thrilling rapids in lush mid-country rainforest.</p>
+    <!-- Hero Section for Water Rafting -->
+    <section class="home" id="home">
+      <div class="wrapper">
+        <div class="box water-hero" style="background: url(images/waterraftinghead.avif) center/cover no-repeat;">
+          <div class="surf-hero-overlay">
+            <h1 class="surf-hero-title">White Water Rafting — Kitulgala</h1>
+            <p class="surf-hero-desc">Thrilling rapids through lush mid-country rainforest</p>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="content-grid">
-      <article>
-        <h2>Rafting Overview</h2>
-        <p>The Kelani River at Kitulgala offers fun, bouncy Class II–III rapids ideal for families, corporate groups and first-time rafters, with higher adrenaline lines after monsoon rains.</p>
-        <h3>Rapids (Typical Run)</h3>
-        <ol>
-          <li>Head Chopper</li>
-          <li>Virgin's Breast</li>
-          <li>Butter Crunch</li>
-          <li>Killer Fall (portage at high water)</li>
-          <li>Rafter's Retreat</li>
-        </ol>
-        <h3>Best Season</h3>
-        <p>Year-round. Higher water May – Jun & Oct – Dec. Clearer, lower water Jan – Mar good for beginners.</p>
-        <h3>Safety & Gear</h3>
-        <ul>
-          <li>Certified helmets, PFDs & paddles provided.</li>
-          <li>Professional river guides & safety kayaker (on higher flows).</li>
-          <li>Wear secure footwear (no flip-flops) & quick-dry clothing.</li>
-        </ul>
-        <h3>Other Activities</h3>
-        <p>Canyoning, rainforest hikes, waterfall abseiling, bird watching (endemic Sri Lanka Grey Hornbill), and locations from the film 'The Bridge on the River Kwai'.</p>
-      </article>
-      <aside>
-        <div class="info-box">
-          <h3>At A Glance</h3>
-          <ul>
-            <li><strong>Region:</strong> Sabaragamuwa Province</li>
-            <li><strong>Drive Time:</strong> ~2.5h from Colombo</li>
-            <li><strong>River Grade:</strong> Class II–III</li>
-            <li><strong>Trip Length:</strong> 5–7 km (60–90 min)</li>
-            <li><strong>Min Age:</strong> 10+ (depends on water level)</li>
-          </ul>
+
+    <!-- Main content styled like wildlife page but water-specific -->
+    <section class="water-main">
+      <div class="water-card">
+        <div class="water-img-wrap">
+          <img class="water-img" src="images/kithulgala.jpg" alt="Kitulgala rafting" />
+          <div class="water-caption">Expert guides, certified safety gear and unforgettable rapids.</div>
         </div>
-        <div class="cta-box">
-          <h3>Book Your Raft</h3>
-          <p>Ask about combo packages: rafting + canyoning + lunch.</p>
-          <a class="btn" href="index.html#contact">Contact Us</a>
+        <div class="water-content">
+          <h2 class="water-title">Why Raft Kitulgala?</h2>
+
+          <p>Kitulgala remains the focal point for white-water rafting in Sri Lanka because it combines accessibility
+            with authentic river character: a mix of continuous Class II–III rapids, scenic rainforest corridors and
+            accessible launch points that suit families, first-timers and experienced paddlers alike. The Kelani’s flow
+            changes through the year, offering calmer, more playful runs during drier months and more challenging,
+            faster water after seasonal rains — giving paddlers options without long, technical approaches.</p>
+
+          <p>Current situation: local operators have rebuilt steadily after recent travel disruptions and now operate
+            with strong safety standards, smaller group sizes and improved kit. Many companies have updated their safety
+            protocols, invested in licensed guides, and adopted flexible booking policies to accommodate changing travel
+            plans. Community-led initiatives also focus on minimizing environmental impact, with guide training and
+            waste reduction practices becoming more common.</p>
+
+          <p>Why choose Kitulgala: besides reliable rapids, Kitulgala offers a rare combination of quick access from
+            Colombo, scenic rainforest surroundings and complementary activities such as canyoning and waterfall
+            abseiling. The river has enough variety to teach paddling skills while still offering photo-friendly lines
+            and calm pools to rest between rapids — ideal if you want both excitement and natural beauty in one day.</p>
+
+          <p>Beyond the sport, Kitulgala is important locally and nationally: rafting supports village economies,
+            creates jobs for guides and drivers, and encourages local suppliers (lodges, restaurants, gear hire).
+            Responsible rafting operators often partner with community projects and conservation groups, so choosing a
+            reputable provider directly benefits local livelihoods and conservation efforts.</p>
+
+          <p>Practical considerations: transfers typically take 2–3 hours from Colombo depending on road conditions, so
+            many visitors combine Kitulgala with an overnight stay nearby. Bring quick-dry clothing, secure footwear and
+            a small waterproof bag for valuables; consider a basic waterproof camera or phone pouch for river shots. If
+            you’re focused on photography or a specific water level, speak with operators beforehand — they can advise
+            the best dates and run types for your goals.</p>
+
+          <p class="water-highlight">In short: Kitulgala offers accessible, well-run rafting with strong scenic and
+            cultural value — pick a licensed operator, plan for weather-driven water levels, and you’ll leave with both
+            adrenaline memories and a direct contribution to local communities and conservation.</p>
         </div>
-      </aside>
+      </div>
     </section>
   </main>
   <section class="footer">
     <div class="box-container">
       <div class="box">
         <h3>Quick links</h3>
-        <a href="index.html#home">home</a>    
+        <a href="index.html#home">home</a>
         <a href="index.html#packages">packages</a>
         <a href="index.html#query">query</a>
       </div>
