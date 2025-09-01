@@ -51,12 +51,11 @@ section {
   z-index: 1000;
   display: flex;
   align-items: center;
-  background: #fff;
-  box-shadow: 0 2px 12px rgba(235, 231, 231, 0.15);
 }
 .header.active {
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  color: #000000;
 }
 .header .logo {
   margin-right: auto;
@@ -103,14 +102,6 @@ section {
   width: 60%;
 }
 
-.form-label {
-  display: block;
-  margin-top: 15px;
-  font-size: 1.6rem;
-  color: #10221b;
-  font-weight: 500;
-}
-
 .input-fields .input,
 .msg textarea {
   margin: 10px 0;
@@ -128,10 +119,6 @@ section {
 .msg .btn1 {
   margin-top: 1rem;
   display: inline-block;
-}
-
-.btn1 button[type="submit"] {
-  display: inline-block;
   border: 0.2rem solid green;
   color: black;
   cursor: pointer;
@@ -139,14 +126,11 @@ section {
   padding: 1rem 3rem;
   border-radius: 40px;
   background: none;
-  transition: 0.3s;
-  font-weight: 500;
 }
-
-.btn1 button[type="submit"]:hover {
-  background-color: green;
-  color: white;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+.btn1 button[type="submit"] {
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 i {
@@ -227,37 +211,27 @@ i {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
-  position: relative;
 }
-
 .search-form input[type="search"] {
   width: 100%;
-  padding: 12px 15px;
+  padding: 10px;
   font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 5px;
   outline: none;
   margin-right: 10px;
   color: #0056b3;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.search-form input[type="search"]:focus {
-  border-color: #007BFF;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
 }
 
 .search-form label {
   color: #007BFF;
   font-size: 20px;
   cursor: pointer;
-  transition: color 0.3s, transform 0.2s;
-  padding: 8px;
+  transition: color 0.3s;
 }
 
 .search-form label:hover {
   color: #0056b3;
-  transform: scale(1.1);
 }
 
 .search-form #close-search {
@@ -267,13 +241,11 @@ i {
   font-size: 30px;
   color: #fff;
   cursor: pointer;
-  transition: color 0.3s, transform 0.2s;
-  z-index: 1001;
+  transition: color 0.3s;
 }
 
 .search-form #close-search:hover {
   color: #ff6347;
-  transform: scale(1.1);
 }
 
 
@@ -338,6 +310,56 @@ form label:hover {
   font-size: 1.5rem;
   padding: 1rem 0;
 }
+
+/* Surfing Page Hero Section Transparent Styles */
+.home .box .surf-hero-overlay {
+  background: none;
+  border: none;
+  padding: 4rem 3rem;
+  border-radius: 0;
+  text-align: center;
+  box-shadow: none;
+  animation: fadeInDown 1.5s;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.home .box .surf-hero-title {
+  font-size: 4.5rem;
+  color: #ffffff;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
+  line-height: 1.1;
+}
+
+.home .box .surf-hero-desc {
+  font-size: 2.2rem;
+  color: #FFD700;
+  font-weight: 600;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  line-height: 1.3;
+}
+
+/* Override the default box positioning for surfing page */
+.home .box[style*="surfingnew1.jpg"] {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.home .box[style*="surfingnew1.jpg"]:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
 .category .box-container {
   display: -ms-grid;
   display: grid;
@@ -361,10 +383,9 @@ form label:hover {
   font-size: 2rem;
   background: linear-gradient(to right, #2545fc,
   #0de3eb, #100a2e, #eedd44);
-  -webkit-text-fill-color: transparent;
-  color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .category .box-container .box p {
@@ -425,14 +446,6 @@ form label:hover {
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 0.5rem;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s;
-}
-
-.packages .box-container .box .image img:hover {
-  transform: scale(1.03);
 }
 
 .packages .box-container .box .content {
@@ -546,6 +559,22 @@ form label:hover {
   .home .box .conent h3 {
     font-size: 4rem;
   }
+  
+  /* Surfing hero responsive */
+  .home .box .surf-hero-overlay {
+    padding: 3rem 2rem;
+    max-width: 90%;
+    background: none;
+  }
+  .home .box .surf-hero-title {
+    font-size: 3.5rem;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.9);
+  }
+  .home .box .surf-hero-desc {
+    font-size: 2rem;
+    color: #FFD700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  }
 }
 @media (max-width: 768px) {
   .header #menu-btn {
@@ -590,22 +619,30 @@ form label:hover {
     width: 100%;
   }
   .input, textarea {
-    width: 100% !important;
-    box-sizing: border-box;
+    width: 60vw !important;
   }
   .msg {
-    margin-left: 0;
-  }
-  .form-label {
-    font-size: 1.4rem;
-  }
-  .wrapper1 {
-    padding: 15px;
-    max-width: 90%;
+    margin-left: -20px;
   }
   form {
     flex-direction: column;
-    width: 100%;
+    width: 70vw;
+  }
+  
+  /* Surfing hero mobile styles */
+  .home .box .surf-hero-overlay {
+    padding: 2.5rem 1.5rem;
+    max-width: 95%;
+    background: none;
+  }
+  .home .box .surf-hero-title {
+    font-size: 2.8rem;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 1);
+  }
+  .home .box .surf-hero-desc {
+    font-size: 1.6rem;
+    color: #FFD700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
   }
 }
 
@@ -625,9 +662,29 @@ form label:hover {
   .wrapper1 {
     padding: 10px;
   }
+  
+  /* Surfing hero small screen styles */
+  .home .box .surf-hero-overlay {
+    padding: 2rem 1rem;
+    max-width: 98%;
+    background: none;
+  }
+  .home .box .surf-hero-title {
+    font-size: 2.2rem;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+    margin-bottom: 1rem;
+  }
+  .home .box .surf-hero-desc {
+    font-size: 1.3rem;
+    color: #FFD700;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+  }
 }
 
-/* --- Surfing Page Styles (added by Copilot, 2025-08-29) --- */
+/* === SURFING PAGE STYLES === */
+
+/* Note: These styles are not currently used but kept for reference */
+/*
 .surfing-main-title {
   font-size: 4.8rem;
   text-align: center;
@@ -720,51 +777,78 @@ form label:hover {
     font-size: 1rem;
   }
 }
-/* --- End Surfing Page Styles --- */
+*/
 
-/* --- Modern Surfing Page Styles (added by Copilot, 2025-08-29) --- */
+/* === ACTIVE SURFING PAGE STYLES === */
+/* Hero Section Alternative (not currently used) */
+/* Note: This would be for a standalone hero section, but we're using the home section instead */
+/*
 .surf-hero {
   position: relative;
-  min-height: 60vh;
-  background: linear-gradient(rgba(33,145,80,0.3), rgba(13,227,235,0.2)), url('../images/surfingnew1.jpg') center/cover no-repeat;
+  min-height: 70vh;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), 
+    url('../images/surfingnew1.jpg') center/cover no-repeat;
   background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
 }
 .surf-hero-overlay {
-  /*background: rgba(0,0,0,0.25);*/
-  padding: 3rem 2rem;
-  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.342);
+  backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 4rem 3rem;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 8px 32px rgba(173, 166, 166, 0.18);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0);
   animation: fadeInDown 1.5s;
-  
+  max-width: 600px;
+  width: 90%;
 }
 .surf-hero-title {
-  font-size: 4rem;
-  color: #fff;
-  font-weight: 800;
+  font-size: 4.5rem;
+  color: #ffffff;
+  font-weight: 900;
   letter-spacing: 2px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+  line-height: 1.1;
 }
 .surf-hero-desc {
-  font-size: 2rem;
-  color: #eedd44;
+  font-size: 2.2rem;
+  color: #ffffff;
   font-weight: 500;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+  line-height: 1.3;
 }
+*/
+
+/* Animation for hero content fade-in */
 @keyframes fadeInDown {
   from { opacity: 0; transform: translateY(-30px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+
+/* Main content section with surfing information */
 .surf-main {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 3rem 0;
+  padding: 1rem 0 3rem 0;
   background: #f8f9fa;
+  margin-top: 2rem; /* Reduces gap between hero and main content */
+  position: relative;
+  z-index: 2;
 }
+
+/* Card container for surfing content */
 .surf-card {
   display: flex;
   background: #fff;
@@ -776,10 +860,14 @@ form label:hover {
   margin: 0 2rem;
   animation: fadeInUp 1.2s;
 }
+
+/* Animation for content sliding up */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(40px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* Image section of the card */
 .surf-card-img-wrap {
   flex: 1 1 350px;
   min-height: 400px;
@@ -787,13 +875,15 @@ form label:hover {
   border-radius: 18px 0 0 18px;
   position: relative;
 }
+
 .surf-card-img {
-  
-  display: none; /* Hidden since we're using background image now */
+  display: none;
 }
+
 .surf-card-img:hover {
   transform: scale(1.04) rotate(-2deg);
 }
+
 .surf-card-content {
   flex: 2 1 500px;
   padding: 3rem 2.5rem;
@@ -801,18 +891,21 @@ form label:hover {
   flex-direction: column;
   justify-content: center;
 }
+
 .surf-card-title {
   font-size: 2.6rem;
   color: #219150;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
+
 .surf-card-content p {
   font-size: 1.7rem;
   color: #333;
   line-height: 1.7;
   margin-bottom: 1.2rem;
 }
+
 .surf-card-highlight {
   font-size: 2rem;
   font-weight: bold;
@@ -823,33 +916,122 @@ form label:hover {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
+
+/* === RESPONSIVE DESIGN FOR SURFING PAGE === */
+
+/* Tablet and medium screens (≤900px) */
 @media (max-width: 900px) {
-  .surf-hero { min-height: 50vh; }
-  .surf-hero-title { font-size: 2.5rem; }
-  .surf-hero-desc { font-size: 1.3rem; }
-  .surf-main { padding: 2rem 0; }
-  .surf-card { flex-direction: column; max-width: 98vw; }
+  /* Unused hero styles (commented out)
+  .surf-hero { 
+    min-height: 60vh;
+    background-attachment: scroll;
+  }
+  .surf-hero-overlay {
+    padding: 3rem 2rem;
+    width: 95%;
+    max-width: none;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+  }
+  .surf-hero-title { 
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  }
+  .surf-hero-desc { 
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  }
+  */
+  
+  /* Reduce spacing for main content on tablets */
+  .surf-main { 
+    padding: 1rem 0 2rem 0; 
+    margin-top: -1rem;
+  }
+  
+ 
+  .surf-card { 
+    flex-direction: column; 
+    max-width: 98vw; 
+  }
+  
+
   .surf-card-img-wrap { 
     min-height: 250px; 
-    border-radius: 18px 18px 0 0;
+    border-radius: 18px 18px 0 0; 
   }
-  .surf-card-content { padding: 2rem 1rem; }
-  .surf-card-title { font-size: 2rem; }
-  .surf-card-content p { font-size: 1.3rem; }
-  .surf-card-highlight { font-size: 1.2rem; }
+  
+
+  .surf-card-content { 
+    padding: 2rem 1rem; 
+  }
+  
+
+  .surf-card-title { 
+    font-size: 2rem; 
+  }
+  
+  .surf-card-content p { 
+    font-size: 1.3rem; 
+  }
+  
+  .surf-card-highlight { 
+    font-size: 1.2rem; 
+  }
 }
+
+/* Mobile screens (≤600px) */
 @media (max-width: 600px) {
-  .surf-hero { min-height: 40vh; }
-  .surf-hero-title { font-size: 1.5rem; }
-  .surf-hero-desc { font-size: 1rem; }
-  .surf-main { padding: 1rem 0; }
+
+  /* Unused hero styles (commented out)
+  .surf-hero { 
+    min-height: 50vh;
+    background-attachment: scroll;
+  }
+  .surf-hero-overlay {
+    padding: 2.5rem 1.5rem;
+    width: 98%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    border-radius: 15px;
+  }
+  .surf-hero-title { 
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+  }
+  .surf-hero-desc { 
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  }
+  */
+  
+  .surf-main { 
+    padding: 0.5rem 0 1rem 0; 
+    margin-top: -0.5rem;
+  }
+  
   .surf-card-img-wrap { 
     min-height: 200px; 
     border-radius: 18px 18px 0 0;
   }
-  .surf-card-content { padding: 1rem 0.5rem; }
-  .surf-card-title { font-size: 1.1rem; }
-  .surf-card-content p { font-size: 1rem; }
-  .surf-card-highlight { font-size: 1rem; padding: 0.5rem 0.7rem; }
+  
+  .surf-card-content { 
+    padding: 1rem 0.5rem; 
+  }
+  
+  .surf-card-title { 
+    font-size: 1.1rem; 
+  }
+  
+  .surf-card-content p { 
+    font-size: 1rem; 
+  }
+  
+  .surf-card-highlight { 
+    font-size: 1rem; 
+    padding: 0.5rem 0.7rem; 
+  }
 }
-/* --- End Modern Surfing Page Styles --- */
+
+/* === END OF SURFING PAGE STYLES === */
