@@ -11,6 +11,7 @@
   text-transform: capitalize;
   transition: 0.2s linear;
 }
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -21,6 +22,7 @@ html {
 section {
   padding: 5rem 9%;
 }
+
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -32,16 +34,19 @@ section {
   padding: 1rem 3rem;
   border-radius: 40px;
 }
+
 .btn:hover {
   background: black;
   color: white;
 }
+
 .heading {
   text-align: center;
   margin-bottom: 2.5rem;
   font-size: 4rem;
   color: #10221b;
 }
+
 .header {
   position: fixed;
   top: 0;
@@ -52,17 +57,21 @@ section {
   display: flex;
   align-items: center;
 }
+
 .header.active {
   background: #ffffff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   color: #000000;
 }
+
 .header .logo {
   margin-right: auto;
   font-size: 2.5rem;
-  color: black;
+  color: #fff;
+  /* default: white on hero */
   font-weight: bolder;
 }
+
 .wrapper1 {
   margin-left: auto;
   margin-right: auto;
@@ -116,6 +125,7 @@ section {
 .msg textarea {
   height: 189px;
 }
+
 .msg .btn1 {
   margin-top: 1rem;
   display: inline-block;
@@ -127,6 +137,7 @@ section {
   border-radius: 40px;
   background: none;
 }
+
 .btn1 button[type="submit"] {
   background-color: transparent;
   font-size: 15px;
@@ -141,7 +152,8 @@ i {
 
 /*-------------- NavBar updated------------- */
 .header .navbar a {
-  color: #000000;
+  color: #ffffff;
+  /* default: white links */
   font-size: 16px;
   text-transform: capitalize;
   margin: 0 10px;
@@ -160,24 +172,55 @@ i {
 .header .navbar #nav-close {
   font-size: 5rem;
   cursor: pointer;
-  color: black;
+  color: #fff;
   display: none;
 }
+
 .header .icons a,
 .header .icons div {
   font-size: 2.5rem;
   margin-left: 2rem;
   cursor: pointer;
-  color: black;
+  color: #fff;
+  /* default white icons */
 }
 
 .header.icons a:hover,
 .header.icons div:hover {
   color: green;
 }
+
+/* When header becomes active (scrolled), switch to dark/black colors */
+.header.active .logo {
+  color: #000;
+}
+
+.header.active .navbar a {
+  color: #000;
+}
+
+.header.active .navbar #nav-close {
+  color: #000;
+}
+
+.header.active .icons a,
+.header.active .icons div {
+  color: #000;
+}
+
 .header #menu-btn {
   display: none;
 }
+
+/* Mobile navbar when opened should show dark links on its white background */
+.header .navbar.active a {
+  color: #000;
+}
+
+.header .navbar.active #nav-close {
+  color: #000;
+}
+
 /* Search Form Styles */
 /* -------CSS updated------- */
 
@@ -212,6 +255,7 @@ i {
   display: flex;
   align-items: center;
 }
+
 .search-form input[type="search"] {
   width: 100%;
   padding: 10px;
@@ -257,6 +301,7 @@ form {
   display: flex;
   align-items: center;
 }
+
 form input {
   width: 100%;
   font-size: 2rem;
@@ -275,12 +320,15 @@ form label {
   cursor: pointer;
   color: white;
 }
+
 form label:hover {
   color: green;
 }
+
 .home {
   padding: 0;
 }
+
 .home .box {
   min-height: 100vh;
   display: flex;
@@ -294,16 +342,19 @@ form label:hover {
 .home .content {
   width: 50rem;
 }
+
 .home .content span {
   font-size: 4rem;
   color: black;
 }
+
 .home .content h3 {
   font-size: 6rem;
   color: green;
   padding-top: 0.5rem;
   text-transform: uppercase;
 }
+
 .home .content p {
   line-height: 2;
   color: black;
@@ -323,6 +374,8 @@ form label:hover {
   max-width: 600px;
   margin: 0 auto;
   position: relative;
+  z-index: 2;
+  /* keep hero text above overlay */
 }
 
 .home .box .surf-hero-title {
@@ -360,6 +413,7 @@ form label:hover {
   background: rgba(0, 0, 0, 0.2);
   pointer-events: none;
 }
+
 .category .box-container {
   display: -ms-grid;
   display: grid;
@@ -372,6 +426,7 @@ form label:hover {
   text-align: center;
   padding: 1rem;
 }
+
 .category .box-container .box img {
   height: 20rem;
   width: 20rem;
@@ -379,10 +434,11 @@ form label:hover {
   margin-bottom: 1rem;
   box-shadow: 1px 2px 6px 3px grey;
 }
+
 .category .box-container .box h3 {
   font-size: 2rem;
   background: linear-gradient(to right, #2545fc,
-  #0de3eb, #100a2e, #eedd44);
+      #0de3eb, #100a2e, #eedd44);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -394,6 +450,7 @@ form label:hover {
   padding: 1rem 0;
   line-height: 2;
 }
+
 .packages {
   background: #eee;
 }
@@ -419,7 +476,7 @@ form label:hover {
   background: #10221b;
 }
 
-.packages .box-container .box:hover .content > * {
+.packages .box-container .box:hover .content>* {
   color: #fff;
 }
 
@@ -470,13 +527,11 @@ form label:hover {
 }
 
 .footer {
-  background: -webkit-gradient(
-      linear,
+  background: -webkit-gradient(linear,
       left top,
       left bottom,
       from(rgba(0, 0, 0, 0.5)),
-      to(rgba(0, 0, 0, 0.5))
-    ),
+      to(rgba(0, 0, 0, 0.5))),
     url(../images/footer-bg.jpg) no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/footer.jpg) no-repeat;
@@ -536,6 +591,7 @@ form label:hover {
   .header {
     padding: 2rem;
   }
+
   section {
     padding: 3rem 2rem;
   }
@@ -545,41 +601,49 @@ form label:hover {
   html {
     font-size: 55%;
   }
+
   .home .box {
     padding: 2rem;
     justify-content: center;
     background-position: right !important;
   }
+
   .home .box .conent {
     text-align: center;
   }
+
   .home .box .conent span {
     font-size: 3rem;
   }
+
   .home .box .conent h3 {
     font-size: 4rem;
   }
-  
+
   /* Surfing hero responsive */
   .home .box .surf-hero-overlay {
     padding: 3rem 2rem;
     max-width: 90%;
     background: none;
   }
+
   .home .box .surf-hero-title {
     font-size: 3.5rem;
     text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.9);
   }
+
   .home .box .surf-hero-desc {
     font-size: 2rem;
     color: #FFD700;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   }
 }
+
 @media (max-width: 768px) {
   .header #menu-btn {
     display: inline-block;
   }
+
   .header .navbar {
     position: fixed;
     top: 0;
@@ -588,57 +652,69 @@ form label:hover {
     z-index: 10000;
     width: 35rem;
     height: 100%;
-   
+
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
   }
+
   .header .navbar.active {
     left: 0;
     box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
   }
+
   .header .navbar a {
     margin: 1rem 0;
     font-size: 3rem;
   }
+
   .header .navbar #nav-close {
     display: block;
     position: absolute;
     top: 1rem;
     right: 2rem;
   }
+
   .contact-form {
     flex-direction: column;
   }
+
   .msg textarea {
     height: 80px;
   }
+
   .input-fields,
   .msg {
     width: 100%;
   }
-  .input, textarea {
+
+  .input,
+  textarea {
     width: 60vw !important;
   }
+
   .msg {
     margin-left: -20px;
   }
+
   form {
     flex-direction: column;
     width: 70vw;
   }
-  
+
   /* Surfing hero mobile styles */
   .home .box .surf-hero-overlay {
     padding: 2.5rem 1.5rem;
     max-width: 95%;
     background: none;
   }
+
   .home .box .surf-hero-title {
     font-size: 2.8rem;
     text-shadow: 3px 3px 12px rgba(0, 0, 0, 1);
   }
+
   .home .box .surf-hero-desc {
     font-size: 1.6rem;
     color: #FFD700;
@@ -650,30 +726,37 @@ form label:hover {
   html {
     font-size: 50%;
   }
+
   .heading {
     font-size: 3rem;
   }
-    .input, textarea {
+
+  .input,
+  textarea {
     width: 70vw !important;
   }
+
   form {
     width: 50vw;
   }
+
   .wrapper1 {
     padding: 10px;
   }
-  
+
   /* Surfing hero small screen styles */
   .home .box .surf-hero-overlay {
     padding: 2rem 1rem;
     max-width: 98%;
     background: none;
   }
+
   .home .box .surf-hero-title {
     font-size: 2.2rem;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
     margin-bottom: 1rem;
   }
+
   .home .box .surf-hero-desc {
     font-size: 1.3rem;
     color: #FFD700;
@@ -831,8 +914,15 @@ form label:hover {
 
 /* Animation for hero content fade-in */
 @keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
@@ -843,7 +933,8 @@ form label:hover {
   align-items: flex-start;
   padding: 1rem 0 3rem 0;
   background: #f8f9fa;
-  margin-top: 2rem; /* Reduces gap between hero and main content */
+  margin-top: 2rem;
+  /* Reduces gap between hero and main content */
   position: relative;
   z-index: 2;
 }
@@ -853,7 +944,7 @@ form label:hover {
   display: flex;
   background: #fff;
   border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
   overflow: hidden;
   max-width: 1100px;
   width: 100%;
@@ -863,25 +954,51 @@ form label:hover {
 
 /* Animation for content sliding up */
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Image section of the card */
 .surf-card-img-wrap {
   flex: 1 1 350px;
   min-height: 400px;
-  background: linear-gradient(rgba(238,221,68,0.1), rgba(13,227,235,0.1)), url('../images/surfing.jpg') center/cover no-repeat;
+  /* use inline <img> inside this container so images are selectable and responsive */
+  background: linear-gradient(rgba(238, 221, 68, 0.04), rgba(13, 227, 235, 0.04));
   border-radius: 18px 0 0 18px;
   position: relative;
+  overflow: hidden;
 }
 
 .surf-card-img {
-  display: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
 }
 
 .surf-card-img:hover {
-  transform: scale(1.04) rotate(-2deg);
+  transform: scale(1.03);
+}
+
+/* subtle overlay for hero backgrounds to improve contrast */
+.home .box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.081);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .surf-card-content {
@@ -914,7 +1031,7 @@ form label:hover {
   background: #eedd44;
   padding: 1rem 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
 
 /* === RESPONSIVE DESIGN FOR SURFING PAGE === */
@@ -942,41 +1059,41 @@ form label:hover {
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
   }
   */
-  
+
   /* Reduce spacing for main content on tablets */
-  .surf-main { 
-    padding: 1rem 0 2rem 0; 
+  .surf-main {
+    padding: 1rem 0 2rem 0;
     margin-top: -1rem;
   }
-  
- 
-  .surf-card { 
-    flex-direction: column; 
-    max-width: 98vw; 
-  }
-  
 
-  .surf-card-img-wrap { 
-    min-height: 250px; 
-    border-radius: 18px 18px 0 0; 
-  }
-  
 
-  .surf-card-content { 
-    padding: 2rem 1rem; 
+  .surf-card {
+    flex-direction: column;
+    max-width: 98vw;
   }
-  
 
-  .surf-card-title { 
-    font-size: 2rem; 
+
+  .surf-card-img-wrap {
+    min-height: 250px;
+    border-radius: 18px 18px 0 0;
   }
-  
-  .surf-card-content p { 
-    font-size: 1.3rem; 
+
+
+  .surf-card-content {
+    padding: 2rem 1rem;
   }
-  
-  .surf-card-highlight { 
-    font-size: 1.2rem; 
+
+
+  .surf-card-title {
+    font-size: 2rem;
+  }
+
+  .surf-card-content p {
+    font-size: 1.3rem;
+  }
+
+  .surf-card-highlight {
+    font-size: 1.2rem;
   }
 }
 
@@ -1005,33 +1122,310 @@ form label:hover {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
   }
   */
-  
-  .surf-main { 
-    padding: 0.5rem 0 1rem 0; 
+
+  .surf-main {
+    padding: 0.5rem 0 1rem 0;
     margin-top: -0.5rem;
   }
-  
-  .surf-card-img-wrap { 
-    min-height: 200px; 
+
+  .surf-card-img-wrap {
+    min-height: 200px;
     border-radius: 18px 18px 0 0;
   }
-  
-  .surf-card-content { 
-    padding: 1rem 0.5rem; 
+
+  .surf-card-content {
+    padding: 1rem 0.5rem;
   }
-  
-  .surf-card-title { 
-    font-size: 1.1rem; 
+
+  .surf-card-title {
+    font-size: 1.1rem;
   }
-  
-  .surf-card-content p { 
-    font-size: 1rem; 
+
+  .surf-card-content p {
+    font-size: 1rem;
   }
-  
-  .surf-card-highlight { 
-    font-size: 1rem; 
-    padding: 0.5rem 0.7rem; 
+
+  .surf-card-highlight {
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
   }
 }
 
 /* === END OF SURFING PAGE STYLES === */
+
+/* === YALA SAFARI PAGE STYLES === */
+
+.yala-hero {
+  background-position: center;
+  background-size: cover !important;
+}
+
+.yala-hero .surf-hero-title {
+  /* warmer title color for safari */
+  color: #fff;
+  text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.85);
+}
+
+.yala-hero .surf-hero-desc {
+  color: #ffd875;
+}
+
+.wildlife-card {
+  border: 0.2rem solid rgba(33, 145, 80, 0.12);
+}
+
+.wildlife-card .surf-card-img-wrap {
+  box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.12);
+}
+
+.wildlife-caption {
+  font-size: 1.4rem;
+  color: #666;
+  margin-top: 0.6rem;
+}
+
+/* small responsive tweak for wildlife card */
+@media (max-width: 900px) {
+  .wildlife-card .surf-card-img-wrap {
+    min-height: 260px;
+  }
+}
+
+/* === END YALA STYLES === */
+
+/* === WILDLIFE-SPECIFIC LAYOUT (scoped) === */
+.wildlife-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.5rem 0 3rem 0;
+  background: #fbfbf8;
+  margin-top: 2rem;
+}
+
+.wildlife-card {
+  display: flex;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 28px rgba(8, 18, 12, 0.06);
+  overflow: hidden;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 2rem;
+}
+
+.wildlife-img-wrap {
+  flex: 1 1 380px;
+  min-height: 420px;
+  background: linear-gradient(rgba(34, 34, 34, 0.03), rgba(13, 227, 235, 0.02));
+  border-radius: 18px 0 0 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.wildlife-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.wildlife-img:hover {
+  transform: scale(1.03);
+}
+
+.wildlife-content {
+  flex: 2 1 520px;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wildlife-title {
+  font-size: 2.8rem;
+  color: #1f7a3a;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.wildlife-content p {
+  font-size: 1.7rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.wildlife-highlight {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #bf6d00;
+  margin-top: 1.5rem;
+  background: #fff6e6;
+  padding: 0.9rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .wildlife-card {
+    flex-direction: column;
+    max-width: 96vw;
+  }
+
+  .wildlife-img-wrap {
+    min-height: 300px;
+    border-radius: 18px 18px 0 0;
+  }
+
+  .wildlife-content {
+    padding: 2rem 1rem;
+  }
+
+  .wildlife-title {
+    font-size: 2.2rem;
+  }
+
+  .wildlife-content p {
+    font-size: 1.35rem;
+  }
+
+  .wildlife-highlight {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .wildlife-img-wrap {
+    min-height: 220px;
+  }
+
+  .wildlife-title {
+    font-size: 1.3rem;
+  }
+
+  .wildlife-content p {
+    font-size: 1rem;
+  }
+
+  .wildlife-highlight {
+    font-size: 1rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .header .navbar a {
+    font-size: 2.2rem;
+  }
+}
+
+/* === END WILDLIFE-SPECIFIC STYLES === */
+
+/* === WATER RAFTING PAGE STYLES === */
+.water-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.5rem 0 3rem 0;
+  background: linear-gradient(#f4fbff, #eef7fb);
+  margin-top: 2rem;
+}
+
+.water-card {
+  display: flex;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 28px rgba(6, 50, 80, 0.06);
+  overflow: hidden;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 2rem;
+}
+
+.water-img-wrap {
+  flex: 1 1 380px;
+  min-height: 420px;
+  border-radius: 18px 0 0 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.water-img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.water-img:hover {
+  transform: scale(1.02);
+}
+
+.water-content {
+  flex: 2 1 520px;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.water-title {
+  font-size: 2.6rem;
+  color: #0b6bb9;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.water-content p {
+  font-size: 1.7rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.water-highlight {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #006ba6;
+  background: #e6f7ff;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .water-card {
+    flex-direction: column;
+    max-width: 96vw;
+  }
+
+  .water-img-wrap {
+    min-height: 300px;
+    border-radius: 18px 18px 0 0;
+  }
+
+  .water-content {
+    padding: 2rem 1rem;
+  }
+
+  .water-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .water-img-wrap {
+    min-height: 220px;
+  }
+
+  .water-title {
+    font-size: 1.2rem;
+  }
+
+  .water-content p {
+    font-size: 1rem;
+  }
+}
+
+/* === END WATER RAFTING STYLES === */
