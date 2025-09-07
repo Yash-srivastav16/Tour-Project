@@ -532,12 +532,22 @@ form label:hover {
       left bottom,
       from(rgba(0, 0, 0, 0.5)),
       to(rgba(0, 0, 0, 0.5))),
-    url(../images/footer-bg.jpg) no-repeat;
+    url(../images/footer3.png) no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/footer.jpg) no-repeat;
+    url(../images/footer3.png) no-repeat;
+    occupacy: 0.7;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+.footer .footer-intro p{
+  grid-column: 1 / -1;   /* make it span across the whole grid */
+  text-align: center;
+  font-size: 2.5rem;
+  color: #87d065;
+  font-weight: bolder;
+  margin-bottom: 2rem;
 }
 
 .footer .box-container {
@@ -548,6 +558,14 @@ form label:hover {
   gap: 1.5rem;
 }
 
+.footer .box-container .box p {
+  
+  width: 100%;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 1rem 0;
+
+}
 .footer .box-container .box h3 {
   font-size: 2rem;
   padding: 1.5rem 0;
@@ -562,17 +580,17 @@ form label:hover {
 }
 
 .footer .box-container .box a i {
-  color: #219150;
+  color: #45ed83;
   padding-right: 0.5rem;
+  size:0cqi;
 }
 
 .footer .box-container .box a:hover {
-  color: #219150;
+  color: #87d065;
+   padding-right: 2.2rem;
+   font-weight: bolder;
 }
 
-.footer .box-container .box a:hover i {
-  padding-right: 2rem;
-}
 
 .footer .credit {
   text-align: center;
@@ -583,8 +601,10 @@ form label:hover {
   color: #fff;
 }
 
-.footer .credit span {
-  color: #219150;
+.footer .credit span:hover {
+  color: #87d065;
+  font-size: 2rem;
+  font-weight:bold;
 }
 
 @media (max-width: 1200px) {
