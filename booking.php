@@ -647,15 +647,32 @@
                         <div class="form-group">
                             <label for="packageSelect">
                                 <i class="fas fa-map-marked-alt"></i>
-                                Choose Your Adventure
+                                Choose Your Package
                             </label>
                             <select id="packageSelect" name="packageSelect" required>
                                 <option value="">-- Select your preferred package --</option>
-                                <option value="Sri Lanka Budget Tour Package" selected>Sri Lanka Budget Tour Package - $640</option>
-                                <option value="Yala Wildlife Safari">Yala Wildlife Safari - $1,200</option>
-                                <option value="Kithulgala Water Rafting">Kithulgala Water Rafting - $1,800</option>
-                                <option value="Surfing Paradise">Surfing Paradise - $950</option>
+
+                                <option value="Highlights of Sri Lanka – 10 Days" data-price="865" selected>
+                                        Highlights of Sri Lanka – 10 Days – $865
+                                </option>
+                                <option value="Highlights of Sri Lanka 5 Days" data-price="380">
+                                         Highlights of Sri Lanka 5 Days – $380
+                                </option>
+                                <option value="Sri Lanka 9 Day Tour Package" data-price="660">
+                                        Sri Lanka 9 Day Tour Package – $660
+                                </option>
+                                <option value="Sri Lanka Budget Tour Package" data-price="640">
+                                        Sri Lanka Budget Tour Package – $640
+                                </option>
+                                <option value="Sri Lankan Heritage Tour" data-price="515">
+                                        Sri Lankan Heritage Tour – $515
+                                </option>
+                                <option value="Sri Lanka Beach Holiday" data-price="495">
+                                        Sri Lanka Beach Holiday – $495
+                                </option>
+
                             </select>
+
                         </div>
                     </div>
 
@@ -676,6 +693,21 @@
                             <input type="number" id="numTravelers" name="numTravelers" min="1" max="20" value="1" required>
                         </div>
                     </div>
+
+                    <div class="price-summary" 
+     style="background:#f9fafc; border:2px solid #e0e6ed; border-radius:12px; 
+            padding:20px; margin:20px 0; text-align:center; 
+            box-shadow:0 4px 12px rgba(0,0,0,0.05); transition:all 0.3s ease-in-out;">
+
+    <h3 style="font-size:1.6rem; font-weight:bold; color:#2c3e50; margin-bottom:10px;">
+        Total Price: 
+        <span id="totalPrice" style="color:#27ae60; font-size:1.8rem; font-weight:700;">$0</span>
+    </h3>
+
+    <p id="priceBreakdown" style="font-size:1rem; color:#555; margin:0;"></p>
+</div>
+
+
 
                     <div class="form-group full-width">
                         <label for="message">
@@ -1119,6 +1151,7 @@
             }
         });
     </script>
+    <script src="calculate.js"></script>
 </body>
 
 </html>
