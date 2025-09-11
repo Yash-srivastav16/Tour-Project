@@ -36,3 +36,21 @@ window.onload=()=>{
     }
 };
 
+// handle increase/decrease buttons for adults & children
+document.querySelectorAll('.increase').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = document.getElementById(btn.dataset.target);
+    target.value = parseInt(target.value) + 1;
+  });
+});
+
+document.querySelectorAll('.decrease').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = document.getElementById(btn.dataset.target);
+    if (parseInt(target.value) > 0) { // don’t go below 0
+      target.value = parseInt(target.value) - 1;
+    }
+  });
+});
+
+
