@@ -1449,3 +1449,123 @@ form label:hover {
 }
 
 /* === END WATER RAFTING STYLES === */
+
+
+/* ===== Booking Form Section ===== */
+
+#booking {
+  width: 75vw;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  
+  
+  
+}
+
+/* Heading */
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 2.4rem;
+  color: #10221b;
+  width: 100%;
+}
+
+/* Form layout */
+.booking-form form {
+  idth: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center input boxes */
+}
+
+/* Input boxes */
+.booking-form .input-box {
+  margin-bottom: 18px;
+  width: 100%;
+  max-width: 400px; /* Optional: makes form compact */
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form .input-box label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.booking-form .input-box input {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  background: #fafafa;
+  color: #10221b;
+}
+
+/* Submit button */
+.booking-form .submit-btn {
+width: 100%;
+  max-width: 400px;
+  padding: 12px 0;
+  background: #1abc9c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.booking-form .submit-btn:hover {
+  background: #c9302c;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  #booking {
+    margin: 20px;
+    padding: 15px;
+  }
+}
+.booking-form .custom-number {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.booking-form .custom-number input {
+  width: 325px;
+  text-align: center;
+  padding: 5px;
+  
+}
+
+.booking-form .custom-number button {
+  background: #3bc5e0;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.booking-form .custom-number button:hover {
+  background: #e02b2b;
+}
