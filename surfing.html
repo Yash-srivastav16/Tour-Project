@@ -75,6 +75,58 @@
       </div>
     </section>
 
+     <!-- Booking Form Section -->
+  <section id="booking">
+      <div class="booking-form">
+        <h2>Book Your Tour</h2>
+        <form id="bookingForm">
+          <div class="input-box">
+            <label for="name">Your Name*</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="input-box">
+            <label for="email">Your Email*</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="input-box">
+            <label for="phone">Contact No.*</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+
+          <div class="input-box">
+            <label for="package">Package Name*</label>
+            <input type="text" id="package" name="package" required>
+          </div>
+
+          <div class="input-box">
+              <label for="adults">No of Tickets for Adults(12+ years)*</label>
+            <div class="custom-number">
+              <button type="button" class="decrease" data-target="adults">-</button>
+              <input type="number" id="adults" name="adults" min="0" value="0">
+              <button type="button" class="increase" data-target="adults">+</button>
+            </div>
+            
+
+            <label for="children">No of Tickets for Children(3–11 years)*</label>
+            <div class="custom-number">
+              <button type="button" class="decrease" data-target="children">-</button>
+              <input type="number" id="children" name="children" min="0" value="0">
+              <button type="button" class="increase" data-target="children">+</button>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label for="date">Date*</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Booking</button>
+        </form>
+      </div>
+  </section>
+
     <section class="footer">
         <div class="footer-intro">
             <p>Experience the luxuries of Sri Lanka with our specially crafted luxury tours and indulge in its quintessential charms.</p>   

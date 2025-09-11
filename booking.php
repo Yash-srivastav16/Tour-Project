@@ -66,8 +66,8 @@
             <!-- Package Header -->
             <div class="package-header">
                 <div class="package-title-section">
-                    <h1 class="package-title">Manali Adventure Package</h1>
-                    <p class="package-subtitle">Experience the breathtaking beauty of the Himalayas</p>
+                    <h1 class="package-title">Sri Lanka Budget Tour Package</h1>
+                    <p class="package-subtitle">Explore Sri Lanka's cultural heritage, natural beauty, and wildlife diversity</p>
                     <div class="package-rating">
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -76,15 +76,15 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <span class="rating-text">4.8/5 (124 reviews)</span>
+                        <span class="rating-text">5.0/5 (1 review)</span>
                     </div>
                 </div>
                 <div class="package-price-section">
                     <div class="price-container">
-                        <span class="original-price">₹25,000</span>
-                        <span class="current-price">₹18,999</span>
+                        <span class="original-price">$800</span>
+                        <span class="current-price">$640</span>
                         <span class="per-person">per person</span>
-                        <div class="discount-badge">Save 24%</div>
+                        <div class="discount-badge">Save 20%</div>
                     </div>
                     <button class="book-now-btn" onclick="scrollToBooking(event)">
                         <i class="fas fa-calendar-check"></i>
@@ -93,211 +93,151 @@
                 </div>
             </div>
 
-            <!-- Ultra Modern Gallery Section -->
+            <!-- Modern Tour Gallery Section -->
             <div class="modern-gallery-section">
                 <!-- Gallery Header -->
                 <div class="gallery-header">
-                    <div class="gallery-title-area">
-                        <h2>Experience Manali</h2>
-                        <p>Discover breathtaking views and unforgettable moments</p>
-                    </div>
-                    <div class="gallery-actions">
-                        <button class="view-all-btn" onclick="openGalleryModal()">
-                            <i class="fas fa-expand"></i>
-                            View All 12 Photos
-                        </button>
-                    </div>
+                    <h2>Experience the Journey</h2>
+                    <p>Immerse yourself in stunning destinations and unforgettable adventures</p>
                 </div>
 
-                <!-- Modern Gallery Grid -->
-                <div class="ultra-modern-gallery">
-                    <!-- Hero Main Image -->
-                    <div class="gallery-hero-main" onclick="openGalleryModal()">
-                        <img src="images/category-1.jpg" alt="Manali Adventure Package" id="mainPackageImage">
-                        <div class="hero-overlay">
-                            <div class="hero-overlay-content">
-                                <div class="play-icon">
-                                    <i class="fas fa-play"></i>
+                <!-- Main Gallery Layout -->
+                <div class="tour-gallery-grid">
+                    <!-- Featured Main Image -->
+                    <div class="gallery-main-image" onclick="openGalleryLightbox()">
+                        <img src="image galary/sigiriya.jpg" alt="Sri Lanka Adventure" id="mainGalleryImage">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="view-icon">
+                                    <i class="fas fa-expand-alt"></i>
                                 </div>
-                                <span class="overlay-text">Explore Gallery</span>
+                                <span class="view-text">Click to explore</span>
                             </div>
-                        </div>
-                        <div class="image-indicator">
-                            <span class="current-image">1</span>
-                            <span class="separator">/</span>
-                            <span class="total-images">12</span>
                         </div>
                     </div>
 
-                    <!-- Secondary Images Grid -->
-                    <div class="gallery-secondary-grid">
-                        <div class="secondary-image-item" data-image="2" onclick="changeGalleryImage(this, 'images/category-2.jpg')">
-                            <img src="images/category-2.jpg" alt="Adventure Activities">
-                            <div class="image-overlay">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
+                    <!-- Gallery Grid Sidebar -->
+                    <div class="gallery-grid-sidebar">
+                        <div class="grid-image" onclick="changeMainImage(this, 'image galary/kandyy.jpg')">
+                            <img src="image galary/kandyy.jpg" alt="Temple of Sacred Tooth Relic">
+                            <div class="grid-overlay">
+                                <i class="fas fa-dharmachakra"></i>
                             </div>
                         </div>
                         
-                        <div class="secondary-image-item" data-image="3" onclick="changeGalleryImage(this, 'images/category-3.jpg')">
-                            <img src="images/category-3.jpg" alt="Cultural Sites">
-                            <div class="image-overlay">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
+                        <div class="grid-image" onclick="changeMainImage(this, 'image galary/ella.jpg')">
+                            <img src="image galary/ella.jpg" alt="Ella Nine Arch Bridge">
+                            <div class="grid-overlay">
+                                <i class="fas fa-mountain"></i>
                             </div>
                         </div>
                         
-                        <div class="secondary-image-item" data-image="4" onclick="changeGalleryImage(this, 'images/category-4.jpg')">
-                            <img src="images/category-4.jpg" alt="Scenic Beauty">
-                            <div class="image-overlay">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
+                        <div class="grid-image" onclick="changeMainImage(this, 'image galary/neteapl.jpg')">
+                            <img src="image galary/neteapl.jpg" alt="Tea Plantations">
+                            <div class="grid-overlay">
+                                <i class="fas fa-leaf"></i>
                             </div>
                         </div>
                         
-                        <div class="secondary-image-item show-more-item" onclick="openGalleryModal()">
-                            <img src="images/img-1.jpg" alt="More Photos">
-                            <div class="show-more-overlay">
-                                <div class="more-count">+8</div>
-                                <div class="more-text">More Photos</div>
-                                <div class="grid-icon">
-                                    <i class="fas fa-th-large"></i>
+                        <div class="grid-image more-photos" onclick="openGalleryLightbox()">
+                            <img src="image galary/yala-beach.jpg" alt="View More">
+                            <div class="more-overlay">
+                                <div class="more-content">
+                                    <i class="fas fa-images"></i>
+                                    <span class="more-count">+4</span>
+                                    <span class="more-text">Show all photos</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Interactive Gallery Tags -->
-                <div class="gallery-tags">
-                    <div class="tag-item active" data-category="all">
-                        <i class="fas fa-globe"></i>
-                        <span>All Views</span>
-                    </div>
-                    <div class="tag-item" data-category="adventure">
-                        <i class="fas fa-mountain"></i>
-                        <span>Adventure</span>
-                    </div>
-                    <div class="tag-item" data-category="culture">
-                        <i class="fas fa-landmark"></i>
-                        <span>Culture</span>
-                    </div>
-                    <div class="tag-item" data-category="nature">
-                        <i class="fas fa-leaf"></i>
-                        <span>Nature</span>
-                    </div>
-                </div>
-
-                <!-- Modern Stats Bar -->
-                <div class="modern-stats-bar">
-                    <div class="stats-left">
-                        <div class="stat-item">
+                <!-- Gallery Features -->
+                <div class="gallery-features">
+                    <div class="feature-left">
+                        <div class="photo-count">
                             <i class="fas fa-camera"></i>
-                            <span>12 High-Quality Photos</span>
+                            <span>8 professional photos</span>
                         </div>
-                        <div class="stat-item">
-                            <i class="fas fa-star"></i>
-                            <span>4.9 Star Rating</span>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-heart"></i>
-                            <span>124 Reviews</span>
+                        <div class="quality-badge">
+                            <i class="fas fa-award"></i>
+                            <span>High quality images</span>
                         </div>
                     </div>
-                    <div class="stats-right">
-                        <button class="social-share-btn" onclick="shareGallery()">
-                            <i class="fas fa-share-alt"></i>
-                            <span>Share Gallery</span>
-                        </button>
-                        <button class="download-btn" onclick="downloadGallery()">
-                            <i class="fas fa-download"></i>
-                            <span>Download</span>
+                    <div class="feature-right">
+                        <button class="gallery-action-btn" onclick="openGalleryLightbox()">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                            View Gallery
                         </button>
                     </div>
                 </div>
             </div>
 
-            <!-- Premium Gallery Modal -->
-            <div class="premium-gallery-modal" id="galleryModal">
-                <div class="modal-backdrop" onclick="closeGalleryModal()"></div>
-                <div class="premium-modal-content">
-                    <!-- Modern Modal Header -->
-                    <div class="premium-modal-header">
-                        <div class="modal-title-section">
-                            <h2>Manali Adventure Gallery</h2>
-                            <p>Discover the beauty that awaits you</p>
+            <!-- Modern Gallery Lightbox -->
+            <div class="gallery-lightbox" id="galleryLightbox">
+                <div class="lightbox-backdrop" onclick="closeGalleryLightbox()"></div>
+                <div class="lightbox-container">
+                    <!-- Lightbox Header -->
+                    <div class="lightbox-header">
+                        <div class="header-left">
+                            <h3>Sri Lanka Budget Tour Gallery</h3>
+                            <span class="image-counter">
+                                <span id="currentLightboxIndex">1</span> / <span id="totalLightboxImages">8</span>
+                            </span>
                         </div>
-                        <div class="modal-controls">
-                            <button class="modal-control-btn" onclick="toggleSlideshow()">
-                                <i class="fas fa-play" id="slideshowIcon"></i>
+                        <button class="close-lightbox" onclick="closeGalleryLightbox()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <!-- Main Lightbox Image -->
+                    <div class="lightbox-main">
+                        <div class="main-image-wrapper">
+                            <img src="image galary/sigiriya.jpg" alt="Gallery Image" id="lightboxMainImage">
+                            <button class="nav-arrow nav-prev" onclick="navigateLightbox(-1)">
+                                <i class="fas fa-chevron-left"></i>
                             </button>
-                            <button class="modal-control-btn" onclick="downloadCurrentImage()">
-                                <i class="fas fa-download"></i>
+                            <button class="nav-arrow nav-next" onclick="navigateLightbox(1)">
+                                <i class="fas fa-chevron-right"></i>
                             </button>
-                            <button class="modal-close-btn" onclick="closeGalleryModal()">
-                                <i class="fas fa-times"></i>
-                            </button>
+                        </div>
+                        
+                        <!-- Image Info -->
+                        <div class="image-info">
+                            <h4 id="lightboxImageTitle">Sigiriya Rock Fortress</h4>
+                            <p id="lightboxImageDesc">Experience the UNESCO World Heritage Site with ancient royal palace, stunning views, and unique mirror wall.</p>
                         </div>
                     </div>
 
-                    <!-- Main Image Display -->
-                    <div class="modal-main-display">
-                        <div class="main-image-container">
-                            <img src="images/category-1.jpg" alt="Gallery Image" id="modalMainImage">
-                            <div class="image-navigation">
-                                <button class="nav-btn prev-btn" onclick="navigateImage(-1)">
-                                    <i class="fas fa-chevron-left"></i>
-                                </button>
-                                <button class="nav-btn next-btn" onclick="navigateImage(1)">
-                                    <i class="fas fa-chevron-right"></i>
-                                </button>
-                            </div>
-                            <div class="image-counter">
-                                <span id="currentImageIndex">1</span> / <span id="totalImageCount">12</span>
-                            </div>
+                    <!-- Thumbnail Navigation -->
+                    <div class="lightbox-thumbnails">
+                        <div class="thumbnail-item active" onclick="selectLightboxImage(0)">
+                            <img src="image galary/sigiriya.jpg" alt="Sigiriya Rock Fortress">
                         </div>
-                        <div class="image-info-panel">
-                            <h3 id="imageTitle">Breathtaking Mountain Views</h3>
-                            <p id="imageDescription">Experience the majestic Himalayan peaks and pristine valleys that make Manali a perfect adventure destination.</p>
-                            <div class="image-tags">
-                                <span class="tag">Mountain Views</span>
-                                <span class="tag">Adventure</span>
-                                <span class="tag">Nature</span>
-                            </div>
+                        <div class="thumbnail-item" onclick="selectLightboxImage(1)">
+                            <img src="image galary/kandyy.jpg" alt="Temple of Sacred Tooth Relic">
+                        </div>
+                        <div class="thumbnail-item" onclick="selectLightboxImage(2)">
+                            <img src="image galary/ella.jpg" alt="Ella Nine Arch Bridge">
+                        </div>
+                        <div class="thumbnail-item" onclick="selectLightboxImage(3)">
+                            <img src="image galary/neteapl.jpg" alt="Tea Plantations">
+                        </div>
+                        <div class="thumbnail-item" onclick="selectLightboxImage(4)">
+                            <img src="image galary/yala-beach.jpg" alt="Yala & Beach">
+                        </div>
+                        <div class="thumbnail-item" onclick="selectLightboxImage(5)">
+                            <img src="image galary/yalanat.jpg" alt="Yala National Park">
+                        </div>
+                        <div class="thumbnail-item" onclick="selectLightboxImage(6)">
+                            <img src="image galary/temp.jpg" alt="Buddhist Temples">
+                        </div>
+                        <div class="thumbnail-item" onclick="selectLightboxImage(7)">
+                            <img src="image galary/Breathtaking_Mountain_Views.jpg" alt="Mountain Views">
                         </div>
                     </div>
-
-                    <!-- Thumbnail Strip -->
-                    <div class="modal-thumbnail-strip">
-                        <div class="thumbnail-container" id="thumbnailContainer">
-                            <div class="thumbnail-item active" data-index="0" onclick="selectModalImage(0)">
-                                <img src="images/category-1.jpg" alt="Mountain Views">
-                            </div>
-                            <div class="thumbnail-item" data-index="1" onclick="selectModalImage(1)">
-                                <img src="images/category-2.jpg" alt="Adventure Activities">
-                            </div>
-                            <div class="thumbnail-item" data-index="2" onclick="selectModalImage(2)">
-                                <img src="images/category-3.jpg" alt="Cultural Sites">
-                            </div>
-                            <div class="thumbnail-item" data-index="3" onclick="selectModalImage(3)">
-                                <img src="images/category-4.jpg" alt="Scenic Beauty">
-                            </div>
-                            <div class="thumbnail-item" data-index="4" onclick="selectModalImage(4)">
-                                <img src="images/img-1.jpg" alt="Adventure Sports">
-                            </div>
-                            <div class="thumbnail-item" data-index="5" onclick="selectModalImage(5)">
-                                <img src="images/img-2.jpg" alt="Local Culture">
-                            </div>
-                            <div class="thumbnail-item" data-index="6" onclick="selectModalImage(6)">
-                                <img src="images/img-3.jpg" alt="Accommodation">
-                            </div>
-                            <div class="thumbnail-item" data-index="7" onclick="selectModalImage(7)">
-                                <img src="images/img-4.jpg" alt="Local Cuisine">
-                            </div>
-                        </div>
+                </div>
+            </div>
                     </div>
                 </div>
             </div>
@@ -306,7 +246,7 @@
             <div class="package-overview-section">
                 <h2>Package Overview</h2>
                 <p class="overview-description">
-                    Discover the enchanting beauty of Manali, nestled in the heart of the Himalayas. This comprehensive 6-day package takes you through snow-capped mountains, lush valleys, ancient temples, and adventure activities that will create memories to last a lifetime. From paragliding in Solang Valley to exploring the mystical Rohtang Pass, every moment is designed to give you the ultimate Himalayan experience.
+                    Want to explore Sri Lanka Budget Tours packages a new tropical destination on your next family vacation? With a contrast of exotic beaches on the island and spiritual Buddhist culture at the same time, Ceylon is one of the perfect holiday destinations to choose from the list. This tour takes your family and kids to this wonderful destination with our customizable 7 nights and 8 days in Sri Lanka Budget tour package. Your 8-day Sri Lanka holiday itinerary includes a visit to many charming cities like Sigiriya, Kandy, Nuwara Eliya, Ella Yala, and Mirissa.
                 </p>
                 
                 <div class="package-highlights">
@@ -314,29 +254,29 @@
                         <div class="highlight-icon">
                             <i class="fas fa-mountain"></i>
                         </div>
-                        <h3>Himalayan Views</h3>
-                        <p>Stunning panoramic views of snow-capped peaks and pristine valleys</p>
+                        <h3>UNESCO Heritage Sites</h3>
+                        <p>Explore Sigiriya Rock Fortress and Dambulla Cave Temples with stunning ancient architecture</p>
                     </div>
                     <div class="highlight-card">
                         <div class="highlight-icon">
-                            <i class="fas fa-skiing"></i>
+                            <i class="fas fa-dharmachakra"></i>
                         </div>
-                        <h3>Adventure Sports</h3>
-                        <p>Thrilling paragliding, river rafting, and mountain trekking experiences</p>
+                        <h3>Buddhist Culture</h3>
+                        <p>Visit the Sacred Tooth Relic Temple in Kandy and experience spiritual Buddhist heritage</p>
                     </div>
                     <div class="highlight-card">
                         <div class="highlight-icon">
-                            <i class="fas fa-spa"></i>
+                            <i class="fas fa-leaf"></i>
                         </div>
-                        <h3>Hot Springs</h3>
-                        <p>Relaxing natural hot water springs at Vashisht for ultimate wellness</p>
+                        <h3>Tea Plantations</h3>
+                        <p>Journey through rolling hills of Nuwara Eliya's tea estates and scenic train rides</p>
                     </div>
                     <div class="highlight-card">
                         <div class="highlight-icon">
-                            <i class="fas fa-camera"></i>
+                            <i class="fas fa-paw"></i>
                         </div>
-                        <h3>Scenic Beauty</h3>
-                        <p>Picture-perfect landscapes perfect for photography enthusiasts</p>
+                        <h3>Wildlife Safari</h3>
+                        <p>Experience Yala National Park with leopards, elephants, and diverse bird species</p>
                     </div>
                 </div>
             </div>
@@ -345,25 +285,25 @@
             <div class="special-features-section">
                 <div class="section-header">
                     <h2>What Makes This Experience Unforgettable</h2>
-                    <p>Join thousands of travelers who've discovered the magic of Manali</p>
+                    <p>Join thousands of travelers who've discovered the magic of Sri Lanka</p>
                 </div>
 
                 <div class="features-showcase">
                     <!-- Feature 1 -->
                     <div class="feature-showcase-item">
                         <div class="feature-image">
-                            <img src="images/category-2.jpg" alt="Adventure Activities">
-                            <div class="feature-badge">Most Popular</div>
+                            <img src="image galary/sigiriya.jpg" alt="Sigiriya Rock Fortress">
+                            <div class="feature-badge">UNESCO Site</div>
                         </div>
                         <div class="feature-content">
                             <div class="feature-icon">
-                                <i class="fas fa-parachute-box"></i>
+                                <i class="fas fa-landmark"></i>
                             </div>
-                            <h3>Thrilling Adventures</h3>
-                            <p>Experience heart-pumping paragliding, river rafting, and mountain trekking in the stunning Himalayas</p>
+                            <h3>Sigiriya Rock Fortress</h3>
+                            <p>A towering rock formation with an ancient royal palace at the summit, featuring stunning frescoes, water gardens, and the unique mirror wall</p>
                             <div class="feature-stats">
-                                <span><i class="fas fa-star"></i> 4.8/5 Rating</span>
-                                <span><i class="fas fa-users"></i> 500+ Reviews</span>
+                                <span><i class="fas fa-star"></i> UNESCO World Heritage</span>
+                                <span><i class="fas fa-mountain"></i> 200m High Rock</span>
                             </div>
                         </div>
                     </div>
@@ -371,12 +311,12 @@
                     <!-- Feature 2 -->
                     <div class="feature-showcase-item">
                         <div class="feature-image">
-                            <img src="images/category-3.jpg" alt="Cultural Experience">
-                            <div class="feature-badge">Authentic</div>
+                            <img src="image galary/kandyy.jpg" alt="Temple of Sacred Tooth Relic">
+                            <div class="feature-badge">Sacred</div>
                         </div>
                         <div class="feature-content">
                             <div class="feature-icon">
-                                <i class="fas fa-temple-buddhist"></i>
+                                <i class="fas fa-dharmachakra"></i>
                             </div>
                             <h3>Cultural Immersion</h3>
                             <p>Visit ancient temples, interact with locals, and experience authentic Himachali culture and cuisine</p>
@@ -390,18 +330,18 @@
                     <!-- Feature 3 -->
                     <div class="feature-showcase-item">
                         <div class="feature-image">
-                            <img src="images/category-4.jpg" alt="Scenic Beauty">
-                            <div class="feature-badge">Breathtaking</div>
+                            <img src="image galary/yalanat.jpg" alt="Yala National Park">
+                            <div class="feature-badge">Wildlife</div>
                         </div>
                         <div class="feature-content">
                             <div class="feature-icon">
-                                <i class="fas fa-mountain"></i>
+                                <i class="fas fa-paw"></i>
                             </div>
-                            <h3>Himalayan Landscapes</h3>
-                            <p>Witness snow-capped peaks, pristine valleys, and breathtaking views at 13,000+ feet altitude</p>
+                            <h3>Yala National Park Safari</h3>
+                            <p>Embark on an exciting wildlife safari with the highest leopard density in the world, plus elephants and diverse bird species</p>
                             <div class="feature-stats">
-                                <span><i class="fas fa-eye"></i> Scenic Views</span>
-                                <span><i class="fas fa-snowflake"></i> Snow Activities</span>
+                                <span><i class="fas fa-paw"></i> Leopard Spotting</span>
+                                <span><i class="fas fa-binoculars"></i> Wildlife Safari</span>
                             </div>
                         </div>
                     </div>
@@ -449,27 +389,34 @@
 
                 <!-- Quick Itinerary Overview -->
                 <div class="quick-itinerary">
-                    <h3>6-Day Journey Overview</h3>
+                    <h3>8-Day Sri Lanka Journey Overview</h3>
                     <div class="itinerary-overview-grid">
                         <div class="overview-day">
                             <div class="day-num">1-2</div>
                             <div class="day-info">
-                                <h4>Arrival & Local Exploration</h4>
-                                <p>Temple visits, Mall Road, local cuisine</p>
+                                <h4>Arrival & Cultural Triangle</h4>
+                                <p>Colombo airport to Sigiriya, ancient rock fortress</p>
                             </div>
                         </div>
                         <div class="overview-day">
                             <div class="day-num">3-4</div>
                             <div class="day-info">
-                                <h4>Adventure & High Altitude</h4>
-                                <p>Solang Valley activities, Rohtang Pass</p>
+                                <h4>Kandy Sacred City</h4>
+                                <p>Temple of Tooth Relic, cultural performances</p>
                             </div>
                         </div>
                         <div class="overview-day">
                             <div class="day-num">5-6</div>
                             <div class="day-info">
-                                <h4>Villages & Departure</h4>
-                                <p>Kasol, Tosh village, farewell</p>
+                                <h4>Hill Country & Tea Estates</h4>
+                                <p>Nuwara Eliya, Ella Nine Arch Bridge</p>
+                            </div>
+                        </div>
+                        <div class="overview-day">
+                            <div class="day-num">7-8</div>
+                            <div class="day-info">
+                                <h4>Wildlife & Beach</h4>
+                                <p>Yala Safari, Mirissa beach, departure</p>
                             </div>
                         </div>
                     </div>
@@ -482,31 +429,31 @@
                     <div class="inclusions-card">
                         <h3><i class="fas fa-check-circle"></i> What's Included</h3>
                         <ul class="inclusions-list">
-                            <li><i class="fas fa-bed"></i> 5 nights luxury mountain resort accommodation</li>
-                            <li><i class="fas fa-utensils"></i> Daily breakfast and dinner with local cuisine</li>
-                            <li><i class="fas fa-car"></i> Private vehicle for all transfers and sightseeing</li>
+                            <li><i class="fas fa-bed"></i> 7 nights 3-star hotel accommodation</li>
+                            <li><i class="fas fa-utensils"></i> Daily breakfast and authentic Sri Lankan cuisine</li>
+                            <li><i class="fas fa-car"></i> Private air-conditioned vehicle for all transfers</li>
                             <li><i class="fas fa-user-tie"></i> Professional English-speaking guide</li>
-                            <li><i class="fas fa-parachute-box"></i> Paragliding experience in Solang Valley</li>
-                            <li><i class="fas fa-mountain"></i> Rohtang Pass permits and transfers</li>
-                            <li><i class="fas fa-ticket-alt"></i> All temple and monument entry fees</li>
+                            <li><i class="fas fa-paw"></i> Yala National Park safari experience</li>
+                            <li><i class="fas fa-temple"></i> Temple visits and cultural site entry fees</li>
+                            <li><i class="fas fa-ticket-alt"></i> All monument and attraction entry fees</li>
                             <li><i class="fas fa-headset"></i> 24/7 customer support and assistance</li>
                             <li><i class="fas fa-shield-alt"></i> Comprehensive travel insurance</li>
-                            <li><i class="fas fa-camera"></i> Professional photography sessions</li>
+                            <li><i class="fas fa-train"></i> Scenic train ride from Kandy to Ella</li>
                         </ul>
                     </div>
                     <div class="exclusions-card">
                         <h3><i class="fas fa-times-circle"></i> What's Not Included</h3>
                         <ul class="exclusions-list">
-                            <li><i class="fas fa-plane"></i> Airfare or train tickets to/from Manali</li>
-                            <li><i class="fas fa-utensils"></i> Lunch during sightseeing days</li>
+                            <li><i class="fas fa-plane"></i> International flights to/from Colombo</li>
+                            <li><i class="fas fa-utensils"></i> Lunch and dinner on some days</li>
                             <li><i class="fas fa-wallet"></i> Personal expenses and gratuities</li>
-                            <li><i class="fas fa-skiing"></i> Optional adventure activities</li>
-                            <li><i class="fas fa-camera"></i> Camera fees at certain monuments</li>
+                            <li><i class="fas fa-cocktail"></i> Optional activities and excursions</li>
+                            <li><i class="fas fa-camera"></i> Camera fees at certain attractions</li>
                             <li><i class="fas fa-tshirt"></i> Laundry and room service charges</li>
                             <li><i class="fas fa-gamepad"></i> Personal entertainment activities</li>
                             <li><i class="fas fa-wine-bottle"></i> Alcoholic beverages and drinks</li>
                             <li><i class="fas fa-shopping-bag"></i> Shopping and souvenirs</li>
-                            <li><i class="fas fa-first-aid"></i> Medical expenses and medication</li>
+                            <li><i class="fas fa-first-aid"></i> Travel insurance and medical expenses</li>
                         </ul>
                     </div>
                 </div>
@@ -525,8 +472,8 @@
                             <img src="images/img-1.jpg" alt="Customer">
                         </div>
                         <div class="customer-info">
-                            <h4>Priya Sharma</h4>
-                            <span class="customer-location">Mumbai, Maharashtra</span>
+                            <h4>Lisa K.</h4>
+                            <span class="customer-location">Switzerland</span>
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -537,11 +484,9 @@
                         </div>
                     </div>
                     <p class="testimonial-text">
-                        "Amazing experience in Manali! The team organized everything perfectly. The hotel was beautiful, 
-                        the food was delicious, and our guide was incredibly knowledgeable. The adventure activities 
-                        were thrilling yet safe. Highly recommend this package!"
+                        "Lishan was a great help with every step of the booking, available at all times to reply to our questions. We had a wonderful driver and guide SAMAN during our 8 day tour. He knew the best restaurants and helped us with everything we needed. Lishan selected the hotels carefully and the pickup/drop off was excellent. Thanks to Lishan and Saman for everything!"
                     </p>
-                    <div class="testimonial-date">February 2024</div>
+                    <div class="testimonial-date">December 2023</div>
                 </div>
 
                 <div class="testimonial-card">
@@ -550,8 +495,8 @@
                             <img src="images/img-2.jpg" alt="Customer">
                         </div>
                         <div class="customer-info">
-                            <h4>Rahul & Anita Gupta</h4>
-                            <span class="customer-location">Delhi, India</span>
+                            <h4>Robert</h4>
+                            <span class="customer-location">Poland</span>
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -562,11 +507,9 @@
                         </div>
                     </div>
                     <p class="testimonial-text">
-                        "Perfect honeymoon package! Every detail was taken care of. The scenic beauty of Manali 
-                        combined with adventure activities made our trip unforgettable. The hot springs visit 
-                        was incredibly relaxing. Thank you for making our honeymoon magical!"
+                        "As a family of four, we came to Sri Lanka for 7 days tour. We needed everything organized from arrival to departure at Colombo airport. Our Polish friend recommended Ceylon Classic Tours. We visited Sigiriya, Kandy, Nuwara Eliya, Yala, Mirissa, then Galle. We had the best driver and very nice hotels. Some hotels even exceeded our expectations. I can highly recommend their services!"
                     </p>
-                    <div class="testimonial-date">January 2024</div>
+                    <div class="testimonial-date">December 2023</div>
                 </div>
 
                 <div class="testimonial-card">
@@ -575,8 +518,8 @@
                             <img src="images/img-3.jpg" alt="Customer">
                         </div>
                         <div class="customer-info">
-                            <h4>Vikram Singh</h4>
-                            <span class="customer-location">Bangalore, Karnataka</span>
+                            <h4>Raj Patel</h4>
+                            <span class="customer-location">London, UK</span>
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -588,10 +531,10 @@
                     </div>
                     <p class="testimonial-text">
                         "Outstanding service and value for money! The itinerary was well-planned with perfect 
-                        balance of adventure and relaxation. Rohtang Pass was breathtaking, and paragliding 
-                        was an incredible experience. Will definitely book again!"
+                        balance of culture and nature. Sigiriya Rock Fortress was breathtaking, and the wildlife 
+                        safari was an incredible experience. Will definitely book again!"
                     </p>
-                    <div class="testimonial-date">March 2024</div>
+                    <div class="testimonial-date">February 2024</div>
                 </div>
             </div>
         </div>
@@ -611,7 +554,7 @@
                         <i class="fas fa-award"></i>
                     </div>
                     <h3>15+ Years Experience</h3>
-                    <p>Over a decade of expertise in organizing unforgettable mountain adventures and cultural experiences across India.</p>
+                    <p>Over a decade of expertise in organizing unforgettable Sri Lankan adventures and cultural experiences across the Pearl of the Indian Ocean.</p>
                 </div>
 
                 <div class="feature-card">
@@ -619,7 +562,7 @@
                         <i class="fas fa-users"></i>
                     </div>
                     <h3>50,000+ Happy Travelers</h3>
-                    <p>Join thousands of satisfied customers who have created lifelong memories with our expertly crafted tour packages.</p>
+                    <p>Join thousands of satisfied customers who have created lifelong memories exploring Sri Lanka's ancient heritage and natural wonders.</p>
                 </div>
 
                 <div class="feature-card">
@@ -708,7 +651,7 @@
                             </label>
                             <select id="packageSelect" name="packageSelect" required>
                                 <option value="">-- Select your preferred package --</option>
-                                <option value="Manali Adventure Package" selected>Manali Adventure Package - ₹18,999</option>
+                                <option value="Sri Lanka Budget Tour Package" selected>Sri Lanka Budget Tour Package - $640</option>
                                 <option value="Yala Wildlife Safari">Yala Wildlife Safari - $1,200</option>
                                 <option value="Kithulgala Water Rafting">Kithulgala Water Rafting - $1,800</option>
                                 <option value="Surfing Paradise">Surfing Paradise - $950</option>
@@ -772,27 +715,65 @@
 
                 <div class="info-card">
                     <div class="info-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h3>Best Price Promise</h3>
-                    <p>We guarantee the most competitive prices with transparent pricing and no hidden costs. If you find better, we'll match it!</p>
-                </div>
-
-                <div class="info-card">
-                    <div class="info-icon">
-                        <i class="fas fa-undo"></i>
-                    </div>
-                    <h3>Flexible Cancellation</h3>
-                    <p>Life happens. That's why we offer flexible cancellation policies and easy rescheduling options for your peace of mind.</p>
-                </div>
-
-                <div class="info-card">
-                    <div class="info-icon">
                         <i class="fas fa-gift"></i>
                     </div>
                     <h3>Exclusive Perks</h3>
                     <p>Enjoy complimentary upgrades, welcome gifts, and special access to unique experiences not available elsewhere.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Location Section -->
+    <section class="location-section">
+        <div class="container">
+            <div class="location-header">
+                <h2>Where you'll be</h2>
+                <p class="location-name">Sri Lanka, Pearl of the Indian Ocean</p>
+            </div>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.123456789!2d77.1887!3d32.2396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390468d0e46b6e67%3A0x6e5c33c1c0c6e67e!2sManali%2C%20Himachal%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1609459200000!5m2!1sen!2sin"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+                
+                <div class="map-controls">
+                    <button class="map-control-btn" onclick="openInMaps()" title="Open in Google Maps">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false">
+                            <path d="m20.666 20.666 10 10"></path>
+                            <path d="m24.0002 12.6668c0 6.2593-5.0741 11.3334-11.3334 11.3334-6.2592 0-11.3333-5.0741-11.3333-11.3334 0-6.2592 5.0741-11.3333 11.3333-11.3333 6.2593 0 11.3334 5.0741 11.3334 11.3333z" fill="none"></path>
+                        </svg>
+                    </button>
+                    <button class="map-control-btn" onclick="toggleFullscreen()" title="Fullscreen">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false">
+                            <g fill="none">
+                                <path d="m14 29h-10.2c-.4418278 0-.8-.3581722-.8-.8v-10.2"></path>
+                                <path d="m4 28 10-10"></path>
+                                <g stroke-linejoin="round">
+                                    <path d="m18 3h10c.5522847 0 1 .44771525 1 1v10"></path>
+                                    <path d="m18 14 11-11"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="location-description">
+                <h3>About the area</h3>
+                <p>Experience the breathtaking beauty of Sri Lanka, the Pearl of the Indian Ocean. This tropical paradise offers stunning beaches, ancient temples, lush tea plantations, and incredible wildlife. From the cultural triangle of Sigiriya to the pristine beaches of Mirissa, Sri Lanka is the perfect destination for culture enthusiasts and nature lovers alike.</p>
+                
+                <button class="show-more-btn" onclick="showMoreLocation()">
+                    <span>Show more</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
+                        <path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
@@ -858,47 +839,39 @@
             }
         }
         
-        // Ultra Modern Gallery Functions
-        let currentImageIndex = 0;
-        let isSlideshow = false;
-        let slideshowInterval;
+        // Modern Tour Gallery Functions
+        let currentLightboxIndex = 0;
         
-        const galleryImages = [
-            { src: 'images/category-1.jpg', title: 'Breathtaking Mountain Views', description: 'Experience the majestic Himalayan peaks and pristine valleys that make Manali a perfect adventure destination.', tags: ['Mountain Views', 'Adventure', 'Nature'] },
-            { src: 'images/category-2.jpg', title: 'Thrilling Adventure Activities', description: 'Get your adrenaline pumping with exciting outdoor activities like paragliding, trekking, and river rafting.', tags: ['Adventure', 'Sports', 'Outdoor'] },
-            { src: 'images/category-3.jpg', title: 'Rich Cultural Heritage', description: 'Discover ancient temples, traditional architecture, and immerse yourself in local culture and traditions.', tags: ['Culture', 'Heritage', 'Traditional'] },
-            { src: 'images/category-4.jpg', title: 'Scenic Natural Beauty', description: 'Explore pristine valleys, lush green landscapes, and breathtaking natural formations.', tags: ['Nature', 'Scenic', 'Landscape'] },
-            { src: 'images/img-1.jpg', title: 'Adventure Sports Paradise', description: 'Experience world-class adventure sports in one of India\'s most beautiful destinations.', tags: ['Adventure', 'Sports', 'Extreme'] },
-            { src: 'images/img-2.jpg', title: 'Local Cultural Experiences', description: 'Connect with local communities and experience authentic Himalayan culture.', tags: ['Culture', 'Local', 'Community'] },
-            { src: 'images/img-3.jpg', title: 'Premium Accommodation', description: 'Stay in comfortable, well-appointed accommodations with stunning mountain views.', tags: ['Accommodation', 'Comfort', 'Luxury'] },
-            { src: 'images/img-4.jpg', title: 'Authentic Himalayan Cuisine', description: 'Savor delicious local cuisine and traditional Himalayan flavors.', tags: ['Food', 'Cuisine', 'Traditional'] }
+        const galleryData = [
+            { src: 'image galary/sigiriya.jpg', title: 'Ancient Sigiriya Rock Fortress', description: 'Experience the magnificent ancient rock fortress and palace ruins of Sigiriya, a UNESCO World Heritage Site.' },
+            { src: 'image galary/kandyy.jpg', title: 'Sacred Temple of Tooth Relic', description: 'Visit the most sacred Buddhist temple in Kandy, home to the tooth relic of Lord Buddha.' },
+            { src: 'image galary/ella.jpg', title: 'Scenic Ella Nine Arch Bridge', description: 'Discover the iconic Nine Arch Bridge surrounded by lush tea plantations and misty mountains.' },
+            { src: 'image galary/neteapl.jpg', title: 'Tea Plantation Paradise', description: 'Explore the rolling hills of tea plantations in Nuwara Eliya, the heart of Sri Lankan tea country.' },
+            { src: 'image galary/yala-beach.jpg', title: 'Pristine Southern Beaches', description: 'Relax on the golden beaches of Sri Lanka\'s southern coast with crystal clear waters.' },
+            { src: 'image galary/yalanat.jpg', title: 'Yala National Park Safari', description: 'Experience thrilling wildlife safari with leopards, elephants and diverse bird species.' },
+            { src: 'image galary/buddha.jpg', title: 'Buddhist Cultural Heritage', description: 'Immerse yourself in Sri Lanka\'s rich Buddhist culture and ancient temple architecture.' },
+            { src: 'image galary/mirissbeach.jpg', title: 'Tropical Beach Paradise', description: 'Enjoy the pristine beaches of Mirissa with opportunities for whale watching and water sports.' }
         ];
 
-        function changeGalleryImage(element, imageSrc) {
-            const mainImage = document.getElementById('mainPackageImage');
-            const imageIndicator = document.querySelector('.current-image');
+        function changeMainImage(element, imageSrc) {
+            const mainImage = document.getElementById('mainGalleryImage');
             
             if (mainImage) {
-                // Find image index
-                const imageIndex = galleryImages.findIndex(img => img.src === imageSrc);
-                currentImageIndex = imageIndex !== -1 ? imageIndex : 0;
+                // Find the index of the clicked image
+                const imageIndex = galleryData.findIndex(img => img.src === imageSrc);
+                currentLightboxIndex = imageIndex !== -1 ? imageIndex : 0;
                 
-                // Smooth transition effect
-                mainImage.style.transform = 'scale(0.95)';
-                mainImage.style.opacity = '0.6';
+                // Smooth transition
+                mainImage.style.opacity = '0.7';
+                mainImage.style.transform = 'scale(0.98)';
                 
                 setTimeout(() => {
                     mainImage.src = imageSrc;
-                    mainImage.style.transform = 'scale(1)';
                     mainImage.style.opacity = '1';
-                    
-                    // Update indicator
-                    if (imageIndicator) {
-                        imageIndicator.textContent = currentImageIndex + 1;
-                    }
+                    mainImage.style.transform = 'scale(1)';
                 }, 200);
                 
-                // Add click effect
+                // Add click feedback
                 element.style.transform = 'scale(0.95)';
                 setTimeout(() => {
                     element.style.transform = 'scale(1)';
@@ -906,146 +879,97 @@
             }
         }
 
-        function openGalleryModal() {
-            const modal = document.getElementById('galleryModal');
-            if (modal) {
-                modal.classList.add('active');
+        function openGalleryLightbox() {
+            const lightbox = document.getElementById('galleryLightbox');
+            if (lightbox) {
+                lightbox.classList.add('active');
                 document.body.style.overflow = 'hidden';
-                updateModalImage(currentImageIndex);
+                updateLightboxImage(currentLightboxIndex);
                 
-                // Smooth entrance animation
+                // Smooth entrance
                 setTimeout(() => {
-                    modal.querySelector('.premium-modal-content').style.transform = 'scale(1)';
-                    modal.querySelector('.premium-modal-content').style.opacity = '1';
-                }, 10);
+                    lightbox.querySelector('.lightbox-container').style.transform = 'scale(1)';
+                    lightbox.querySelector('.lightbox-container').style.opacity = '1';
+                }, 50);
             }
         }
 
-        function closeGalleryModal() {
-            const modal = document.getElementById('galleryModal');
-            if (modal) {
-                modal.querySelector('.premium-modal-content').style.transform = 'scale(0.95)';
-                modal.querySelector('.premium-modal-content').style.opacity = '0';
+        function closeGalleryLightbox() {
+            const lightbox = document.getElementById('galleryLightbox');
+            if (lightbox) {
+                lightbox.querySelector('.lightbox-container').style.transform = 'scale(0.95)';
+                lightbox.querySelector('.lightbox-container').style.opacity = '0';
                 
                 setTimeout(() => {
-                    modal.classList.remove('active');
+                    lightbox.classList.remove('active');
                     document.body.style.overflow = 'auto';
-                    stopSlideshow();
                 }, 300);
             }
         }
 
-        function selectModalImage(index) {
-            currentImageIndex = index;
-            updateModalImage(index);
-            updateThumbnailSelection(index);
-        }
-
-        function updateModalImage(index) {
-            const modalImage = document.getElementById('modalMainImage');
-            const imageTitle = document.getElementById('imageTitle');
-            const imageDescription = document.getElementById('imageDescription');
-            const currentIndexSpan = document.getElementById('currentImageIndex');
-            const imageTags = document.querySelector('.image-tags');
+        function updateLightboxImage(index) {
+            const lightboxImage = document.getElementById('lightboxMainImage');
+            const imageTitle = document.getElementById('lightboxImageTitle');
+            const imageDesc = document.getElementById('lightboxImageDesc');
+            const currentIndex = document.getElementById('currentLightboxIndex');
+            const totalImages = document.getElementById('totalLightboxImages');
             
-            if (galleryImages[index]) {
-                const image = galleryImages[index];
+            if (galleryData[index]) {
+                const imageData = galleryData[index];
                 
-                // Smooth transition
-                modalImage.style.opacity = '0.5';
+                // Update image with transition
+                lightboxImage.style.opacity = '0.5';
                 setTimeout(() => {
-                    modalImage.src = image.src;
-                    modalImage.style.opacity = '1';
+                    lightboxImage.src = imageData.src;
+                    lightboxImage.style.opacity = '1';
                     
-                    if (imageTitle) imageTitle.textContent = image.title;
-                    if (imageDescription) imageDescription.textContent = image.description;
-                    if (currentIndexSpan) currentIndexSpan.textContent = index + 1;
-                    
-                    // Update tags
-                    if (imageTags && image.tags) {
-                        imageTags.innerHTML = image.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
-                    }
+                    if (imageTitle) imageTitle.textContent = imageData.title;
+                    if (imageDesc) imageDesc.textContent = imageData.description;
+                    if (currentIndex) currentIndex.textContent = index + 1;
+                    if (totalImages) totalImages.textContent = galleryData.length;
                 }, 150);
             }
+            
+            updateLightboxThumbnails(index);
         }
 
-        function updateThumbnailSelection(index) {
-            const thumbnails = document.querySelectorAll('.thumbnail-item');
-            thumbnails.forEach((thumb, i) => {
-                thumb.classList.toggle('active', i === index);
+        function updateLightboxThumbnails(activeIndex) {
+            const thumbnails = document.querySelectorAll('.lightbox-thumbnails .thumbnail-item');
+            thumbnails.forEach((thumb, index) => {
+                thumb.classList.toggle('active', index === activeIndex);
             });
         }
 
-        function navigateImage(direction) {
-            currentImageIndex += direction;
+        function selectLightboxImage(index) {
+            currentLightboxIndex = index;
+            updateLightboxImage(index);
+        }
+
+        function navigateLightbox(direction) {
+            currentLightboxIndex += direction;
             
-            if (currentImageIndex >= galleryImages.length) {
-                currentImageIndex = 0;
-            } else if (currentImageIndex < 0) {
-                currentImageIndex = galleryImages.length - 1;
+            if (currentLightboxIndex >= galleryData.length) {
+                currentLightboxIndex = 0;
+            } else if (currentLightboxIndex < 0) {
+                currentLightboxIndex = galleryData.length - 1;
             }
             
-            updateModalImage(currentImageIndex);
-            updateThumbnailSelection(currentImageIndex);
+            updateLightboxImage(currentLightboxIndex);
         }
 
-        function toggleSlideshow() {
-            const slideshowIcon = document.getElementById('slideshowIcon');
-            
-            if (isSlideshow) {
-                stopSlideshow();
-                slideshowIcon.className = 'fas fa-play';
-            } else {
-                startSlideshow();
-                slideshowIcon.className = 'fas fa-pause';
-            }
-        }
-
-        function startSlideshow() {
-            isSlideshow = true;
-            slideshowInterval = setInterval(() => {
-                navigateImage(1);
-            }, 3000);
-        }
-
-        function stopSlideshow() {
-            isSlideshow = false;
-            if (slideshowInterval) {
-                clearInterval(slideshowInterval);
-            }
-        }
-
-        function downloadCurrentImage() {
-            const currentImage = galleryImages[currentImageIndex];
-            if (currentImage) {
-                const link = document.createElement('a');
-                link.href = currentImage.src;
-                link.download = currentImage.title.replace(/\s+/g, '_') + '.jpg';
-                link.click();
-            }
-        }
-
-        function downloadGallery() {
-            alert('Gallery download feature would be implemented with server-side support. For now, you can right-click and save individual images.');
-        }
-
-        // Keyboard navigation
+        // Keyboard navigation for lightbox
         document.addEventListener('keydown', function(e) {
-            const modal = document.getElementById('galleryModal');
-            if (modal && modal.classList.contains('active')) {
+            const lightbox = document.getElementById('galleryLightbox');
+            if (lightbox && lightbox.classList.contains('active')) {
                 switch(e.key) {
                     case 'ArrowLeft':
-                        navigateImage(-1);
+                        navigateLightbox(-1);
                         break;
                     case 'ArrowRight':
-                        navigateImage(1);
+                        navigateLightbox(1);
                         break;
                     case 'Escape':
-                        closeGalleryModal();
-                        break;
-                    case ' ':
-                        e.preventDefault();
-                        toggleSlideshow();
+                        closeGalleryLightbox();
                         break;
                 }
             }
@@ -1055,7 +979,7 @@
         function shareGallery() {
             if (navigator.share) {
                 navigator.share({
-                    title: 'Manali Adventure Package Gallery',
+                    title: 'Sri Lanka Budget Tour Package Gallery',
                     text: 'Check out these amazing photos from our Manali tour package! 🏔️✨',
                     url: window.location.href
                 }).catch(console.error);
@@ -1140,7 +1064,7 @@
             const urlParams = new URLSearchParams(window.location.search);
             const selectedPackage = urlParams.get('package');
             if (selectedPackage === 'manali') {
-                document.getElementById('packageSelect').value = 'Manali Adventure Package';
+                document.getElementById('packageSelect').value = 'Sri Lanka Budget Tour Package';
             }
 
             // Add smooth scrolling to booking section
