@@ -319,7 +319,7 @@
                                 <i class="fas fa-dharmachakra"></i>
                             </div>
                             <h3>Cultural Immersion</h3>
-                            <p>Visit ancient temples, interact with locals, and experience authentic Himachali culture and cuisine</p>
+                            <p>Visit ancient temples, interact with locals, and experience authentic Sri Lankan culture and cuisine</p>
                             <div class="feature-stats">
                                 <span><i class="fas fa-camera"></i> Photo Opportunities</span>
                                 <span><i class="fas fa-utensils"></i> Local Cuisine</span>
@@ -766,7 +766,7 @@
             
             <div class="map-container">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.123456789!2d77.1887!3d32.2396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390468d0e46b6e67%3A0x6e5c33c1c0c6e67e!2sManali%2C%20Himachal%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1609459200000!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.636429084537!2d81.04621631478391!3d6.863074494988844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4618a1a9b7ad7%3A0x5a3b9a1b0c2d3e4f!2sElla%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1634567890123!5m2!1sen!2slk"
                     width="100%" 
                     height="100%" 
                     style="border:0;" 
@@ -1076,6 +1076,24 @@
             setTimeout(() => {
                 ripple.remove();
             }, 600);
+        }
+
+        // Open Ella, Sri Lanka location in Google Maps
+        function openInMaps() {
+            const ellaLocation = "https://www.google.com/maps/search/?api=1&query=Ella,+Sri+Lanka";
+            window.open(ellaLocation, '_blank');
+        }
+
+        // Toggle fullscreen for map
+        function toggleFullscreen() {
+            const mapContainer = document.querySelector('.map-container');
+            if (mapContainer) {
+                if (!document.fullscreenElement) {
+                    mapContainer.requestFullscreen();
+                } else {
+                    document.exitFullscreen();
+                }
+            }
         }
 
         // Add CSS for ripple animation
