@@ -1189,3 +1189,130 @@ section {
     padding: 1rem 1.5rem;
   }
 }
+
+/* Additional styles to improve gallery lightbox responsiveness */
+.gallery-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-height: 95vh;
+}
+
+/* Main lightbox content scrolling */
+.lightbox-main {
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    height: calc(70vh - 15rem); /* Fixed height calculation */
+    min-height: 400px; /* Minimum height */
+}
+
+.lightbox-main::-webkit-scrollbar {
+    width: 6px;
+}
+
+.lightbox-main::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+
+.lightbox-main::-webkit-scrollbar-thumb {
+    background: var(--primary-color, #2c5530);
+    border-radius: 3px;
+}
+
+/* Fix thumbnail navigation section */
+.lightbox-thumbnails {
+    position: relative;
+    flex-shrink: 0;
+    min-height: 8rem;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+}
+
+.lightbox-thumbnails .thumbnail-item {
+    transition: all 0.3s ease;
+    transform-origin: center;
+    position: relative;
+}
+
+/* Thumbnail animation effect */
+.lightbox-thumbnails .thumbnail-item.active {
+    transform: scale(1.08);
+    z-index: 1;
+}
+
+/* Different height scenarios */
+@media (min-height: 900px) {
+    .lightbox-main {
+        height: calc(75vh - 15rem);
+    }
+}
+
+@media (min-height: 700px) and (max-height: 900px) {
+    .lightbox-main {
+        height: calc(70vh - 15rem);
+    }
+}
+
+@media (max-height: 700px) {
+    .lightbox-header {
+        padding: 1.2rem 2rem;
+    }
+    
+    .lightbox-main {
+        padding: 1.5rem 2rem;
+        height: calc(65vh - 15rem);
+    }
+}
+
+/* Ensure the gallery is usable on really small heights */
+@media (max-height: 500px) {
+    .lightbox-container {
+        max-height: 98vh;
+    }
+    
+    .lightbox-header {
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .lightbox-main {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        height: calc(98vh - 12rem);
+    }
+    
+    .main-image-wrapper {
+        flex: 0 0 60%;
+        height: 100%;
+    }
+    
+    .image-info {
+        flex: 0 0 40%;
+        padding: 0 1rem;
+        height: 100%;
+        overflow-y: auto;
+    }
+    
+    .lightbox-thumbnails {
+        min-height: 6.5rem;
+    }
+    
+    .lightbox-thumbnails .thumbnail-item {
+        width: 6.5rem;
+        height: 5rem;
+    }
+}
