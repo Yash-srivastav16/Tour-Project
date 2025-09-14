@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link rel="stylesheet" href="css/booking-style.css">
+    <link rel="stylesheet" href="css/gallery-fixes.css">
 </head>
 
 <body>
@@ -204,7 +205,12 @@
                         
                         <!-- Image Info -->
                         <div class="image-info">
-                            <h4 id="lightboxImageTitle">Sigiriya Rock Fortress</h4>
+                            <div class="image-title-row">
+                                <h4 id="lightboxImageTitle">Sigiriya Rock Fortress</h4>
+                                <button class="fullscreen-toggle" id="fullscreenToggle" onclick="toggleFullscreenMode()">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
                             <p id="lightboxImageDesc">Experience the UNESCO World Heritage Site with ancient royal palace, stunning views, and unique mirror wall.</p>
                         </div>
                     </div>
@@ -881,9 +887,20 @@
             { src: 'image galary/neteapl.jpg', title: 'Tea Plantation Paradise', description: 'Explore the rolling hills of tea plantations in Nuwara Eliya, the heart of Sri Lankan tea country.' },
             { src: 'image galary/yala-beach.jpg', title: 'Pristine Southern Beaches', description: 'Relax on the golden beaches of Sri Lanka\'s southern coast with crystal clear waters.' },
             { src: 'image galary/yalanat.jpg', title: 'Yala National Park Safari', description: 'Experience thrilling wildlife safari with leopards, elephants and diverse bird species.' },
-            { src: 'image galary/buddha.jpg', title: 'Buddhist Cultural Heritage', description: 'Immerse yourself in Sri Lanka\'s rich Buddhist culture and ancient temple architecture.' },
-            { src: 'image galary/mirissbeach.jpg', title: 'Tropical Beach Paradise', description: 'Enjoy the pristine beaches of Mirissa with opportunities for whale watching and water sports.' }
+            { src: 'image galary/Breathtaking_Mountain_Views.jpg', title: 'Breathtaking Mountain Views', description: 'Marvel at the stunning mountain landscapes and breathtaking vistas of Sri Lanka\'s hill country.' },
+            { src: 'image galary/temp.jpg', title: 'Buddhist Temples', description: 'Explore the ancient Buddhist temples and experience the spiritual heritage of Sri Lanka.' }
         ];
+        
+        // Preload all gallery images for smoother transitions
+        function preloadGalleryImages() {
+            galleryData.forEach(imageData => {
+                const img = new Image();
+                img.src = imageData.src;
+            });
+        }
+        
+        // Run preload on page load
+        window.addEventListener('load', preloadGalleryImages);
 
         function changeMainImage(element, imageSrc) {
             const mainImage = document.getElementById('mainGalleryImage');
@@ -945,21 +962,31 @@
             const imageDesc = document.getElementById('lightboxImageDesc');
             const currentIndex = document.getElementById('currentLightboxIndex');
             const totalImages = document.getElementById('totalLightboxImages');
+            const mainImageWrapper = document.querySelector('.main-image-wrapper');
             
             if (galleryData[index]) {
                 const imageData = galleryData[index];
                 
                 // Update image with transition
                 lightboxImage.style.opacity = '0.5';
-                setTimeout(() => {
+                
+                // Preload the new image to prevent layout shifts
+                const preloadImage = new Image();
+                preloadImage.onload = function() {
                     lightboxImage.src = imageData.src;
                     lightboxImage.style.opacity = '1';
+                    
+                    // Maintain container stability during transition
+                    if (mainImageWrapper) {
+                        mainImageWrapper.style.minHeight = mainImageWrapper.offsetHeight + 'px';
+                    }
                     
                     if (imageTitle) imageTitle.textContent = imageData.title;
                     if (imageDesc) imageDesc.textContent = imageData.description;
                     if (currentIndex) currentIndex.textContent = index + 1;
                     if (totalImages) totalImages.textContent = galleryData.length;
-                }, 150);
+                };
+                preloadImage.src = imageData.src;
             }
             
             updateLightboxThumbnails(index);
@@ -969,6 +996,13 @@
             const thumbnails = document.querySelectorAll('.lightbox-thumbnails .thumbnail-item');
             thumbnails.forEach((thumb, index) => {
                 thumb.classList.toggle('active', index === activeIndex);
+                
+                // Scroll active thumbnail into view
+                if (index === activeIndex) {
+                    setTimeout(() => {
+                        thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                    }, 100);
+                }
             });
         }
 
@@ -1006,6 +1040,117 @@
                 }
             }
         });
+        
+        // Touch swipe navigation for mobile devices
+        function setupTouchNavigation() {
+            const lightboxMain = document.querySelector('.lightbox-main');
+            if (!lightboxMain) return;
+            
+            let touchStartX = 0;
+            let touchEndX = 0;
+            let lastTap = 0;
+            
+            lightboxMain.addEventListener('touchstart', function(e) {
+                touchStartX = e.changedTouches[0].screenX;
+            }, {passive: true});
+            
+            lightboxMain.addEventListener('touchend', function(e) {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+                
+                // Handle double tap for zoom
+                const currentTime = new Date().getTime();
+                const tapLength = currentTime - lastTap;
+                
+                if (tapLength < 300 && tapLength > 0) {
+                    // Double tap detected
+                    handleDoubleTap(e);
+                    e.preventDefault();
+                }
+                lastTap = currentTime;
+            }, {passive: false});
+            
+            function handleSwipe() {
+                const minSwipeDistance = 50;
+                const swipeDistance = touchEndX - touchStartX;
+                
+                if (Math.abs(swipeDistance) < minSwipeDistance) return;
+                
+                if (swipeDistance > 0) {
+                    // Swiped right, go to previous
+                    navigateLightbox(-1);
+                } else {
+                    // Swiped left, go to next
+                    navigateLightbox(1);
+                }
+            }
+            
+            function handleDoubleTap(e) {
+                const lightbox = document.getElementById('galleryLightbox');
+                if (!lightbox) return;
+                
+                const img = document.getElementById('lightboxMainImage');
+                const imgWrapper = img.closest('.main-image-wrapper');
+                
+                if (imgWrapper.classList.contains('zoomed')) {
+                    // Reset zoom
+                    imgWrapper.classList.remove('zoomed');
+                    img.style.transform = 'scale(1)';
+                    img.style.cursor = 'zoom-in';
+                } else {
+                    // Apply zoom
+                    imgWrapper.classList.add('zoomed');
+                    img.style.transform = 'scale(2)';
+                    img.style.cursor = 'zoom-out';
+                }
+            }
+        }
+        
+        // Initialize touch navigation when page loads
+        window.addEventListener('load', setupTouchNavigation);
+        
+        // Fullscreen mode toggle
+        function toggleFullscreenMode() {
+            const lightbox = document.getElementById('galleryLightbox');
+            const fullscreenBtn = document.getElementById('fullscreenToggle');
+            const imageInfo = document.querySelector('.image-info');
+            
+            if (lightbox) {
+                lightbox.classList.toggle('fullscreen-mode');
+                
+                // Update the icon
+                if (fullscreenBtn) {
+                    if (lightbox.classList.contains('fullscreen-mode')) {
+                        fullscreenBtn.innerHTML = '<i class="fas fa-compress"></i>';
+                        
+                        // In fullscreen mode, show info on tap
+                        const mainImageWrapper = document.querySelector('.main-image-wrapper');
+                        if (mainImageWrapper) {
+                            mainImageWrapper.addEventListener('click', toggleImageInfo);
+                        }
+                    } else {
+                        fullscreenBtn.innerHTML = '<i class="fas fa-expand"></i>';
+                        
+                        // Remove tap listener when exiting fullscreen
+                        const mainImageWrapper = document.querySelector('.main-image-wrapper');
+                        if (mainImageWrapper) {
+                            mainImageWrapper.removeEventListener('click', toggleImageInfo);
+                        }
+                    }
+                }
+            }
+        }
+        
+        // Toggle image info display in fullscreen mode
+        function toggleImageInfo(e) {
+            // Don't toggle if clicking on navigation arrows
+            if (e.target.closest('.nav-arrow')) return;
+            
+            const imageInfo = document.querySelector('.gallery-lightbox.fullscreen-mode .image-info');
+            if (imageInfo) {
+                imageInfo.classList.toggle('show');
+            }
+        }
 
         // Enhanced Share Gallery Function
         function shareGallery() {
