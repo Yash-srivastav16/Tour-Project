@@ -3,12 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#ff6b35">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Book Your Dream Adventure - Ceylon Classic Tours</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link rel="stylesheet" href="css/booking-style.css">
     <link rel="stylesheet" href="css/gallery-fixes.css">
+    <link rel="stylesheet" href="css/feedback-button.css">
+    <!-- Swipper CSS-->
+     <link rel="stylesheet" href="css/testimonials-swiper.css">
+     <link rel="stylesheet" href="css/features-slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -17,7 +24,7 @@
         <a href="index.html" class="logo"><i class="fas fa-hiking"></i> travel.com</a>
         <nav class="navbar">
             <div id="nav-close" class="fas fa-times"></div>
-            <a href="index.html#home">home</a>
+            <a href="Sri_lanka_Budget_Tour_Package.php">home</a>
             <a href="index.html#category">Adventures</a>
             <a href="index.html#packages">packages</a>
             <a href="index.html#contact">contact</a>
@@ -41,6 +48,12 @@
     <div class="floating-book-btn" id="floatingBookBtn" onclick="scrollToBooking(event)">
         <i class="fas fa-calendar-check"></i>
         <span>Book Now</span>
+    </div>
+    
+    <!-- Floating Feedback Button -->
+    <div class="floating-feedback-btn" id="floatingFeedbackBtn" onclick="goToFeedbackPage(event)">
+        <i class="fas fa-comment-dots"></i>
+        <span>Share Feedback</span>
     </div>
 
     <!-- Hero Section -->
@@ -125,21 +138,21 @@
                                 <i class="fas fa-dharmachakra"></i>
                             </div>
                         </div>
-                        
+
                         <div class="grid-image" onclick="changeMainImage(this, 'image galary/ella.jpg')">
                             <img src="image galary/ella.jpg" alt="Ella Nine Arch Bridge">
                             <div class="grid-overlay">
                                 <i class="fas fa-mountain"></i>
                             </div>
                         </div>
-                        
+
                         <div class="grid-image" onclick="changeMainImage(this, 'image galary/neteapl.jpg')">
                             <img src="image galary/neteapl.jpg" alt="Tea Plantations">
                             <div class="grid-overlay">
                                 <i class="fas fa-leaf"></i>
                             </div>
                         </div>
-                        
+
                         <div class="grid-image more-photos" onclick="openGalleryLightbox()">
                             <img src="image galary/yala-beach.jpg" alt="View More">
                             <div class="more-overlay">
@@ -202,7 +215,7 @@
                                 <i class="fas fa-chevron-right"></i>
                             </button>
                         </div>
-                        
+
                         <!-- Image Info -->
                         <div class="image-info">
                             <div class="image-title-row">
@@ -244,234 +257,275 @@
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- Package Overview -->
+        <div class="package-overview-section">
+            <h2>Package Overview</h2>
+            <p class="overview-description">
+                Want to explore Sri Lanka Budget Tours packages a new tropical destination on your next family vacation? With a contrast of exotic beaches on the island and spiritual Buddhist culture at the same time, Ceylon is one of the perfect holiday destinations to choose from the list. This tour takes your family and kids to this wonderful destination with our customizable 7 nights and 8 days in Sri Lanka Budget tour package. Your 8-day Sri Lanka holiday itinerary includes a visit to many charming cities like Sigiriya, Kandy, Nuwara Eliya, Ella Yala, and Mirissa.
+            </p>
+
+            <div class="package-highlights">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-mountain"></i>
                     </div>
+                    <h3>UNESCO Heritage Sites</h3>
+                    <p>Explore Sigiriya Rock Fortress and Dambulla Cave Temples with stunning ancient architecture</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-dharmachakra"></i>
+                    </div>
+                    <h3>Buddhist Culture</h3>
+                    <p>Visit the Sacred Tooth Relic Temple in Kandy and experience spiritual Buddhist heritage</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Tea Plantations</h3>
+                    <p>Journey through rolling hills of Nuwara Eliya's tea estates and scenic train rides</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <h3>Wildlife Safari</h3>
+                    <p>Experience Yala National Park with leopards, elephants, and diverse bird species</p>
                 </div>
             </div>
+        </div>
 
-            <!-- Package Overview -->
-            <div class="package-overview-section">
-                <h2>Package Overview</h2>
-                <p class="overview-description">
-                    Want to explore Sri Lanka Budget Tours packages a new tropical destination on your next family vacation? With a contrast of exotic beaches on the island and spiritual Buddhist culture at the same time, Ceylon is one of the perfect holiday destinations to choose from the list. This tour takes your family and kids to this wonderful destination with our customizable 7 nights and 8 days in Sri Lanka Budget tour package. Your 8-day Sri Lanka holiday itinerary includes a visit to many charming cities like Sigiriya, Kandy, Nuwara Eliya, Ella Yala, and Mirissa.
-                </p>
-                
-                <div class="package-highlights">
-                    <div class="highlight-card">
-                        <div class="highlight-icon">
-                            <i class="fas fa-mountain"></i>
-                        </div>
-                        <h3>UNESCO Heritage Sites</h3>
-                        <p>Explore Sigiriya Rock Fortress and Dambulla Cave Temples with stunning ancient architecture</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">
-                            <i class="fas fa-dharmachakra"></i>
-                        </div>
-                        <h3>Buddhist Culture</h3>
-                        <p>Visit the Sacred Tooth Relic Temple in Kandy and experience spiritual Buddhist heritage</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <h3>Tea Plantations</h3>
-                        <p>Journey through rolling hills of Nuwara Eliya's tea estates and scenic train rides</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">
-                            <i class="fas fa-paw"></i>
-                        </div>
-                        <h3>Wildlife Safari</h3>
-                        <p>Experience Yala National Park with leopards, elephants, and diverse bird species</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- What Makes This Special Section -->
-            <div class="special-features-section">
+        <!-- What Makes This Special Section -->
+        <section class="special-features-section">
+            <div class="container">
                 <div class="section-header">
                     <h2>What Makes This Experience Unforgettable</h2>
                     <p>Join thousands of travelers who've discovered the magic of Sri Lanka</p>
                 </div>
 
-                <div class="features-showcase">
-                    <!-- Feature 1 -->
-                    <div class="feature-showcase-item">
-                        <div class="feature-image">
-                            <img src="image galary/sigiriya.jpg" alt="Sigiriya Rock Fortress">
-                            <div class="feature-badge">UNESCO Site</div>
-                        </div>
-                        <div class="feature-content">
-                            <div class="feature-icon">
-                                <i class="fas fa-landmark"></i>
+                <!-- Swiper Features Container -->
+                <div class="swiper features-slider">
+                    <div class="swiper-wrapper">
+                        <!-- Feature 1 -->
+                        <div class="swiper-slide">
+                            <div class="feature-showcase-item">
+                                <div class="feature-image">
+                                    <img src="image galary/sigiriya.jpg" alt="Sigiriya Rock Fortress">
+                                    <div class="feature-badge">UNESCO Site</div>
+                                </div>
+                                <div class="feature-content">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-landmark"></i>
+                                    </div>
+                                    <h3>Sigiriya Rock Fortress</h3>
+                                    <p>A towering rock formation with an ancient royal palace at the summit, featuring stunning frescoes, water gardens, and the unique mirror wall</p>
+                                    <div class="feature-stats">
+                                        <span><i class="fas fa-star"></i> UNESCO World Heritage</span>
+                                        <span><i class="fas fa-mountain"></i> 200m High Rock</span>
+                                    </div>
+                                </div>
                             </div>
-                            <h3>Sigiriya Rock Fortress</h3>
-                            <p>A towering rock formation with an ancient royal palace at the summit, featuring stunning frescoes, water gardens, and the unique mirror wall</p>
-                            <div class="feature-stats">
-                                <span><i class="fas fa-star"></i> UNESCO World Heritage</span>
-                                <span><i class="fas fa-mountain"></i> 200m High Rock</span>
+                        </div>
+
+                          <!-- Feature 2 -->
+                        <div class="swiper-slide">
+                            <div class="feature-showcase-item">
+                                <div class="feature-image">
+                                    <img src="image galary/kandy2.jpg" alt="Scenic Train Journey">
+                                    <div class="feature-badge">Scenic</div>
+                                </div>
+                                <div class="feature-content">
+                                    <div class="feature-icon">
+                                    <i class="fas fa-dharmachakra"></i>
+                                    </div>
+                                    <h3>Scenic Train Journey</h3>
+                                    <p>Visit ancient temples, interact with locals, and experience authentic Sri Lankan culture and <br>cuisine.</p>
+                                    <div class="feature-stats">
+                                        <span><i class="fas fa-mountain"></i> Breathtaking Views</span>
+                                        <span><i class="fas fa-camera"></i> Instagram Worthy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Feature 3 -->
+                        <div class="swiper-slide">
+                            <div class="feature-showcase-item">
+                                <div class="feature-image">
+                                    <img src="image galary/ella.jpg" alt="Scenic Train Journey">
+                                    <div class="feature-badge">Scenic</div>
+                                </div>
+                                <div class="feature-content">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-train"></i>
+                                    </div>
+                                    <h3>Scenic Train Journey</h3>
+                                    <p>Experience one of the world's most beautiful train rides through misty mountains, lush tea plantations and the iconic Nine Arch Bridge</p>
+                                    <div class="feature-stats">
+                                        <span><i class="fas fa-mountain"></i> Breathtaking Views</span>
+                                        <span><i class="fas fa-camera"></i> Instagram Worthy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Feature 4 -->
+                        <div class="swiper-slide">
+                            <div class="feature-showcase-item">
+                                <div class="feature-image">
+                                    <img src="image galary/yalanat.jpg" alt="Yala National Park">
+                                    <div class="feature-badge">Wildlife</div>
+                                </div>
+                                <div class="feature-content">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-paw"></i>
+                                    </div>
+                                    <h3>Yala National Park Safari</h3>
+                                    <p>Embark on an exciting wildlife safari with the highest leopard density in the world, plus elephants and diverse bird species</p>
+                                    <div class="feature-stats">
+                                        <span><i class="fas fa-paw"></i> Leopard Spotting</span>
+                                        <span><i class="fas fa-binoculars"></i> Wildlife Safari</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- Add pagination bullets -->
+                    <div class="swiper-pagination"></div>
+                    
+                    <!-- Add navigation arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Feature 2 -->
-                    <div class="feature-showcase-item">
-                        <div class="feature-image">
-                            <img src="image galary/kandyy.jpg" alt="Temple of Sacred Tooth Relic">
-                            <div class="feature-badge">Sacred</div>
-                        </div>
-                        <div class="feature-content">
-                            <div class="feature-icon">
-                                <i class="fas fa-dharmachakra"></i>
-                            </div>
-                            <h3>Cultural Immersion</h3>
-                            <p>Visit ancient temples, interact with locals, and experience authentic Sri Lankan culture and cuisine</p>
-                            <div class="feature-stats">
-                                <span><i class="fas fa-camera"></i> Photo Opportunities</span>
-                                <span><i class="fas fa-utensils"></i> Local Cuisine</span>
-                            </div>
-                        </div>
+            <!-- Trust Indicators -->
+            <div class="trust-indicators">
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-
-                    <!-- Feature 3 -->
-                    <div class="feature-showcase-item">
-                        <div class="feature-image">
-                            <img src="image galary/yalanat.jpg" alt="Yala National Park">
-                            <div class="feature-badge">Wildlife</div>
-                        </div>
-                        <div class="feature-content">
-                            <div class="feature-icon">
-                                <i class="fas fa-paw"></i>
-                            </div>
-                            <h3>Yala National Park Safari</h3>
-                            <p>Embark on an exciting wildlife safari with the highest leopard density in the world, plus elephants and diverse bird species</p>
-                            <div class="feature-stats">
-                                <span><i class="fas fa-paw"></i> Leopard Spotting</span>
-                                <span><i class="fas fa-binoculars"></i> Wildlife Safari</span>
-                            </div>
-                        </div>
+                    <div class="trust-content">
+                        <h4>100% Safe</h4>
+                        <p>Certified guides & safety equipment</p>
                     </div>
                 </div>
-
-                <!-- Trust Indicators -->
-                <div class="trust-indicators">
-                    <div class="trust-item">
-                        <div class="trust-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="trust-content">
-                            <h4>100% Safe</h4>
-                            <p>Certified guides & safety equipment</p>
-                        </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-undo"></i>
                     </div>
-                    <div class="trust-item">
-                        <div class="trust-icon">
-                            <i class="fas fa-undo"></i>
-                        </div>
-                        <div class="trust-content">
-                            <h4>Free Cancellation</h4>
-                            <p>Cancel up to 24 hours before</p>
-                        </div>
-                    </div>
-                    <div class="trust-item">
-                        <div class="trust-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <div class="trust-content">
-                            <h4>24/7 Support</h4>
-                            <p>Round-the-clock assistance</p>
-                        </div>
-                    </div>
-                    <div class="trust-item">
-                        <div class="trust-icon">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <div class="trust-content">
-                            <h4>Award Winning</h4>
-                            <p>Top-rated tour operator</p>
-                        </div>
+                    <div class="trust-content">
+                        <h4>Free Cancellation</h4>
+                        <p>Cancel up to 24 hours before</p>
                     </div>
                 </div>
-
-                <!-- Quick Itinerary Overview -->
-                <div class="quick-itinerary">
-                    <h3>8-Day Sri Lanka Journey Overview</h3>
-                    <div class="itinerary-overview-grid">
-                        <div class="overview-day">
-                            <div class="day-num">1-2</div>
-                            <div class="day-info">
-                                <h4>Arrival & Cultural Triangle</h4>
-                                <p>Colombo airport to Sigiriya, ancient rock fortress</p>
-                            </div>
-                        </div>
-                        <div class="overview-day">
-                            <div class="day-num">3-4</div>
-                            <div class="day-info">
-                                <h4>Kandy Sacred City</h4>
-                                <p>Temple of Tooth Relic, cultural performances</p>
-                            </div>
-                        </div>
-                        <div class="overview-day">
-                            <div class="day-num">5-6</div>
-                            <div class="day-info">
-                                <h4>Hill Country & Tea Estates</h4>
-                                <p>Nuwara Eliya, Ella Nine Arch Bridge</p>
-                            </div>
-                        </div>
-                        <div class="overview-day">
-                            <div class="day-num">7-8</div>
-                            <div class="day-info">
-                                <h4>Wildlife & Beach</h4>
-                                <p>Yala Safari, Mirissa beach, departure</p>
-                            </div>
-                        </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="trust-content">
+                        <h4>24/7 Support</h4>
+                        <p>Round-the-clock assistance</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="trust-content">
+                        <h4>Award Winning</h4>
+                        <p>Top-rated tour operator</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Package Inclusions & Exclusions -->
-            <div class="inclusions-section">
-                <div class="inclusions-grid">
-                    <div class="inclusions-card">
-                        <h3><i class="fas fa-check-circle"></i> What's Included</h3>
-                        <ul class="inclusions-list">
-                            <li><i class="fas fa-bed"></i> 7 nights 3-star hotel accommodation</li>
-                            <li><i class="fas fa-utensils"></i> Daily breakfast and authentic Sri Lankan cuisine</li>
-                            <li><i class="fas fa-car"></i> Private air-conditioned vehicle for all transfers</li>
-                            <li><i class="fas fa-user-tie"></i> Professional English-speaking guide</li>
-                            <li><i class="fas fa-paw"></i> Yala National Park safari experience</li>
-                            <li><i class="fas fa-temple"></i> Temple visits and cultural site entry fees</li>
-                            <li><i class="fas fa-ticket-alt"></i> All monument and attraction entry fees</li>
-                            <li><i class="fas fa-headset"></i> 24/7 customer support and assistance</li>
-                            <li><i class="fas fa-shield-alt"></i> Comprehensive travel insurance</li>
-                            <li><i class="fas fa-train"></i> Scenic train ride from Kandy to Ella</li>
-                        </ul>
+            <!-- Quick Itinerary Overview -->
+            <div class="quick-itinerary " style="margin-bottom: 6rem;">
+                <h3>8-Day Sri Lanka Journey Overview</h3>
+                <div class="itinerary-overview-grid">
+                    <div class="overview-day">
+                        <div class="day-num">1-2</div>
+                        <div class="day-info">
+                            <h4>Arrival & Cultural Triangle</h4>
+                            <p>Colombo airport to Sigiriya, ancient rock fortress</p>
+                        </div>
                     </div>
-                    <div class="exclusions-card">
-                        <h3><i class="fas fa-times-circle"></i> What's Not Included</h3>
-                        <ul class="exclusions-list">
-                            <li><i class="fas fa-plane"></i> International flights to/from Colombo</li>
-                            <li><i class="fas fa-utensils"></i> Lunch and dinner on some days</li>
-                            <li><i class="fas fa-wallet"></i> Personal expenses and gratuities</li>
-                            <li><i class="fas fa-cocktail"></i> Optional activities and excursions</li>
-                            <li><i class="fas fa-camera"></i> Camera fees at certain attractions</li>
-                            <li><i class="fas fa-tshirt"></i> Laundry and room service charges</li>
-                            <li><i class="fas fa-gamepad"></i> Personal entertainment activities</li>
-                            <li><i class="fas fa-wine-bottle"></i> Alcoholic beverages and drinks</li>
-                            <li><i class="fas fa-shopping-bag"></i> Shopping and souvenirs</li>
-                            <li><i class="fas fa-first-aid"></i> Travel insurance and medical expenses</li>
-                        </ul>
+                    <div class="overview-day">
+                        <div class="day-num">3-4</div>
+                        <div class="day-info">
+                            <h4>Kandy Sacred City</h4>
+                            <p>Temple of Tooth Relic, cultural performances</p>
+                        </div>
+                    </div>
+                    <div class="overview-day">
+                        <div class="day-num">5-6</div>
+                        <div class="day-info">
+                            <h4>Hill Country & Tea Estates</h4>
+                            <p>Nuwara Eliya, Ella Nine Arch Bridge</p>
+                        </div>
+                    </div>
+                    <div class="overview-day">
+                        <div class="day-num">7-8</div>
+                        <div class="day-info">
+                            <h4>Wildlife & Beach</h4>
+                            <p>Yala Safari, Mirissa beach, departure</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Package Inclusions & Exclusions -->
+        <div class="inclusions-section">
+            <div class="inclusions-grid">
+                <div class="inclusions-card">
+                    <h3><i class="fas fa-check-circle"></i> What's Included</h3>
+                    <ul class="inclusions-list">
+                        <li><i class="fas fa-bed"></i> 7 nights 3-star hotel accommodation</li>
+                        <li><i class="fas fa-utensils"></i> Daily breakfast and authentic Sri Lankan cuisine</li>
+                        <li><i class="fas fa-car"></i> Private air-conditioned vehicle for all transfers</li>
+                        <li><i class="fas fa-user-tie"></i> Professional English-speaking guide</li>
+                        <li><i class="fas fa-paw"></i> Yala National Park safari experience</li>
+                        <li><i class="fas fa-temple"></i> Temple visits and cultural site entry fees</li>
+                        <li><i class="fas fa-ticket-alt"></i> All monument and attraction entry fees</li>
+                        <li><i class="fas fa-headset"></i> 24/7 customer support and assistance</li>
+                        <li><i class="fas fa-shield-alt"></i> Comprehensive travel insurance</li>
+                        <li><i class="fas fa-train"></i> Scenic train ride from Kandy to Ella</li>
+                    </ul>
+                </div>
+                <div class="exclusions-card">
+                    <h3><i class="fas fa-times-circle"></i> What's Not Included</h3>
+                    <ul class="exclusions-list">
+                        <li><i class="fas fa-plane"></i> International flights to/from Colombo</li>
+                        <li><i class="fas fa-utensils"></i> Lunch and dinner on some days</li>
+                        <li><i class="fas fa-wallet"></i> Personal expenses and gratuities</li>
+                        <li><i class="fas fa-cocktail"></i> Optional activities and excursions</li>
+                        <li><i class="fas fa-camera"></i> Camera fees at certain attractions</li>
+                        <li><i class="fas fa-tshirt"></i> Laundry and room service charges</li>
+                        <li><i class="fas fa-gamepad"></i> Personal entertainment activities</li>
+                        <li><i class="fas fa-wine-bottle"></i> Alcoholic beverages and drinks</li>
+                        <li><i class="fas fa-shopping-bag"></i> Shopping and souvenirs</li>
+                        <li><i class="fas fa-first-aid"></i> Travel insurance and medical expenses</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
 
     <!-- Customer Testimonials Section -->
-    <section class="testimonials-section">
-        <div class="container">
+    <!--<section class="testimonials-section">
+        <div class="container ">
             <h2>What Our Customers Say</h2>
-            <div class="testimonials-grid">
+            <div class="testimonials-grid ">
                 <div class="testimonial-card">
                     <div class="testimonial-header">
                         <div class="customer-image">
@@ -536,15 +590,240 @@
                         </div>
                     </div>
                     <p class="testimonial-text">
-                        "Outstanding service and value for money! The itinerary was well-planned with perfect 
-                        balance of culture and nature. Sigiriya Rock Fortress was breathtaking, and the wildlife 
+                        "Outstanding service and value for money! The itinerary was well-planned with perfect
+                        balance of culture and nature. Sigiriya Rock Fortress was breathtaking, and the wildlife
                         safari was an incredible experience. Will definitely book again!"
                     </p>
                     <div class="testimonial-date">February 2024</div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
+
+    <!-- Customer Testimonials Section -->
+<section class="testimonials-section">
+    <div class="container">
+        <h2>What Our Customers Say</h2>
+        <!-- Swiper Testimonials Container -->
+        <div class="swiper testimonials-swiper">
+            <div class="swiper-wrapper">
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="customer-image">
+                                <img src="images/img-1.jpg" alt="Customer">
+                            </div>
+                            <div class="customer-info">
+                                <h4>Lisa K.</h4>
+                                <span class="customer-location">Switzerland</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "Lishan was a great help with every step of the booking, available at all times to reply to our questions. We had a wonderful driver and guide SAMAN during our 8 day tour. He knew the best restaurants and helped us with everything we needed. Lishan selected the hotels carefully and the pickup/drop off was excellent. Thanks to Lishan and Saman for everything!"
+                        </p>
+                        <div class="testimonial-date">December 2023</div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="customer-image">
+                                <img src="images/img-2.jpg" alt="Customer">
+                            </div>
+                            <div class="customer-info">
+                                <h4>Robert</h4>
+                                <span class="customer-location">Poland</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "As a family of four, we came to Sri Lanka for 7 days tour. We needed everything organized from arrival to departure at Colombo airport. Our Polish friend recommended Ceylon Classic Tours. We visited Sigiriya, Kandy, Nuwara Eliya, Yala, Mirissa, then Galle. We had the best driver and very nice hotels. Some hotels even exceeded our expectations. I can highly recommend their services!"
+                        </p>
+                        <div class="testimonial-date">December 2023</div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="customer-image">
+                                <img src="images/img-4.jpg" alt="Customer">
+                            </div>
+                            <div class="customer-info">
+                                <h4>Emily Chen</h4>
+                                <span class="customer-location">Singapore</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "Our 10-day trip across Sri Lanka was absolutely magical! The tea plantations in Nuwara Eliya took my breath away, and the elephant safari in Udawalawe was a dream come true. Our guide Chaminda was knowledgeable and attentive. Ceylon Classic Tours created a perfect balance of adventure, culture, and relaxation. Worth every penny!"
+                        </p>
+                        <div class="testimonial-date">March 2024</div>
+                    </div>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="customer-image">
+                                <img src="images/img-5.jpg" alt="Customer">
+                            </div>
+                            <div class="customer-info">
+                                <h4>James & Sophie Miller</h4>
+                                <span class="customer-location">Australia</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "Honeymooning in Sri Lanka was the best decision! Ceylon Classic Tours arranged a perfect romantic getaway for us. The private beach dinner in Bentota was unforgettable, and our villa in Ella had stunning mountain views. The only minor issue was one hotel being overbooked, but they quickly upgraded us to an even better place! Would definitely return for our anniversary."
+                        </p>
+                        <div class="testimonial-date">February 2024</div>
+                    </div>
+                </div>
+                <!-- Testimonial 5 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="customer-image">
+                                <img src="images/img-6.jpg" alt="Customer">
+                            </div>
+                            <div class="customer-info">
+                                <h4>Michael Torres</h4>
+                                <span class="customer-location">United States</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "As a solo traveler and photography enthusiast, this tour exceeded my expectations! The ancient ruins of Polonnaruwa and the train ride through the highlands provided incredible photo opportunities. My guide knew all the best spots for sunrise shots at Sigiriya Rock. Ceylon Classic Tours customized my itinerary perfectly to focus on photography while experiencing authentic Sri Lankan culture."
+                        </p>
+                        <div class="testimonial-date">April 2024</div>
+                    </div>
+                    </div>
+                
+                <!-- Testimonial 6 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="customer-image">
+                                <img src="images/img-1.jpg" alt="Customer">
+                            </div>
+                            <div class="customer-info">
+                                <h4>Anna & Thomas Schmidt</h4>
+                                <span class="customer-location">Germany</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "We've traveled to many countries, but Sri Lanka with Ceylon Classic Tours was truly special. The attention to detail was remarkable – from traditional cooking classes in Kandy to a surprise birthday cake for my husband at our hotel in Colombo. Our guide Pradeep felt like family by the end of our trip. The cultural insights and hidden gems they showed us made this trip unforgettable."
+                        </p>
+                        <div class="testimonial-date">January 2024</div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 7 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="customer-image">
+                                <img src="images/img-4.jpg" alt="Customer">
+                            </div>
+                            <div class="customer-info">
+                                <h4>Sarah Johnson</h4>
+                                <span class="customer-location">Canada</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "Traveling as a family with teenagers can be challenging, but Ceylon Classic Tours created a perfect adventure for all of us. Our kids loved the white water rafting in Kitulgala and surfing lessons in Arugam Bay, while my husband and I enjoyed the cultural sites and Ayurvedic spa treatments. The eco-friendly accommodations they selected were impressive, and we appreciated their commitment to sustainable tourism."
+                        </p>
+                        <div class="testimonial-date">May 2024</div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 8 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="customer-image">
+                                <img src="images/img-5.jpg" alt="Customer">
+                            </div>
+                            <div class="customer-info">
+                                <h4>Olivia Martinez</h4>
+                                <span class="customer-location">Spain</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "When our flight was delayed by 6 hours, I was worried our entire trip would be affected. But Ceylon Classic Tours adjusted our itinerary seamlessly! They went above and beyond to ensure we didn't miss any highlights. The ancient city of Anuradhapura was fascinating, and the beach stay in Trincomalee was pure bliss. Their local connections meant we experienced authentic Sri Lankan hospitality everywhere we went."
+                        </p>
+                        <div class="testimonial-date">March 2024</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add pagination bullets -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- Add navigation arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+
+    
 
     <!-- Why Choose Us Section -->
     <section class="why-choose-us-section">
@@ -553,7 +832,7 @@
                 <h2>Why Travel With Us?</h2>
                 <p>Experience the difference with our award-winning tour services</p>
             </div>
-            
+
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -659,22 +938,22 @@
                                 <option value="">-- Select your preferred package --</option>
 
                                 <option value="Highlights of Sri Lanka – 10 Days" data-price="865" selected>
-                                        Highlights of Sri Lanka – 10 Days – $865
+                                    Highlights of Sri Lanka – 10 Days – $865
                                 </option>
                                 <option value="Highlights of Sri Lanka 5 Days" data-price="380">
-                                         Highlights of Sri Lanka 5 Days – $380
+                                    Highlights of Sri Lanka 5 Days – $380
                                 </option>
                                 <option value="Sri Lanka 9 Day Tour Package" data-price="660">
-                                        Sri Lanka 9 Day Tour Package – $660
+                                    Sri Lanka 9 Day Tour Package – $660
                                 </option>
                                 <option value="Sri Lanka Budget Tour Package" data-price="640">
-                                        Sri Lanka Budget Tour Package – $640
+                                    Sri Lanka Budget Tour Package – $640
                                 </option>
                                 <option value="Sri Lankan Heritage Tour" data-price="515">
-                                        Sri Lankan Heritage Tour – $515
+                                    Sri Lankan Heritage Tour – $515
                                 </option>
                                 <option value="Sri Lanka Beach Holiday" data-price="495">
-                                        Sri Lanka Beach Holiday – $495
+                                    Sri Lanka Beach Holiday – $495
                                 </option>
 
                             </select>
@@ -700,18 +979,18 @@
                         </div>
                     </div>
 
-                    <div class="price-summary" 
-     style="background:#f9fafc; border:2px solid #e0e6ed; border-radius:12px; 
+                    <div class="price-summary"
+                        style="background:#f9fafc; border:2px solid #e0e6ed; border-radius:12px; 
             padding:20px; margin:20px 0; text-align:center; 
             box-shadow:0 4px 12px rgba(0,0,0,0.05); transition:all 0.3s ease-in-out;">
 
-    <h3 style="font-size:1.6rem; font-weight:bold; color:#2c3e50; margin-bottom:10px;">
-        Total Price: 
-        <span id="totalPrice" style="color:#27ae60; font-size:1.8rem; font-weight:700;">$0</span>
-    </h3>
+                        <h3 style="font-size:1.6rem; font-weight:bold; color:#2c3e50; margin-bottom:10px;">
+                            Total Price:
+                            <span id="totalPrice" style="color:#27ae60; font-size:1.8rem; font-weight:700;">$0</span>
+                        </h3>
 
-    <p id="priceBreakdown" style="font-size:1rem; color:#555; margin:0;"></p>
-</div>
+                        <p id="priceBreakdown" style="font-size:1rem; color:#555; margin:0;"></p>
+                    </div>
 
 
 
@@ -769,17 +1048,17 @@
                 <h2>Where you'll be</h2>
                 <p class="location-name">Sri Lanka, Pearl of the Indian Ocean</p>
             </div>
-            
+
             <div class="map-container">
-                <iframe 
+                <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.636429084537!2d81.04621631478391!3d6.863074494988844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4618a1a9b7ad7%3A0x5a3b9a1b0c2d3e4f!2sElla%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1634567890123!5m2!1sen!2slk"
-                    width="100%" 
-                    height="100%" 
-                    style="border:0;" 
-                    allowfullscreen="" 
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
                     loading="lazy">
                 </iframe>
-                
+
                 <div class="map-controls">
                     <button class="map-control-btn" onclick="openInMaps()" title="Open in Google Maps">
                         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false">
@@ -805,13 +1084,13 @@
             <div class="location-description">
                 <h3>About the area</h3>
                 <p>Experience the breathtaking beauty of Sri Lanka, the Pearl of the Indian Ocean. This tropical paradise offers stunning beaches, ancient temples, lush tea plantations, and incredible wildlife. From the cultural triangle of Sigiriya to the pristine beaches of Mirissa, Sri Lanka is the perfect destination for culture enthusiasts and nature lovers alike.</p>
-                
-                <button class="show-more-btn" onclick="showMoreLocation()">
+
+                <a href="https://en.wikipedia.org/wiki/Ella,_Sri_Lanka" target="_blank" class="show-more-btn">
                     <span>Show more</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
                         <path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path>
                     </svg>
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -819,8 +1098,8 @@
     <!-- Footer -->
     <section class="footer">
         <div class="footer-intro">
-            <p>Experience the luxuries of Sri Lanka with our specially crafted luxury tours and indulge in its quintessential charms.</p>   
-        </div>        
+            <p>Experience the luxuries of Sri Lanka with our specially crafted luxury tours and indulge in its quintessential charms.</p>
+        </div>
         <div class="box-container">
             <div class="box">
                 <h3>Quick links</h3>
@@ -868,7 +1147,7 @@
                     behavior: 'smooth',
                     block: 'start'
                 });
-                
+
                 // Add a visual highlight effect
                 bookingSection.style.animation = 'highlightSection 2s ease-in-out';
                 setTimeout(() => {
@@ -876,21 +1155,52 @@
                 }, 2000);
             }
         }
-        
+
         // Modern Tour Gallery Functions
         let currentLightboxIndex = 0;
-        
-        const galleryData = [
-            { src: 'image galary/sigiriya.jpg', title: 'Ancient Sigiriya Rock Fortress', description: 'Experience the magnificent ancient rock fortress and palace ruins of Sigiriya, a UNESCO World Heritage Site.' },
-            { src: 'image galary/kandyy.jpg', title: 'Sacred Temple of Tooth Relic', description: 'Visit the most sacred Buddhist temple in Kandy, home to the tooth relic of Lord Buddha.' },
-            { src: 'image galary/ella.jpg', title: 'Scenic Ella Nine Arch Bridge', description: 'Discover the iconic Nine Arch Bridge surrounded by lush tea plantations and misty mountains.' },
-            { src: 'image galary/neteapl.jpg', title: 'Tea Plantation Paradise', description: 'Explore the rolling hills of tea plantations in Nuwara Eliya, the heart of Sri Lankan tea country.' },
-            { src: 'image galary/yala-beach.jpg', title: 'Pristine Southern Beaches', description: 'Relax on the golden beaches of Sri Lanka\'s southern coast with crystal clear waters.' },
-            { src: 'image galary/yalanat.jpg', title: 'Yala National Park Safari', description: 'Experience thrilling wildlife safari with leopards, elephants and diverse bird species.' },
-            { src: 'image galary/Breathtaking_Mountain_Views.jpg', title: 'Breathtaking Mountain Views', description: 'Marvel at the stunning mountain landscapes and breathtaking vistas of Sri Lanka\'s hill country.' },
-            { src: 'image galary/temp.jpg', title: 'Buddhist Temples', description: 'Explore the ancient Buddhist temples and experience the spiritual heritage of Sri Lanka.' }
+
+        const galleryData = [{
+                src: 'image galary/sigiriya.jpg',
+                title: 'Ancient Sigiriya Rock Fortress',
+                description: 'Experience the magnificent ancient rock fortress and palace ruins of Sigiriya, a UNESCO World Heritage Site.'
+            },
+            {
+                src: 'image galary/kandyy.jpg',
+                title: 'Sacred Temple of Tooth Relic',
+                description: 'Visit the most sacred Buddhist temple in Kandy, home to the tooth relic of Lord Buddha.'
+            },
+            {
+                src: 'image galary/ella.jpg',
+                title: 'Scenic Ella Nine Arch Bridge',
+                description: 'Discover the iconic Nine Arch Bridge surrounded by lush tea plantations and misty mountains.'
+            },
+            {
+                src: 'image galary/neteapl.jpg',
+                title: 'Tea Plantation Paradise',
+                description: 'Explore the rolling hills of tea plantations in Nuwara Eliya, the heart of Sri Lankan tea country.'
+            },
+            {
+                src: 'image galary/yala-beach.jpg',
+                title: 'Pristine Southern Beaches',
+                description: 'Relax on the golden beaches of Sri Lanka\'s southern coast with crystal clear waters.'
+            },
+            {
+                src: 'image galary/yalanat.jpg',
+                title: 'Yala National Park Safari',
+                description: 'Experience thrilling wildlife safari with leopards, elephants and diverse bird species.'
+            },
+            {
+                src: 'image galary/Breathtaking_Mountain_Views.jpg',
+                title: 'Breathtaking Mountain Views',
+                description: 'Marvel at the stunning mountain landscapes and breathtaking vistas of Sri Lanka\'s hill country.'
+            },
+            {
+                src: 'image galary/temp.jpg',
+                title: 'Buddhist Temples',
+                description: 'Explore the ancient Buddhist temples and experience the spiritual heritage of Sri Lanka.'
+            }
         ];
-        
+
         // Preload all gallery images for smoother transitions
         function preloadGalleryImages() {
             galleryData.forEach(imageData => {
@@ -898,28 +1208,28 @@
                 img.src = imageData.src;
             });
         }
-        
+
         // Run preload on page load
         window.addEventListener('load', preloadGalleryImages);
 
         function changeMainImage(element, imageSrc) {
             const mainImage = document.getElementById('mainGalleryImage');
-            
+
             if (mainImage) {
                 // Find the index of the clicked image
                 const imageIndex = galleryData.findIndex(img => img.src === imageSrc);
                 currentLightboxIndex = imageIndex !== -1 ? imageIndex : 0;
-                
+
                 // Smooth transition
                 mainImage.style.opacity = '0.7';
                 mainImage.style.transform = 'scale(0.98)';
-                
+
                 setTimeout(() => {
                     mainImage.src = imageSrc;
                     mainImage.style.opacity = '1';
                     mainImage.style.transform = 'scale(1)';
                 }, 200);
-                
+
                 // Add click feedback
                 element.style.transform = 'scale(0.95)';
                 setTimeout(() => {
@@ -934,7 +1244,7 @@
                 lightbox.classList.add('active');
                 document.body.style.overflow = 'hidden';
                 updateLightboxImage(currentLightboxIndex);
-                
+
                 // Smooth entrance
                 setTimeout(() => {
                     lightbox.querySelector('.lightbox-container').style.transform = 'scale(1)';
@@ -948,7 +1258,7 @@
             if (lightbox) {
                 lightbox.querySelector('.lightbox-container').style.transform = 'scale(0.95)';
                 lightbox.querySelector('.lightbox-container').style.opacity = '0';
-                
+
                 setTimeout(() => {
                     lightbox.classList.remove('active');
                     document.body.style.overflow = 'auto';
@@ -963,24 +1273,24 @@
             const currentIndex = document.getElementById('currentLightboxIndex');
             const totalImages = document.getElementById('totalLightboxImages');
             const mainImageWrapper = document.querySelector('.main-image-wrapper');
-            
+
             if (galleryData[index]) {
                 const imageData = galleryData[index];
-                
+
                 // Update image with transition
                 lightboxImage.style.opacity = '0.5';
-                
+
                 // Preload the new image to prevent layout shifts
                 const preloadImage = new Image();
                 preloadImage.onload = function() {
                     lightboxImage.src = imageData.src;
                     lightboxImage.style.opacity = '1';
-                    
+
                     // Maintain container stability during transition
                     if (mainImageWrapper) {
                         mainImageWrapper.style.minHeight = mainImageWrapper.offsetHeight + 'px';
                     }
-                    
+
                     if (imageTitle) imageTitle.textContent = imageData.title;
                     if (imageDesc) imageDesc.textContent = imageData.description;
                     if (currentIndex) currentIndex.textContent = index + 1;
@@ -988,7 +1298,7 @@
                 };
                 preloadImage.src = imageData.src;
             }
-            
+
             updateLightboxThumbnails(index);
         }
 
@@ -996,11 +1306,15 @@
             const thumbnails = document.querySelectorAll('.lightbox-thumbnails .thumbnail-item');
             thumbnails.forEach((thumb, index) => {
                 thumb.classList.toggle('active', index === activeIndex);
-                
+
                 // Scroll active thumbnail into view
                 if (index === activeIndex) {
                     setTimeout(() => {
-                        thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                        thumb.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'nearest',
+                            inline: 'center'
+                        });
                     }, 100);
                 }
             });
@@ -1013,13 +1327,13 @@
 
         function navigateLightbox(direction) {
             currentLightboxIndex += direction;
-            
+
             if (currentLightboxIndex >= galleryData.length) {
                 currentLightboxIndex = 0;
             } else if (currentLightboxIndex < 0) {
                 currentLightboxIndex = galleryData.length - 1;
             }
-            
+
             updateLightboxImage(currentLightboxIndex);
         }
 
@@ -1027,7 +1341,7 @@
         document.addEventListener('keydown', function(e) {
             const lightbox = document.getElementById('galleryLightbox');
             if (lightbox && lightbox.classList.contains('active')) {
-                switch(e.key) {
+                switch (e.key) {
                     case 'ArrowLeft':
                         navigateLightbox(-1);
                         break;
@@ -1040,42 +1354,46 @@
                 }
             }
         });
-        
+
         // Touch swipe navigation for mobile devices
         function setupTouchNavigation() {
             const lightboxMain = document.querySelector('.lightbox-main');
             if (!lightboxMain) return;
-            
+
             let touchStartX = 0;
             let touchEndX = 0;
             let lastTap = 0;
-            
+
             lightboxMain.addEventListener('touchstart', function(e) {
                 touchStartX = e.changedTouches[0].screenX;
-            }, {passive: true});
-            
+            }, {
+                passive: true
+            });
+
             lightboxMain.addEventListener('touchend', function(e) {
                 touchEndX = e.changedTouches[0].screenX;
                 handleSwipe();
-                
+
                 // Handle double tap for zoom
                 const currentTime = new Date().getTime();
                 const tapLength = currentTime - lastTap;
-                
+
                 if (tapLength < 300 && tapLength > 0) {
                     // Double tap detected
                     handleDoubleTap(e);
                     e.preventDefault();
                 }
                 lastTap = currentTime;
-            }, {passive: false});
-            
+            }, {
+                passive: false
+            });
+
             function handleSwipe() {
                 const minSwipeDistance = 50;
                 const swipeDistance = touchEndX - touchStartX;
-                
+
                 if (Math.abs(swipeDistance) < minSwipeDistance) return;
-                
+
                 if (swipeDistance > 0) {
                     // Swiped right, go to previous
                     navigateLightbox(-1);
@@ -1084,14 +1402,14 @@
                     navigateLightbox(1);
                 }
             }
-            
+
             function handleDoubleTap(e) {
                 const lightbox = document.getElementById('galleryLightbox');
                 if (!lightbox) return;
-                
+
                 const img = document.getElementById('lightboxMainImage');
                 const imgWrapper = img.closest('.main-image-wrapper');
-                
+
                 if (imgWrapper.classList.contains('zoomed')) {
                     // Reset zoom
                     imgWrapper.classList.remove('zoomed');
@@ -1105,24 +1423,24 @@
                 }
             }
         }
-        
+
         // Initialize touch navigation when page loads
         window.addEventListener('load', setupTouchNavigation);
-        
+
         // Fullscreen mode toggle
         function toggleFullscreenMode() {
             const lightbox = document.getElementById('galleryLightbox');
             const fullscreenBtn = document.getElementById('fullscreenToggle');
             const imageInfo = document.querySelector('.image-info');
-            
+
             if (lightbox) {
                 lightbox.classList.toggle('fullscreen-mode');
-                
+
                 // Update the icon
                 if (fullscreenBtn) {
                     if (lightbox.classList.contains('fullscreen-mode')) {
                         fullscreenBtn.innerHTML = '<i class="fas fa-compress"></i>';
-                        
+
                         // In fullscreen mode, show info on tap
                         const mainImageWrapper = document.querySelector('.main-image-wrapper');
                         if (mainImageWrapper) {
@@ -1130,7 +1448,7 @@
                         }
                     } else {
                         fullscreenBtn.innerHTML = '<i class="fas fa-expand"></i>';
-                        
+
                         // Remove tap listener when exiting fullscreen
                         const mainImageWrapper = document.querySelector('.main-image-wrapper');
                         if (mainImageWrapper) {
@@ -1140,12 +1458,12 @@
                 }
             }
         }
-        
+
         // Toggle image info display in fullscreen mode
         function toggleImageInfo(e) {
             // Don't toggle if clicking on navigation arrows
             if (e.target.closest('.nav-arrow')) return;
-            
+
             const imageInfo = document.querySelector('.gallery-lightbox.fullscreen-mode .image-info');
             if (imageInfo) {
                 imageInfo.classList.toggle('show');
@@ -1186,11 +1504,11 @@
             toast.className = 'toast-notification';
             toast.textContent = message;
             document.body.appendChild(toast);
-            
+
             setTimeout(() => {
                 toast.classList.add('show');
             }, 100);
-            
+
             setTimeout(() => {
                 toast.classList.remove('show');
                 setTimeout(() => {
@@ -1214,10 +1532,10 @@
             ripple.style.marginLeft = '-10px';
             ripple.style.marginTop = '-10px';
             ripple.style.pointerEvents = 'none';
-            
+
             element.style.position = 'relative';
             element.appendChild(ripple);
-            
+
             setTimeout(() => {
                 ripple.remove();
             }, 600);
@@ -1275,14 +1593,14 @@
             // Floating booking button scroll detection
             const floatingBtn = document.getElementById('floatingBookBtn');
             const bookingSection = document.getElementById('booking');
-            
+
             function handleFloatingButton() {
                 if (bookingSection && floatingBtn) {
                     const heroSection = document.querySelector('.hero-section');
                     const bookingSectionTop = bookingSection.offsetTop;
                     const scrollPosition = window.scrollY;
                     const heroHeight = heroSection ? heroSection.offsetHeight : 600;
-                    
+
                     // Show button after scrolling past hero section
                     // Hide button when reaching booking section
                     if (scrollPosition > heroHeight && scrollPosition < bookingSectionTop - 200) {
@@ -1292,29 +1610,53 @@
                     }
                 }
             }
-            
+
             window.addEventListener('scroll', handleFloatingButton);
             handleFloatingButton(); // Check initial state
 
             // Set minimum date to today for travel date
             const today = new Date().toISOString().split('T')[0];
             const travelDateInput = document.getElementById('travelDate');
-            
+
             if (travelDateInput) travelDateInput.min = today;
 
             // Add visual feedback for form submission (without changing backend)
             const bookingForm = document.getElementById('bookingForm');
             const submitButton = document.querySelector('.submit-booking');
-            
+
             if (bookingForm && submitButton) {
                 bookingForm.addEventListener('submit', function() {
                     submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
                     submitButton.disabled = true;
                 });
             }
+            
+            // Show feedback button after user scrolls down
+            const floatingFeedbackBtn = document.getElementById('floatingFeedbackBtn');
+            if (floatingFeedbackBtn) {
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 300) {
+                        floatingFeedbackBtn.classList.add('visible');
+                    } else {
+                        floatingFeedbackBtn.classList.remove('visible');
+                    }
+                });
+            }
         });
+        
+        // Function to navigate to feedback page
+        function goToFeedbackPage(event) {
+            event.preventDefault();
+            window.location.href = 'feedback.php';
+        }
     </script>
     <script src="calculate.js"></script>
+<!-- Swipper js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Add this line before the closing </body> tag -->
+    <script src="js/testimonials-swiper.js"></script>
+    <script src="js/features-slider.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

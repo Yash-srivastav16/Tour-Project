@@ -1,0 +1,371 @@
+/* Testimonials Swiper Styles - Enhanced Size */
+.testimonials-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonials-section .container {
+    max-width: 1400px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.testimonials-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #2c3e50;
+    font-size: 3.5rem;
+    font-weight: 700;
+    position: relative;
+    letter-spacing: -0.5px;
+}
+
+.testimonials-section h2:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #ff6b35;
+}
+
+.testimonials-swiper {
+    padding: 40px 40px 80px;
+    overflow: visible;
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Style for the cards */
+.testimonial-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    height: 420px; /* Increased fixed height for consistent card sizing */
+    min-height: 420px; /* Ensures minimum height */
+    max-height: 460px; /* Prevents excessive height */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevents content from overflowing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card:before {
+    content: '"';
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 60px;
+    color: rgba(255, 107, 53, 0.1);
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.customer-image {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    border: 4px solid #ff6b35;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.customer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.customer-info h4 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.customer-location {
+    color: #7f8c8d;
+    font-size: 1rem;
+    display: block;
+    margin: 5px 0;
+}
+
+.stars {
+    color: #ff6b35;
+    font-size: 1.05rem;
+    margin-top: 3px;
+}
+
+.testimonial-text {
+    flex: 1;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: #34495e;
+    font-style: italic;
+    margin: 15px 0 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 8; /* Increased to 8 lines for more content */
+    line-clamp: 8; /* Standard property for compatibility */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis; /* Adds ... at the end of truncated text */
+    letter-spacing: 0.01em;
+}
+
+.testimonial-date {
+    font-size: 1rem;
+    color: #7f8c8d;
+    text-align: right;
+    font-weight: 500;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Swiper specific styles */
+.swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    background: rgba(255, 107, 53, 0.5);
+    opacity: 1;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 0 6px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff6b35;
+    transform: scale(1.3);
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+    color: #ff6b35;
+    background: rgba(255, 255, 255, 0.1); /* Slightly visible background */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Enhanced shadow for better visibility */
+    transition: all 0.3s ease;
+    outline: none;
+    cursor: pointer; /* Clear pointer to indicate clickability */
+}
+
+.swiper-button-next:hover, 
+.swiper-button-prev:hover {
+    background: rgba(255, 255, 255, 0.25); /* More visible on hover */
+    transform: scale(1.15);
+    color: #ff6b35; /* Ensure color stays consistent */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+}
+
+.swiper-button-next:focus, 
+.swiper-button-prev:focus {
+    box-shadow: 0 0 0 2px rgba(255, 107, 53, 0.2);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 28px; /* Larger arrow icons to match enlarged section */
+    font-weight: bold;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Enhanced shadow for better visibility */
+}
+
+.swiper-button-disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* Non-interactive slides (no dragging) */
+.swiper-wrapper {
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); /* Improved easing */
+    will-change: transform; /* Performance optimization for mobile */
+    cursor: default; /* Use default cursor to indicate non-draggable */
+    user-select: text; /* Allow text selection since dragging is disabled */
+}
+
+/* Visual feedback for active slide */
+.swiper-slide-active {
+    z-index: 2; /* Ensure active slide is on top */
+}
+
+/* Hover effects */
+.swiper-slide-active .testimonial-card {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive adjustments */
+/* Enhanced responsive styles */
+@media (max-width: 1280px) {
+    .testimonial-card {
+        height: 340px;
+        min-height: 340px;
+    }
+    
+    .testimonial-text {
+        -webkit-line-clamp: 6;
+        line-clamp: 6;
+    }
+}
+
+@media (max-width: 992px) {
+    .testimonials-section {
+        padding: 50px 0;
+    }
+    
+    .testimonials-swiper {
+        padding: 20px 30px 60px; /* Increase horizontal padding for arrow placement */
+    }
+    
+    .testimonial-card {
+        height: 320px;
+        min-height: 320px;
+        padding: 25px;
+    }
+    
+    .swiper-button-next, 
+    .swiper-button-prev {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-section {
+        padding: 40px 0;
+    }
+    
+    .testimonials-section h2 {
+        font-size: 2rem;
+    }
+    
+    .testimonial-card {
+        padding: 22px;
+        height: 300px;
+        min-height: 300px;
+    }
+    
+    .customer-image {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .testimonial-text {
+        font-size: 0.95rem;
+        -webkit-line-clamp: 5;
+        line-clamp: 5;
+    }
+    
+    /* Keep arrows visible but smaller and more transparent on mobile */
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 32px;
+        height: 32px;
+        background: rgba(255, 255, 255, 0.15); /* Very subtle background */
+        margin: 0 5px; /* Bring arrows closer to content */
+    }
+    
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 14px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 576px) {
+    .testimonials-swiper {
+        padding: 10px 25px 50px;
+    }
+    
+    .testimonial-card {
+        padding: 20px;
+        height: 280px;
+        min-height: 280px;
+    }
+    
+    .testimonial-header {
+        margin-bottom: 15px;
+    }
+    
+    .customer-image {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .testimonial-text {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin: 5px 0 15px;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .swiper-pagination {
+        bottom: 5px !important;
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 375px) {
+    .testimonial-card {
+        padding: 18px;
+        height: 260px;
+        min-height: 260px;
+    }
+    
+    .customer-image {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .customer-info h4 {
+        font-size: 1.1rem;
+    }
+    
+    .testimonial-text {
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        margin: 5px 0 10px;
+    }
+}
+
+/* Animation for entering testimonials */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.swiper-slide-active .testimonial-card {
+    animation: fadeInUp 0.9s ease forwards;
+}

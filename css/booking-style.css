@@ -1126,6 +1126,7 @@ input, select, textarea, button {
 .quick-itinerary {
   background: var(--white);
   padding: 4rem;
+  margin-bottom: 8rem;
   border-radius: 2rem;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.08);
 }
@@ -1133,7 +1134,7 @@ input, select, textarea, button {
 .quick-itinerary h3 {
   font-size: 2.8rem;
   color: var(--primary-color);
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
   font-weight: 700;
   text-align: center;
 }
@@ -1195,6 +1196,7 @@ input, select, textarea, button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
+  margin-top: 6rem;
 }
 
 .inclusions-card,
@@ -5424,28 +5426,46 @@ input, select, textarea, button {
   border: none;
   font-size: 1.6rem;
   font-weight: 600;
-  color: #222;
+  color: #ff6b35;
   cursor: pointer;
-  text-decoration: underline;
-  padding: 0;
-  transition: color 0.2s ease;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  position: relative;
+}
+
+.show-more-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff6b35;
+  transition: width 0.3s ease;
 }
 
 .show-more-btn:hover {
-  color: #717171;
+  color: #e85a2a;
+  background-color: rgba(255, 107, 53, 0.05);
+}
+
+.show-more-btn:hover::after {
+  width: 100%;
 }
 
 .show-more-btn svg {
   width: 1.2rem;
   height: 1.2rem;
   stroke: currentColor;
-  stroke-width: 5.33333;
+  stroke-width: 1.5;
   fill: none;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
 }
 
 .show-more-btn:hover svg {
-  transform: translateX(2px);
+  transform: translateX(4px);
 }
 
 /* Responsive Design for Location Section */
