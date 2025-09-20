@@ -81,7 +81,7 @@
             <div class="package-header">
                 <div class="package-title-section">
                     <h1 class="package-title">Highlights of Sri Lanka 5 Days</h1>
-                    <p class="package-subtitle">Discover Sri Lanka's cultural landmarks and natural wonders in this compact 5-day adventure through ancient temples, wildlife parks, and coastal towns</p>
+                    <p class="package-subtitle">5-day Sri Lanka adventure: temples, wildlife & coastal towns</p>
                     <div class="package-rating">
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -1085,7 +1085,7 @@
 
             <div class="map-container">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.636429084537!2d81.04621631478391!3d6.863074494988844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4618a1a9b7ad7%3A0x5a3b9a1b0c2d3e4f!2sElla%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1634567890123!5m2!1sen!2slk"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252936.49472116178!2d80.53474548765062!3d7.881178553560402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afcaff4c8adcc4f%3A0x67ae3cc5b1536914!2sDambulla!5e0!3m2!1sen!2slk!4v1758381846110!5m2!1sen!2slk"
                     width="100%"
                     height="100%"
                     style="border:0;"
@@ -1117,9 +1117,9 @@
 
             <div class="location-description">
                 <h3>About the area</h3>
-                <p>Experience the breathtaking beauty of Sri Lanka, the Pearl of the Indian Ocean. This tropical paradise offers stunning beaches, ancient temples, lush tea plantations, and incredible wildlife. From the cultural triangle of Sigiriya to the pristine beaches of Mirissa, Sri Lanka is the perfect destination for culture enthusiasts and nature lovers alike.</p>
+                <p>Explore the cultural heart of Sri Lanka, beginning with Dambulla’s ancient cave temples, adorned with centuries-old Buddhist murals and statues. Just a short drive away, the iconic Sigiriya Rock Fortress rises majestically from the jungle, featuring stunning frescoes, beautifully landscaped gardens, and panoramic views. Together, these historic sites offer an unforgettable glimpse into Sri Lanka’s rich heritage, art, and architectural brilliance.</p>
 
-                <a href="https://en.wikipedia.org/wiki/Ella,_Sri_Lanka" target="_blank" class="show-more-btn">
+                <a href="https://en.wikipedia.org/wiki/Dambulla" target="_blank" class="show-more-btn">
                     <span>Show more</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
                         <path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path>
