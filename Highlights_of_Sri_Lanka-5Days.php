@@ -74,9 +74,10 @@
         </div>
     </section>
 
-    <!-- Package Details Section -->
+        <!-- Package Details Section -->
     <section class="package-details-section" id="package-details">
         <div class="container">
+
             <!-- Package Header -->
             <div class="package-header">
                 <div class="package-title-section">
@@ -158,7 +159,7 @@
                             <div class="more-overlay">
                                 <div class="more-content">
                                     <i class="fas fa-images"></i>
-                                    <span class="more-count">+5</span>
+                                    <span class="more-count">+4</span>
                                     <span class="more-text">Show all photos</span>
                                 </div>
                             </div>
@@ -231,16 +232,16 @@
                     <!-- Thumbnail Navigation -->
                     <div class="lightbox-thumbnails">
                         <div class="thumbnail-item active" onclick="selectLightboxImage(0)">
-                            <img src="image galary/sigiriya.jpg" alt="Sigiriya Rock Fortress">
+                            <img src="image galary/sigiriya1.jpg" alt="Sigiriya Rock Fortress">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(1)">
-                            <img src="image galary/kandyy.jpg" alt="Temple of Sacred Tooth Relic">
+                            <img src="image galary/kandy4.jpg" alt="Temple of Sacred Tooth Relic">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(2)">
                             <img src="image galary/ella.jpg" alt="Ella Nine Arch Bridge">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(3)">
-                            <img src="image galary/neteapl.jpg" alt="Tea Plantations">
+                            <img src="image galary/tea2.jpeg" alt="Tea Plantations">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(4)">
                             <img src="image galary/yala-beach.jpg" alt="Yala & Beach">
@@ -249,7 +250,7 @@
                             <img src="image galary/yalanat.jpg" alt="Yala National Park">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(6)">
-                            <img src="image galary/temp.jpg" alt="Buddhist Temples">
+                            <img src="image galary/temple2.jpg" alt="Buddhist Temples">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(7)">
                             <img src="image galary/Breathtaking_Mountain_Views.jpg" alt="Mountain Views">
@@ -1194,24 +1195,24 @@
         let currentLightboxIndex = 0;
 
         const galleryData = [{
-                src: 'image galary/sigiriya.jpg',
-                title: 'Ancient Sigiriya Rock Fortress',
-                description: 'Experience the magnificent ancient rock fortress and palace ruins of Sigiriya, a UNESCO World Heritage Site.'
+                src: 'image galary/sigiriya1.jpg',
+                title: 'Historic Sigiriya Palace and Gardens',
+                description: 'Visit Sigiriya, the ancient rock fortress of Sri Lanka, famous for its frescoes, water gardens, and Mirror Wall. A UNESCO World Heritage Site showcasing the brilliance of ancient civilisation.'
             },
             {
-                src: 'image galary/kandyy.jpg',
-                title: 'Sacred Temple of Tooth Relic',
-                description: 'Visit the most sacred Buddhist temple in Kandy, home to the tooth relic of Lord Buddha.'
+                src: 'image galary/kandy4.jpg',
+                title: 'Buddha’s Tooth Relic Shrine',
+                description: 'Visit the iconic temple in Kandy, a spiritual centre that preserves the sacred tooth relic and reflects Sri Lanka’s deep-rooted Buddhist heritage'
             },
             {
-                src: 'image galary/ella.jpg',
-                title: 'Scenic Ella Nine Arch Bridge',
-                description: 'Discover the iconic Nine Arch Bridge surrounded by lush tea plantations and misty mountains.'
+                src: 'image galary/ella2.jpg',
+                title: 'Lush Trails of Nine Arch Bridge',
+                description: 'Walk across the historic Nine Arch Bridge in Ella, a true symbol of Sri Lanka’s scenic beauty.'
             },
             {
-                src: 'image galary/neteapl.jpg',
-                title: 'Tea Plantation Paradise',
-                description: 'Explore the rolling hills of tea plantations in Nuwara Eliya, the heart of Sri Lankan tea country.'
+                src: 'image galary/tea2.jpeg',
+                title: 'Misty Tea Gardens',
+                description: 'Stroll through the lush green tea estates of Nuwara Eliya, where misty hills meet endless rows of tea bushes.'
             },
             {
                 src: 'image galary/yala-beach.jpg',
@@ -1219,9 +1220,9 @@
                 description: 'Relax on the golden beaches of Sri Lanka\'s southern coast with crystal clear waters.'
             },
             {
-                src: 'image galary/yalanat.jpg',
-                title: 'Yala National Park Safari',
-                description: 'Experience thrilling wildlife safari with leopards, elephants and diverse bird species.'
+                src: 'image galary/yaala1.jpg',
+                title: 'Wild Wonders of Yala',
+                description: 'Visit Yala National Park, where lush forests, shimmering lagoons, and golden grasslands host Sri Lanka’s incredible wildlife. A perfect destination for safaris and nature exploration.'
             },
             {
                 src: 'image galary/Breathtaking_Mountain_Views.jpg',
@@ -1229,9 +1230,9 @@
                 description: 'Marvel at the stunning mountain landscapes and breathtaking vistas of Sri Lanka\'s hill country.'
             },
             {
-                src: 'image galary/temp.jpg',
-                title: 'Buddhist Temples',
-                description: 'Explore the ancient Buddhist temples and experience the spiritual heritage of Sri Lanka.'
+                src: 'image galary/temple2.jpg',
+                title: 'Ancient Buddhist Temples',
+                description: 'Wander through historic Buddhist temples that reveal the island’s rich spiritual and cultural past.'
             }
         ];
 

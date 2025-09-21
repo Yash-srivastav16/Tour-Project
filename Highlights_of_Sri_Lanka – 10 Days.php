@@ -81,7 +81,7 @@
             <div class="package-header">
                 <div class="package-title-section">
                     <h1 class="package-title">Highlights of Sri Lanka – 10 Days</h1>
-                    <p class="package-subtitle">10 unforgettable days of temples, safaris, whale & beaches across Sri Lanka</p>
+                    <p class="package-subtitle">10 days of temples, safaris, whales, and beaches in Sri Lanka.</p>
                     <div class="package-rating">
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -158,7 +158,7 @@
                             <div class="more-overlay">
                                 <div class="more-content">
                                     <i class="fas fa-images"></i>
-                                    <span class="more-count">+6</span>
+                                    <span class="more-count">+4</span>
                                     <span class="more-text">Show all photos</span>
                                 </div>
                             </div>
@@ -231,16 +231,16 @@
                     <!-- Thumbnail Navigation -->
                     <div class="lightbox-thumbnails">
                         <div class="thumbnail-item active" onclick="selectLightboxImage(0)">
-                            <img src="image galary/sigiriya.jpg" alt="Sigiriya Rock Fortress">
+                            <img src="image galary/sigiriya3.jpg" alt="Sigiriya Rock Fortress">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(1)">
-                            <img src="image galary/kandyy.jpg" alt="Temple of Sacred Tooth Relic">
+                            <img src="image galary/kandy3.jpg" alt="Temple of Sacred Tooth Relic">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(2)">
-                            <img src="image galary/ella.jpg" alt="Ella Nine Arch Bridge">
+                            <img src="image galary/ella1.jpg" alt="Ella Nine Arch Bridge.">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(3)">
-                            <img src="image galary/neteapl.jpg" alt="Tea Plantations">
+                            <img src="image galary/tea1.jpg" alt="Tea Plantations">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(4)">
                             <img src="image galary/yala-beach.jpg" alt="Yala & Beach">
@@ -249,7 +249,7 @@
                             <img src="image galary/yalanat.jpg" alt="Yala National Park">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(6)">
-                            <img src="image galary/temp.jpg" alt="Buddhist Temples">
+                            <img src="image galary/temple1.jpg" alt="Buddhist Temples">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(7)">
                             <img src="image galary/Breathtaking_Mountain_Views.jpg" alt="Mountain Views">
@@ -569,508 +569,15 @@
         </div>
     </section>
 
-    <!-- Detailed Itinerary Section -->
-    <section class="itinerary-section">
-        <div class="container">
-            <h2 class="section-heading">Detailed 10-Day Itinerary</h2>
-            <div class="itinerary-timeline">
-                
-                <!-- Day 1 -->
-                <div class="itinerary-day">
-                    <div class="day-header">
-                        <span class="day-number">01</span>
-                        <h3>Arrival in Negombo "Little Rome"</h3>
-                        <span class="day-duration">Arrival Day</span>
-                    </div>
-                    <div class="day-content">
-                        <div class="day-schedule">
-                            <div class="schedule-item">
-                                <span class="time">Upon Arrival</span>
-                                <div class="activity">
-                                    <h4>Airport Pickup & Transfer</h4>
-                                    <p>Meet our representative at Bandaranaike International Airport and transfer to Negombo</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">Afternoon</span>
-                                <div class="activity">
-                                    <h4>Negombo City Tour</h4>
-                                    <p>Explore colonial architecture, visit fish market, and discover why it's called "Little Rome"</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">Evening</span>
-                                <div class="activity">
-                                    <h4>Negombo Lagoon</h4>
-                                    <p>Sunset boat ride in the lagoon, traditional fishing village experience</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p><strong>Overnight:</strong> Hotel in Negombo</p>
-                    </div>
-                </div>
-
-                <!-- Day 2 -->
-                <div class="itinerary-day">
-                    <div class="day-header">
-                        <span class="day-number">02</span>
-                        <h3>Negombo to Sigiriya via Dambulla</h3>
-                        <span class="day-duration">Travel & Exploration</span>
-                    </div>
-                    <div class="day-content">
-                        <div class="day-schedule">
-                            <div class="schedule-item">
-                                <span class="time">8:00 AM</span>
-                                <div class="activity">
-                                    <h4>Departure to Dambulla</h4>
-                                    <p>Journey to Cultural Triangle region (3-hour drive)</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">11:30 AM</span>
-                                <div class="activity">
-                                    <h4>Dambulla Cave Temple Complex</h4>
-                                    <p>Explore 80 documented caves with ancient Buddhist murals and statues dating back to 1st century BC</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">2:00 PM</span>
-                                <div class="activity">
-                                    <h4>Transfer to Sigiriya</h4>
-                                    <p>Check-in at hotel, leisure time to enjoy resort facilities</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p><strong>Overnight:</strong> Hotel in Sigiriya</p>
-                    </div>
-                </div>
-
-                <!-- Day 3 -->
-                <div class="itinerary-day">
-                    <div class="day-header">
-                        <span class="day-number">03</span>
-                        <h3>Sigiriya Rock Fortress & Minneriya Safari</h3>
-                        <span class="day-duration">Adventure Day</span>
-                    </div>
-                    <div class="day-content">
-                        <div class="day-schedule">
-                            <div class="schedule-item">
-                                <span class="time">6:00 AM</span>
-                                <div class="activity">
-                                    <h4>Sigiriya Rock Fortress Climb</h4>
-                                    <p>Early morning climb to avoid crowds, explore frescoes, mirror wall, and summit palace ruins</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">11:00 AM</span>
-                                <div class="activity">
-                                    <h4>Rest & Lunch</h4>
-                                    <p>Return to hotel for breakfast and relaxation</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">3:00 PM</span>
-                                <div class="activity">
-                                    <h4>Minneriya National Park Safari</h4>
-                                    <p>Witness the famous elephant gathering where hundreds of elephants converge around the tank</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p><strong>Overnight:</strong> Hotel in Sigiriya</p>
-                    </div>
-                </div>
-
-                <!-- Day 4 -->
-                <div class="itinerary-day">
-                    <div class="day-header">
-                        <span class="day-number">04</span>
-                        <h3>Sigiriya to Kandy via Spice Garden</h3>
-                        <span class="day-duration">Cultural Journey</span>
-                    </div>
-                    <div class="day-content">
-                        <div class="day-schedule">
-                            <div class="schedule-item">
-                                <span class="time">9:00 AM</span>
-                                <div class="activity">
-                                    <h4>Departure to Kandy</h4>
-                                    <p>Scenic drive through central hills</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">11:00 AM</span>
-                                <div class="activity">
-                                    <h4>Spice Garden Visit</h4>
-                                    <p>Learn about Ceylon spices, traditional Ayurvedic treatments and cooking ingredients</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">3:00 PM</span>
-                                <div class="activity">
-                                    <h4>Kandy City Tour</h4>
-                                    <p>Visit Temple of Sacred Tooth Relic, explore Kandy Lake, and local markets</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">6:00 PM</span>
-                                <div class="activity">
-                                    <h4>Cultural Dance Performance</h4>
-                                    <p>Traditional Kandyan dance show featuring fire dancing and folk traditions</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p><strong>Overnight:</strong> Hotel in Kandy</p>
-                    </div>
-                </div>
-
-                <!-- Day 5 -->
-                <div class="itinerary-day">
-                    <div class="day-header">
-                        <span class="day-number">05</span>
-                        <h3>Kandy to Nuwara Eliya - Tea Country</h3>
-                        <span class="day-duration">Hill Station Experience</span>
-                    </div>
-                    <div class="day-content">
-                        <div class="day-schedule">
-                            <div class="schedule-item">
-                                <span class="time">9:00 AM</span>
-                                <div class="activity">
-                                    <h4>Royal Botanical Gardens</h4>
-                                    <p>Visit Peradeniya Botanical Gardens with over 4,000 species of plants</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">11:30 AM</span>
-                                <div class="activity">
-                                    <h4>Journey to Nuwara Eliya</h4>
-                                    <p>Scenic drive through tea plantations and mountain landscapes</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">2:00 PM</span>
-                                <div class="activity">
-                                    <h4>Tea Plantation & Factory Tour</h4>
-                                    <p>Learn tea-making process, from plucking to packaging, and taste fresh Ceylon tea</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">4:00 PM</span>
-                                <div class="activity">
-                                    <h4>Nuwara Eliya City Tour</h4>
-                                    <p>Explore "Little England" with colonial architecture, Gregory Lake, and Victoria Park</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p><strong>Overnight:</strong> Hotel in Nuwara Eliya</p>
-                    </div>
-                </div>
-
-                <!-- Day 6 -->
-                <div class="itinerary-day">
-                    <div class="day-header">
-                        <span class="day-number">06</span>
-                        <h3>Nuwara Eliya to Yala via Ella</h3>
-                        <span class="day-duration">Scenic Journey</span>
-                    </div>
-                    <div class="day-content">
-                        <div class="day-schedule">
-                            <div class="schedule-item">
-                                <span class="time">8:00 AM</span>
-                                <div class="activity">
-                                    <h4>Journey to Ella</h4>
-                                    <p>Drive through tea estates and mountain scenery</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">10:00 AM</span>
-                                <div class="activity">
-                                    <h4>Nine Arch Bridge & Little Adam's Peak</h4>
-                                    <p>Visit iconic railway bridge and hike to viewpoint for panoramic mountain views</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">1:00 PM</span>
-                                <div class="activity">
-                                    <h4>Rawana Falls</h4>
-                                    <p>Stop at this beautiful waterfall cascade named after King Rawana from Ramayana</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">4:00 PM</span>
-                                <div class="activity">
-                                    <h4>Transfer to Yala</h4>
-                                    <p>Check-in at safari lodge near Yala National Park</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p><strong>Overnight:</strong> Safari Lodge near Yala</p>
-                    </div>
-                </div>
-
-                <!-- Day 7 -->
-                <div class="itinerary-day">
-                    <div class="day-header">
-                        <span class="day-number">07</span>
-                        <h3>Yala National Park Safari</h3>
-                        <span class="day-duration">Wildlife Adventure</span>
-                    </div>
-                    <div class="day-content">
-                        <div class="day-schedule">
-                            <div class="schedule-item">
-                                <span class="time">6:00 AM</span>
-                                <div class="activity">
-                                    <h4>Morning Safari</h4>
-                                    <p>Early morning game drive when animals are most active, highest chance to spot leopards</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">10:30 AM</span>
-                                <div class="activity">
-                                    <h4>Return & Breakfast</h4>
-                                    <p>Back to lodge for hearty breakfast and rest</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">3:00 PM</span>
-                                <div class="activity">
-                                    <h4>Afternoon Safari</h4>
-                                    <p>Second game drive to different zones, spot elephants, sloth bears, and 215+ bird species</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">6:30 PM</span>
-                                <div class="activity">
-                                    <h4>Sunset Views</h4>
-                                    <p>Enjoy sunset over the park with wildlife photography opportunities</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p><strong>Overnight:</strong> Safari Lodge near Yala</p>
-                    </div>
-                </div>
-
-                <!-- Day 8 -->
-                <div class="itinerary-day">
-                    <div class="day-header">
-                        <span class="day-number">08</span>
-                        <h3>Yala to Mirissa Beach</h3>
-                        <span class="day-duration">Coastal Paradise</span>
-                    </div>
-                    <div class="day-content">
-                        <div class="day-schedule">
-                            <div class="schedule-item">
-                                <span class="time">8:00 AM</span>
-                                <div class="activity">
-                                    <h4>Departure to Mirissa</h4>
-                                    <p>Journey to southern coast, one of Sri Lanka's most beautiful beaches</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">11:00 AM</span>
-                                <div class="activity">
-                                    <h4>Check-in & Beach Time</h4>
-                                    <p>Hotel check-in, relax on golden sandy beaches</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">3:00 PM</span>
-                                <div class="activity">
-                                    <h4>Beach Activities</h4>
-                                    <p>Swimming, sunbathing, beachside cafes, and water sports</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">6:00 PM</span>
-                                <div class="activity">
-                                    <h4>Sunset at Coconut Tree Hill</h4>
-                                    <p>Iconic sunset views from this Instagram-famous spot</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p><strong>Overnight:</strong> Beach Hotel in Mirissa</p>
-                    </div>
-                </div>
-
-                <!-- Day 9 -->
-                <div class="itinerary-day">
-                    <div class="day-header">
-                        <span class="day-number">09</span>
-                        <h3>Whale Watching & Galle Fort</h3>
-                        <span class="day-duration">Marine Life & Heritage</span>
-                    </div>
-                    <div class="day-content">
-                        <div class="day-schedule">
-                            <div class="schedule-item">
-                                <span class="time">6:30 AM</span>
-                                <div class="activity">
-                                    <h4>Whale Watching Cruise</h4>
-                                    <p>Early morning boat trip to spot blue whales, sperm whales, and dolphins</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">11:00 AM</span>
-                                <div class="activity">
-                                    <h4>Return & Breakfast</h4>
-                                    <p>Back to shore for breakfast and recovery from sea adventure</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">2:00 PM</span>
-                                <div class="activity">
-                                    <h4>Galle Dutch Fort</h4>
-                                    <p>Explore UNESCO World Heritage 17th-century fortification with lighthouse and ramparts</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">4:00 PM</span>
-                                <div class="activity">
-                                    <h4>Sea Turtle Hatchery</h4>
-                                    <p>Visit turtle conservation center and learn about marine protection efforts</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">6:00 PM</span>
-                                <div class="activity">
-                                    <h4>Return to Mirissa</h4>
-                                    <p>Final evening at beach, farewell dinner with local seafood</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p><strong>Overnight:</strong> Beach Hotel in Mirissa</p>
-                    </div>
-                </div>
-
-                <!-- Day 10 -->
-                <div class="itinerary-day">
-                    <div class="day-header">
-                        <span class="day-number">10</span>
-                        <h3>Departure via Colombo</h3>
-                        <span class="day-duration">Final Day</span>
-                    </div>
-                    <div class="day-content">
-                        <div class="day-schedule">
-                            <div class="schedule-item">
-                                <span class="time">9:00 AM</span>
-                                <div class="activity">
-                                    <h4>Departure to Colombo</h4>
-                                    <p>Final journey along coastal highway to capital city</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">11:30 AM</span>
-                                <div class="activity">
-                                    <h4>Colombo City Tour</h4>
-                                    <p>Visit Independence Square, Gangaramaya Temple, shopping at Pettah Market</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">2:00 PM</span>
-                                <div class="activity">
-                                    <h4>Last-minute Shopping</h4>
-                                    <p>Buy souvenirs, Ceylon tea, and spices at duty-free or local markets</p>
-                                </div>
-                            </div>
-                            <div class="schedule-item">
-                                <span class="time">4:00 PM</span>
-                                <div class="activity">
-                                    <h4>Airport Transfer</h4>
-                                    <p>Transfer to Bandaranaike International Airport for departure</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p><strong>End of Tour:</strong> Departure with unforgettable memories</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
     <!-- Customer Testimonials Section -->
-    <!--<section class="testimonials-section">
-        <div class="container ">
-            <h2>What Our Customers Say</h2>
-            <div class="testimonials-grid ">
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="customer-image">
-                            <img src="images/img-1.jpg" alt="Customer">
-                        </div>
-                        <div class="customer-info">
-                            <h4>Lisa K.</h4>
-                            <span class="customer-location">Switzerland</span>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="testimonial-text">
-                        "Lishan was a great help with every step of the booking, available at all times to reply to our questions. We had a wonderful driver and guide SAMAN during our 8 day tour. He knew the best restaurants and helped us with everything we needed. Lishan selected the hotels carefully and the pickup/drop off was excellent. Thanks to Lishan and Saman for everything!"
-                    </p>
-                    <div class="testimonial-date">December 2023</div>
-                </div>
 
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="customer-image">
-                            <img src="images/img-2.jpg" alt="Customer">
-                        </div>
-                        <div class="customer-info">
-                            <h4>Robert</h4>
-                            <span class="customer-location">Poland</span>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="testimonial-text">
-                        "As a family of four, we came to Sri Lanka for 7 days tour. We needed everything organized from arrival to departure at Colombo airport. Our Polish friend recommended Ceylon Classic Tours. We visited Sigiriya, Kandy, Nuwara Eliya, Yala, Mirissa, then Galle. We had the best driver and very nice hotels. Some hotels even exceeded our expectations. I can highly recommend their services!"
-                    </p>
-                    <div class="testimonial-date">December 2023</div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="customer-image">
-                            <img src="images/img-3.jpg" alt="Customer">
-                        </div>
-                        <div class="customer-info">
-                            <h4>Raj Patel</h4>
-                            <span class="customer-location">London, UK</span>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="testimonial-text">
-                        "Outstanding service and value for money! The itinerary was well-planned with perfect
-                        balance of culture and nature. Sigiriya Rock Fortress was breathtaking, and the wildlife
-                        safari was an incredible experience. Will definitely book again!"
-                    </p>
-                    <div class="testimonial-date">February 2024</div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
-    <!-- Customer Testimonials Section -->
-<section class="testimonials-section">
+    <section class="testimonials-section">
     <div class="container">
         <h2>What Our Customers Say</h2>
         <!-- Swiper Testimonials Container -->
         <div class="swiper testimonials-swiper">
             <div class="swiper-wrapper">
+
                 <!-- Testimonial 1 -->
                 <div class="swiper-slide">
                     <div class="testimonial-card">
@@ -1092,10 +599,11 @@
                         </div>
                         <p class="testimonial-text">
                             "Lishan was a great help with every step of the booking, available at all times to reply to our questions. We had a wonderful driver and guide SAMAN during our 8 day tour. He knew the best restaurants and helped us with everything we needed. Lishan selected the hotels carefully and the pickup/drop off was excellent. Thanks to Lishan and Saman for everything!"
-                        </p>
-                        <div class="testimonial-date">December 2023</div>
-                    </div>
-                </div>
+                       </p>
+                       <div class="testimonial-date">December 2023</div>
+                   </div>
+               </div>
+
 
                 <!-- Testimonial 2 -->
                 <div class="swiper-slide">
@@ -1122,6 +630,7 @@
                         <div class="testimonial-date">December 2023</div>
                     </div>
                 </div>
+
                 <!-- Testimonial 3 -->
                 <div class="swiper-slide">
                     <div class="testimonial-card">
@@ -1147,6 +656,7 @@
                         <div class="testimonial-date">March 2024</div>
                     </div>
                 </div>
+                
                 <!-- Testimonial 4 -->
                 <div class="swiper-slide">
                     <div class="testimonial-card">
@@ -1172,6 +682,7 @@
                         <div class="testimonial-date">February 2024</div>
                     </div>
                 </div>
+
                 <!-- Testimonial 5 -->
                 <div class="swiper-slide">
                     <div class="testimonial-card">
@@ -1192,12 +703,12 @@
                             </div>
                         </div>
                         <p class="testimonial-text">
-                            "As a solo traveler and photography enthusiast, this tour exceeded my expectations! The ancient ruins of Polonnaruwa and the train ride through the highlands provided incredible photo opportunities. My guide knew all the best spots for sunrise shots at Sigiriya Rock. Ceylon Classic Tours customized my itinerary perfectly to focus on photography while experiencing authentic Sri Lankan culture."
+                            "As a solo traveler and photography enthusiast, this tour exceeded my expectations! The ancient ruins of Polonnaruwa and the rain ride through the highlands provided incredible photo opportunities. My guide knew all the best spots for sunrise shots at Sigiriya Rock. Ceylon Classic Tours customized my itinerary perfectly to focus on photography while experiencing authentic Sri Lankan culture."
                         </p>
                         <div class="testimonial-date">April 2024</div>
                     </div>
                     </div>
-                
+
                 <!-- Testimonial 6 -->
                 <div class="swiper-slide">
                     <div class="testimonial-card">
@@ -1223,7 +734,7 @@
                         <div class="testimonial-date">January 2024</div>
                     </div>
                 </div>
-                
+  
                 <!-- Testimonial 7 -->
                 <div class="swiper-slide">
                     <div class="testimonial-card">
@@ -1249,45 +760,43 @@
                         <div class="testimonial-date">May 2024</div>
                     </div>
                 </div>
-                
-                <!-- Testimonial 8 -->
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <div class="customer-image">
-                                <img src="images/img-5.jpg" alt="Customer">
-                            </div>
-                            <div class="customer-info">
-                                <h4>Olivia Martinez</h4>
-                                <span class="customer-location">Spain</span>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
+
+            <!-- Testimonial 8 -->
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="customer-image">
+                            <img src="images/img-5.jpg" alt="Customer">
+                        </div>
+                        <div class="customer-info">
+                            <h4>Olivia Martinez</h4>
+                            <span class="customer-location">Spain</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
                             </div>
                         </div>
-                        <p class="testimonial-text">
-                            "When our flight was delayed by 6 hours, I was worried our entire trip would be affected. But Ceylon Classic Tours adjusted our itinerary seamlessly! They went above and beyond to ensure we didn't miss any highlights. The ancient city of Anuradhapura was fascinating, and the beach stay in Trincomalee was pure bliss. Their local connections meant we experienced authentic Sri Lankan hospitality everywhere we went."
-                        </p>
-                        <div class="testimonial-date">March 2024</div>
                     </div>
+                    <p class="testimonial-text">
+                        "When our flight was delayed by 6 hours, I was worried our entire trip would be affected. But Ceylon Classic Tours adjusted our itinerary seamlessly! They went above and beyond to ensure we didn't miss any highlights. The ancient city of Anuradhapura was fascinating, and the beach stay in Trincomalee was pure bliss. Their local connections meant we experienced authentic Sri Lankan hospitality everywhere we went."
+                    </p>
+                    <div class="testimonial-date">March 2024</div>
                 </div>
             </div>
-            
+        </div>
+
             <!-- Add pagination bullets -->
             <div class="swiper-pagination"></div>
-            
+
             <!-- Add navigation arrows -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-        </div>
+            </div>
     </div>
-</section>
-
-    
+                                                                          
 
     <!-- Why Choose Us Section -->
     <section class="why-choose-us-section">
@@ -1445,8 +954,8 @@
 
                     <div class="price-summary"
                         style="background:#f9fafc; border:2px solid #e0e6ed; border-radius:12px; 
-            padding:20px; margin:20px 0; text-align:center; 
-            box-shadow:0 4px 12px rgba(0,0,0,0.05); transition:all 0.3s ease-in-out;">
+                        padding:20px; margin:20px 0; text-align:center; 
+                        box-shadow:0 4px 12px rgba(0,0,0,0.05); transition:all 0.3s ease-in-out;">
 
                         <h3 style="font-size:1.6rem; font-weight:bold; color:#2c3e50; margin-bottom:10px;">
                             Total Price:
@@ -1624,22 +1133,22 @@
         let currentLightboxIndex = 0;
 
         const galleryData = [{
-                src: 'image galary/sigiriya.jpg',
-                title: 'Ancient Sigiriya Rock Fortress',
-                description: 'Experience the magnificent ancient rock fortress and palace ruins of Sigiriya, a UNESCO World Heritage Site.'
+                src: 'image galary/sigiriya3.jpg',
+                title: 'Majestic Lion Rock of Sri Lanka',
+                description: 'Discover Sigiriya, the iconic Lion Rock fortress in Sri Lanka, built by King Kashyapa. Explore its royal palace ruins, elaborate gardens, and historic frescoes. This UNESCO World Heritage Site reflects the creativity and engineering skills of ancient Sri Lankan civilisation.'
             },
             {
-                src: 'image galary/kandyy.jpg',
-                title: 'Sacred Temple of Tooth Relic',
-                description: 'Visit the most sacred Buddhist temple in Kandy, home to the tooth relic of Lord Buddha.'
+                src: 'image galary/kandy3.jpg',
+                title: 'Kandy’s Sacred Tooth Temple',
+                description: 'Discover Kandy’s historic temple, home to the sacred tooth relic and a symbol of Sri Lanka’s faith, devotion, and rich cultural heritage'
             },
             {
-                src: 'image galary/ella.jpg',
-                title: 'Scenic Ella Nine Arch Bridge',
-                description: 'Discover the iconic Nine Arch Bridge surrounded by lush tea plantations and misty mountains.'
+                src: 'image galary/ella1.jpg',
+                title: 'Ella’s Famous Nine Arch Bridge',
+                description: 'Walk across the historic Nine Arch Bridge in Ella, a true symbol of Sri Lanka’s scenic beauty.'
             },
             {
-                src: 'image galary/neteapl.jpg',
+                src: 'image galary/tea1.jpg',
                 title: 'Tea Plantation Paradise',
                 description: 'Explore the rolling hills of tea plantations in Nuwara Eliya, the heart of Sri Lankan tea country.'
             },
@@ -1649,9 +1158,9 @@
                 description: 'Relax on the golden beaches of Sri Lanka\'s southern coast with crystal clear waters.'
             },
             {
-                src: 'image galary/yalanat.jpg',
-                title: 'Yala National Park Safari',
-                description: 'Experience thrilling wildlife safari with leopards, elephants and diverse bird species.'
+                src: 'image galary/yaala2.jpg',
+                title: 'Yala: Nature’s Playground',
+                description: 'Venture into Yala’s forests and grasslands to witness breathtaking wildlife up close.'
             },
             {
                 src: 'image galary/Breathtaking_Mountain_Views.jpg',
@@ -1659,9 +1168,9 @@
                 description: 'Marvel at the stunning mountain landscapes and breathtaking vistas of Sri Lanka\'s hill country.'
             },
             {
-                src: 'image galary/temp.jpg',
-                title: 'Buddhist Temples',
-                description: 'Explore the ancient Buddhist temples and experience the spiritual heritage of Sri Lanka.'
+                src: 'image galary/temple1.jpg',
+                title: 'Ancient Buddhist Temples',
+                description: 'Discover ancient Buddhist temples that showcase Sri Lanka’s spiritual heritage and remarkable architecture.'
             }
         ];
 
