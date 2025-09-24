@@ -1,8 +1,8 @@
 <?php
 // Database setup script
 $servername = "localhost";
-$username = "tour_user";
-$password = "TourUser@#2025"; // Using your password from Process_Booking.php
+$username = "root";
+$password = ""; // Using your password from Process_Booking.php
 $dbname = "tour_user";
 
 
