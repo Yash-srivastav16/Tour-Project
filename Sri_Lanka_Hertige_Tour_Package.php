@@ -119,7 +119,7 @@
                 <div class="tour-gallery-grid">
                     <!-- Featured Main Image -->
                     <div class="gallery-main-image" onclick="openGalleryLightbox()">
-                        <img src="image galary/sigiriya.jpg" alt="Sri Lanka Adventure" id="mainGalleryImage">
+                        <img src="image galary/Galle Fort.jpg" alt="Sri Lanka Adventure" id="mainGalleryImage">
                         <div class="image-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">
@@ -133,14 +133,14 @@
                     <!-- Gallery Grid Sidebar -->
                     <div class="gallery-grid-sidebar">
                         <div class="grid-image" onclick="changeMainImage(this, 'image galary/Temple of the tooth.jpg')">
-                            <img src="image galary/Temple of the tooth.jpg" alt="Temple of Sacred Tooth Relic">
+                            <img src="image galary/Kandy2.jpg" alt="Temple of Sacred Tooth Relic">
                             <div class="grid-overlay">
                                 <i class="fas fa-dharmachakra"></i>
                             </div>
                         </div>
 
                         <div class="grid-image" onclick="changeMainImage(this, 'image galary/Tea plantation.jpg')">
-                            <img src="image galary/Tea plantation.jpg" alt="Nuwara Eliya Tea Plantations">
+                            <img src="image galary/trainRide.jpg" alt="Nuwara Eliya Tea Plantations">
                             <div class="grid-overlay">
                                 <i class="fas fa-leaf"></i>
                             </div>
@@ -158,7 +158,7 @@
                             <div class="more-overlay">
                                 <div class="more-content">
                                     <i class="fas fa-images"></i>
-                                    <span class="more-count">+6</span>
+                                    <span class="more-count">+4</span>
                                     <span class="more-text">Show all photos</span>
                                 </div>
                             </div>
@@ -207,7 +207,7 @@
                     <!-- Main Lightbox Image -->
                     <div class="lightbox-main">
                         <div class="main-image-wrapper">
-                            <img src="image galary/sigiriya.jpg" alt="Gallery Image" id="lightboxMainImage">
+                            <img src="image galary/Galle Fort.jpg" alt="Gallery Image" id="lightboxMainImage">
                             <button class="nav-arrow nav-prev" onclick="navigateLightbox(-1)">
                                 <i class="fas fa-chevron-left"></i>
                             </button>
@@ -219,40 +219,41 @@
                         <!-- Image Info -->
                         <div class="image-info">
                             <div class="image-title-row">
-                                <h4 id="lightboxImageTitle">Sigiriya Rock Fortress</h4>
+                                <h4 id="lightboxImageTitle">Historical Gall Fort</h4>
                                 <button class="fullscreen-toggle" id="fullscreenToggle" onclick="toggleFullscreenMode()">
                                     <i class="fas fa-expand"></i>
                                 </button>
                             </div>
-                            <p id="lightboxImageDesc">Experience the UNESCO World Heritage Site with ancient royal palace, stunning views, and unique mirror wall.</p>
+                            <p id="lightboxImageDesc">A UNESCO World Heritage Site showcasing 16th-century Portuguese and Dutch colonial architecture..</p>
                         </div>
                     </div>
 
                     <!-- Thumbnail Navigation -->
                     <div class="lightbox-thumbnails">
+                        <div class="thumbnail-item" onclick="selectLightboxImage(6)">
+                            <img src="image galary/Galle Fort.jpg" alt="Buddhist Temples">
+                        </div>
                         <div class="thumbnail-item active" onclick="selectLightboxImage(0)">
-                            <img src="image galary/sigiriya.jpg" alt="Sigiriya Rock Fortress">
+                            <img src="image galary/sigiriya1.jpg" alt="Sigiriya Rock Fortress">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(1)">
-                            <img src="image galary/kandyy.jpg" alt="Temple of Sacred Tooth Relic">
-                        </div>
-                        <div class="thumbnail-item" onclick="selectLightboxImage(2)">
-                            <img src="image galary/ella.jpg" alt="Ella Nine Arch Bridge">
+                            <img src="image galary/kandy2.jpg" alt="Temple of Sacred Tooth Relic">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(3)">
-                            <img src="image galary/neteapl.jpg" alt="Tea Plantations">
+                            <img src="image galary/trainRide.jpg" alt="Scenic Train Journey & Tea Plantations">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(4)">
-                            <img src="image galary/yala-beach.jpg" alt="Yala & Beach">
+                            <img src="image galary/NuwaraEliyaa.jpg" alt="Nuwara Eliya - Little England">
+                        </div>
+                        <div class="thumbnail-item" onclick="selectLightboxImage(4)">
+                            <img src="image galary/unawatuna.jpg" alt="Yala & Beach">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(5)">
-                            <img src="image galary/yalanat.jpg" alt="Yala National Park">
+                            <img src="image galary/yala1.jpg" alt="Yala National Park">
                         </div>
-                        <div class="thumbnail-item" onclick="selectLightboxImage(6)">
-                            <img src="image galary/temp.jpg" alt="Buddhist Temples">
-                        </div>
+                        
                         <div class="thumbnail-item" onclick="selectLightboxImage(7)">
-                            <img src="image galary/Breathtaking_Mountain_Views.jpg" alt="Mountain Views">
+                            <img src="image galary/Colombo.jpg" alt="Mountain Views">
                         </div>
                     </div>
                 </div>
@@ -329,7 +330,7 @@
                         <div class="swiper-slide">
                             <div class="feature-showcase-item">
                                 <div class="feature-image">
-                                    <img src="image galary/sigiriya.jpg" alt="Sigiriya Rock Fortress">
+                                    <img src="image galary/sigiriya1.jpg" alt="Sigiriya Rock Fortress">
                                     <div class="feature-badge">UNESCO Site</div>
                                 </div>
                                 <div class="feature-content">
@@ -371,7 +372,7 @@
                         <div class="swiper-slide">
                             <div class="feature-showcase-item">
                                 <div class="feature-image">
-                                    <img src="image galary/Tea plantation.jpg" alt="Scenic Train Journey">
+                                    <img src="image galary/trainRide.jpg" alt="Scenic Train Journey">
                                     <div class="feature-badge">Scenic</div>
                                 </div>
                                 <div class="feature-content">
@@ -413,7 +414,7 @@
                         <div class="swiper-slide">
                             <div class="feature-showcase-item">
                                 <div class="feature-image">
-                                    <img src="image galary/yalanat.jpg" alt="Yala National Park">
+                                    <img src="image galary/yala2.jpg" alt="Yala National Park">
                                     <div class="feature-badge">Wildlife</div>
                                 </div>
                                 <div class="feature-content">
@@ -446,6 +447,26 @@
                                     <div class="feature-stats">
                                         <span><i class="fas fa-landmark"></i> Colonial Heritage</span>
                                         <span><i class="fas fa-star"></i> UNESCO Site</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Feature 7 -->
+                        <div class="swiper-slide">
+                            <div class="feature-showcase-item">
+                                <div class="feature-image">
+                                    <img src="image galary/Colombo.jpg" alt="Colombo City Tour">
+                                    <div class="feature-badge">City Tour</div>
+                                </div>
+                                <div class="feature-content">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-fort-awesome"></i>
+                                    </div>
+                                    <h3>Colombo City Tour</h3>
+                                    <p>Explore Sri Lanka’s bustling capital, visiting Gangaramaya Temple, the National Museum, Pettah Bazaar, and colonial landmarks. Enjoy lively markets, local street food, and the city’s vibrant atmosphere.</p>
+                                    <div class="feature-stats">
+                                        <span><i class="fas fa-landmark"></i>Historic & Modern Landmarks</span>
+                                        <span><i class="fas fa-star"></i> Street Food & Markets</span>
                                     </div>
                                 </div>
                             </div>
@@ -1111,58 +1132,44 @@
     </section>
 
     <!-- Simple Location Section -->
+  
     <section class="location-section">
         <div class="container">
             <div class="location-header">
                 <h2>Where you'll be</h2>
-                <p class="location-name">Sri Lanka, Pearl of the Indian Ocean</p>
+                <p class="location-name">Galle Fort, Sri Lanka</p>
             </div>
 
             <div class="map-container">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.636429084537!2d81.04621631478391!3d6.863074494988844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4618a1a9b7ad7%3A0x5a3b9a1b0c2d3e4f!2sElla%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1634567890123!5m2!1sen!2slk"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.309182085121!2d80.03486951528813!3d6.031933694676817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae17f6190d4a1fb%3A0x8c3d4d7d2c33e98e!2sGalle%20Fort!5e0!3m2!1sen!2slk!4v1695623201234!5m2!1sen!2slk"
                     width="100%"
-                    height="100%"
+                    height="450"
                     style="border:0;"
                     allowfullscreen=""
-                    loading="lazy">
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
 
                 <div class="map-controls">
-                    <button class="map-control-btn" onclick="openInMaps()" title="Open in Google Maps">
-                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false">
-                            <path d="m20.666 20.666 10 10"></path>
-                            <path d="m24.0002 12.6668c0 6.2593-5.0741 11.3334-11.3334 11.3334-6.2592 0-11.3333-5.0741-11.3333-11.3334 0-6.2592 5.0741-11.3333 11.3333-11.3333 6.2593 0 11.3334 5.0741 11.3334 11.3333z" fill="none"></path>
-                        </svg>
-                    </button>
-                    <button class="map-control-btn" onclick="toggleFullscreen()" title="Fullscreen">
-                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false">
-                            <g fill="none">
-                                <path d="m14 29h-10.2c-.4418278 0-.8-.3581722-.8-.8v-10.2"></path>
-                                <path d="m4 28 10-10"></path>
-                                <g stroke-linejoin="round">
-                                    <path d="m18 3h10c.5522847 0 1 .44771525 1 1v10"></path>
-                                    <path d="m18 14 11-11"></path>
-                                </g>
-                            </g>
-                        </svg>
+                    <button class="map-control-btn" onclick="openInMapsGalle()" title="Open in Google Maps">
+                        Open in Maps
                     </button>
                 </div>
             </div>
 
             <div class="location-description">
                 <h3>About the area</h3>
-                <p>Experience the breathtaking beauty of Sri Lanka, the Pearl of the Indian Ocean. This tropical paradise offers stunning beaches, ancient temples, lush tea plantations, and incredible wildlife. From the cultural triangle of Sigiriya to the pristine beaches of Mirissa, Sri Lanka is the perfect destination for culture enthusiasts and nature lovers alike.</p>
+                <p>Galle Fort is a historic fortress and UNESCO World Heritage Site located on the southwest coast of Sri Lanka. Built by the Portuguese and later expanded by the Dutch, it features well-preserved colonial architecture, museums, boutique shops, cafes, and stunning ocean views. Walking through the cobblestone streets feels like stepping back in time.</p>
 
-                <a href="https://en.wikipedia.org/wiki/Ella,_Sri_Lanka" target="_blank" class="show-more-btn">
+                <a href="https://en.wikipedia.org/wiki/Galle_Fort" target="_blank" class="show-more-btn">
                     <span>Show more</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
-                        <path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path>
-                    </svg>
                 </a>
             </div>
         </div>
     </section>
+
+
 
     <!-- Footer -->
     <section class="footer">
@@ -1228,18 +1235,24 @@
         // Modern Tour Gallery Functions
         let currentLightboxIndex = 0;
 
-        const galleryData = [{
-                src: 'image galary/sigiriya.jpg',
+        const galleryData = [
+            {
+                src: 'image galary/Galle Fort.jpg',
+                title: 'Historic Galle Fort',
+                description: 'A UNESCO World Heritage Site showcasing 16th-century Portuguese and Dutch colonial architecture.'
+            },
+            {
+                src: 'image galary/sigiriya1.jpg',
                 title: 'Sigiriya Rock Fortress',
                 description: 'A UNESCO World Heritage Site - the ancient royal palace perched atop a towering rock, known as the "Lion Rock".'
             },
             {
-                src: 'image galary/Temple of the tooth.jpg',
+                src: 'image galary/Kandy2.jpg',
                 title: 'Temple of Sacred Tooth Relic',
                 description: 'One of Buddhism\'s most sacred sites in Kandy, housing the tooth relic of Lord Buddha.'
             },
             {
-                src: 'image galary/Tea plantation.jpg',
+                src: 'image galary/trainRide.jpg',
                 title: 'Scenic Train Journey & Tea Plantations',
                 description: 'Experience one of the world\'s most scenic train rides through misty mountains and tea plantations.'
             },
@@ -1249,19 +1262,14 @@
                 description: 'Known for its cool climate and colonial-era buildings in the heart of Sri Lanka\'s tea country.'
             },
             {
-                src: 'image galary/yala1.jpg',
-                title: 'Yala National Park Safari',
-                description: 'The second largest park in Sri Lanka with the highest concentration of leopards in the world.'
-            },
-            {
                 src: 'image galary/unawatuna.jpg',
                 title: 'Unawatuna Beach Paradise',
                 description: 'One of the most beautiful beaches in Sri Lanka with golden sands and crystal-clear waters.'
             },
             {
-                src: 'image galary/Galle Fort.jpg',
-                title: 'Historic Galle Fort',
-                description: 'A UNESCO World Heritage Site showcasing 16th-century Portuguese and Dutch colonial architecture.'
+                src: 'image galary/yala1.jpg',
+                title: 'Yala National Park Safari',
+                description: 'The second largest park in Sri Lanka with the highest concentration of leopards in the world.'
             },
             {
                 src: 'image galary/Colombo.jpg',
@@ -1610,10 +1618,10 @@
             }, 600);
         }
 
-        // Open Ella, Sri Lanka location in Google Maps
-        function openInMaps() {
-            const ellaLocation = "https://www.google.com/maps/search/?api=1&query=Ella,+Sri+Lanka";
-            window.open(ellaLocation, '_blank');
+        // Open Galle Fort in Google Maps
+        function openInMapsGalle() {
+            const galleLocation = "https://www.google.com/maps/search/?api=1&query=Galle+Fort,+Sri+Lanka";
+            window.open(galleLocation, '_blank');
         }
 
         // Toggle fullscreen for map

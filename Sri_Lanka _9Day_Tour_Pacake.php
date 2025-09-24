@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -119,7 +120,7 @@
                 <div class="tour-gallery-grid">
                     <!-- Featured Main Image -->
                     <div class="gallery-main-image" onclick="openGalleryLightbox()">
-                        <img src="image galary/sigiriya.jpg" alt="Sigiriya Rock Fortress" id="mainGalleryImage">
+                        <img src="image galary/Alla1.jpg" alt="Ella Nine Arch Bridge" id="mainGalleryImage">
                         <div class="image-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">
@@ -133,14 +134,14 @@
                     <!-- Gallery Grid Sidebar -->
                     <div class="gallery-grid-sidebar">
                         <div class="grid-image" onclick="changeMainImage(this, 'image galary/kandy1.jpg')">
-                            <img src="image galary/kandy1.jpg" alt="Temple of Sacred Tooth Relic - Kandy">
+                            <img src="image galary/kandy2.jpg" alt="Temple of Sacred Tooth Relic - Kandy">
                             <div class="grid-overlay">
                                 <i class="fas fa-dharmachakra"></i>
                             </div>
                         </div>
 
                         <div class="grid-image" onclick="changeMainImage(this, 'image galary/ella.jpg')">
-                            <img src="image galary/ella.jpg" alt="Ella Nine Arch Bridge">
+                            <img src="image galary/yala3.jpg" alt="Yala National Park Safari">
                             <div class="grid-overlay">
                                 <i class="fas fa-mountain"></i>
                             </div>
@@ -207,7 +208,7 @@
                     <!-- Main Lightbox Image -->
                     <div class="lightbox-main">
                         <div class="main-image-wrapper">
-                            <img src="image galary/sigiriya.jpg" alt="Sigiriya Rock Fortress" id="lightboxMainImage">
+                            <img src="image galary/Alla1.jpg" alt="Ella Nine Arch Bridge" id="lightboxMainImage">
                             <button class="nav-arrow nav-prev" onclick="navigateLightbox(-1)">
                                 <i class="fas fa-chevron-left"></i>
                             </button>
@@ -219,26 +220,27 @@
                         <!-- Image Info -->
                         <div class="image-info">
                             <div class="image-title-row">
-                                <h4 id="lightboxImageTitle">Sigiriya Rock Fortress</h4>
+                                <h4 id="lightboxImageTitle">Ella Nine Arch Bridge</h4>
                                 <button class="fullscreen-toggle" id="fullscreenToggle" onclick="toggleFullscreenMode()">
                                     <i class="fas fa-expand"></i>
                                 </button>
                             </div>
-                            <p id="lightboxImageDesc">Climb the ancient rock fortress, renowned for its stunning frescoes and archaeological significance.</p>
+                            <p id="lightboxImageDesc">The scenic train ride to Ella passes through lush tea plantations and offers views of the iconic Nine Arch Bridge surrounded by misty mountains.</p>
                         </div>
                     </div>
 
                     <!-- Thumbnail Navigation -->
                     <div class="lightbox-thumbnails">
+                        <div class="thumbnail-item" onclick="selectLightboxImage(2)">
+                            <img src="image galary/Alla1.jpg" alt="Ella Nine Arch Bridge">
+                        </div>
                         <div class="thumbnail-item active" onclick="selectLightboxImage(0)">
-                            <img src="image galary/sigiriya.jpg" alt="Sigiriya Rock Fortress">
+                            <img src="image galary/sigiriya2.jpeg" alt="Sigiriya Rock Fortress">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(1)">
-                            <img src="image galary/kandy1.jpg" alt="Kandy - Sacred Temple of the Tooth">
+                            <img src="image galary/kandy2.jpg" alt="Kandy - Sacred Temple of the Tooth">
                         </div>
-                        <div class="thumbnail-item" onclick="selectLightboxImage(2)">
-                            <img src="image galary/ella.jpg" alt="Ella Nine Arch Bridge">
-                        </div>
+
                         <div class="thumbnail-item" onclick="selectLightboxImage(3)">
                             <img src="image galary/ancientcity.jpg" alt="Ancient City of Polonnaruwa">
                         </div>
@@ -246,10 +248,10 @@
                             <img src="image galary/mirissaBeach.jpg" alt="Mirissa Beach">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(5)">
-                            <img src="image galary/yala1.jpg" alt="Yala National Park Safari">
+                            <img src="image galary/yala3.jpg" alt="Yala National Park Safari">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(6)">
-                            <img src="image galary/NuwaraaEliya.jpg" alt="Nuwara Eliya - Little England">
+                            <img src="image galary/nuwaraeliya1.jpg" alt="Nuwara Eliya - Little England">
                         </div>
                     </div>
                 </div>
@@ -312,7 +314,7 @@
                         <div class="swiper-slide">
                             <div class="feature-showcase-item">
                                 <div class="feature-image">
-                                    <img src="image galary/sigiriya.jpg" alt="Sigiriya Rock Fortress">
+                                    <img src="image galary/sigiriya2.jpeg" alt="Sigiriya Rock Fortress">
                                     <div class="feature-badge">UNESCO Site</div>
                                 </div>
                                 <div class="feature-content">
@@ -333,7 +335,7 @@
                         <div class="swiper-slide">
                             <div class="feature-showcase-item">
                                 <div class="feature-image">
-                                    <img src="image galary/kandy1.jpg" alt="Kandy City Tour">
+                                    <img src="image galary/kandy2.jpg" alt="Kandy City Tour">
                                     <div class="feature-badge">Cultural</div>
                                 </div>
                                 <div class="feature-content">
@@ -354,7 +356,7 @@
                         <div class="swiper-slide">
                             <div class="feature-showcase-item">
                                 <div class="feature-image">
-                                    <img src="image galary/ella.jpg" alt="Scenic Train Journey">
+                                    <img src="image galary/Alla1.jpg" alt="Scenic Train Journey">
                                     <div class="feature-badge">Scenic</div>
                                 </div>
                                 <div class="feature-content">
@@ -1060,58 +1062,41 @@
     </section>
 
     <!-- Simple Location Section -->
-    <section class="location-section">
-        <div class="container">
-            <div class="location-header">
-                <h2>Where you'll be</h2>
-                <p class="location-name">Sri Lanka, Pearl of the Indian Ocean</p>
-            </div>
-
-            <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.636429084537!2d81.04621631478391!3d6.863074494988844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4618a1a9b7ad7%3A0x5a3b9a1b0c2d3e4f!2sElla%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1634567890123!5m2!1sen!2slk"
-                    width="100%"
-                    height="100%"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy">
-                </iframe>
-
-                <div class="map-controls">
-                    <button class="map-control-btn" onclick="openInMaps()" title="Open in Google Maps">
-                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false">
-                            <path d="m20.666 20.666 10 10"></path>
-                            <path d="m24.0002 12.6668c0 6.2593-5.0741 11.3334-11.3334 11.3334-6.2592 0-11.3333-5.0741-11.3333-11.3334 0-6.2592 5.0741-11.3333 11.3333-11.3333 6.2593 0 11.3334 5.0741 11.3334 11.3333z" fill="none"></path>
-                        </svg>
-                    </button>
-                    <button class="map-control-btn" onclick="toggleFullscreen()" title="Fullscreen">
-                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false">
-                            <g fill="none">
-                                <path d="m14 29h-10.2c-.4418278 0-.8-.3581722-.8-.8v-10.2"></path>
-                                <path d="m4 28 10-10"></path>
-                                <g stroke-linejoin="round">
-                                    <path d="m18 3h10c.5522847 0 1 .44771525 1 1v10"></path>
-                                    <path d="m18 14 11-11"></path>
-                                </g>
-                            </g>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <div class="location-description">
-                <h3>About the area</h3>
-                <p>Experience the breathtaking beauty of Sri Lanka, the Pearl of the Indian Ocean. This tropical paradise offers stunning beaches, ancient temples, lush tea plantations, and incredible wildlife. From the cultural triangle of Sigiriya to the pristine beaches of Mirissa, Sri Lanka is the perfect destination for culture enthusiasts and nature lovers alike.</p>
-
-                <a href="https://en.wikipedia.org/wiki/Ella,_Sri_Lanka" target="_blank" class="show-more-btn">
-                    <span>Show more</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
-                        <path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path>
-                    </svg>
-                </a>
-            </div>
+<!-- Sigiriya Location Section with Marker -->
+<section class="location-section">
+    <div class="container">
+        <div class="location-header">
+            <h2>Where you'll be</h2>
+            <p class="location-name">Sigiriya, Lion Rock Fortress</p>
         </div>
-    </section>
+
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.4502833860297!2d80.74823291528821!3d7.95710959430662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afca0d64f67b5a7%3A0x7f4b5d5270f40e1a!2sSigiriya%20Rock%20Fortress!5e0!3m2!1sen!2slk!4v1695618901234!5m2!1sen!2slk"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="location-description">
+            <h3>About the area</h3>
+            <p>Sigiriya, also known as Lion Rock, is one of Sri Lanka’s most iconic landmarks. This UNESCO World Heritage Site features a massive rock fortress built in the 5th century, surrounded by ancient frescoes, landscaped gardens, and breathtaking views. Visitors can climb to the summit for panoramic views and explore the history and legends that make Sigiriya a cultural treasure.</p>
+
+            <a href="https://en.wikipedia.org/wiki/Sigiriya" target="_blank" class="show-more-btn">
+                <span>Show more</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
 
     <!-- Footer -->
     <section class="footer">
@@ -1177,21 +1162,23 @@
         // Modern Tour Gallery Functions
         let currentLightboxIndex = 0;
 
-        const galleryData = [{
-                src: 'image galary/sigiriya.jpg',
+        const galleryData = [
+            {
+                src: 'image galary/Alla1.jpg',
+                title: 'Nine Arch Bridge, Ella',
+                description: 'The scenic train ride to Ella passes through lush tea plantations and offers views of the iconic Nine Arch Bridge surrounded by misty mountains.'
+            },
+            {
+                src: 'image galary/sigiriya2.jpeg',
                 title: 'Ancient Sigiriya Rock Fortress',
                 description: 'Climb the ancient rock fortress, renowned for its stunning frescoes and archaeological significance. Enjoy breathtaking views from the summit.'
             },
             {
-                src: 'image galary/kandy1.jpg',
+                src: 'image galary/kandy2.jpg',
                 title: 'Kandy City - Sacred Temple of the Tooth',
                 description: 'Explore Kandy, the last royal capital of Sri Lanka. Visit the sacred Temple of the Tooth, home to the relic of the Buddha.'
             },
-            {
-                src: 'image galary/ella.jpg',
-                title: 'Nine Arch Bridge, Ella',
-                description: 'The scenic train ride to Ella passes through lush tea plantations and offers views of the iconic Nine Arch Bridge surrounded by misty mountains.'
-            },
+            
             {
                 src: 'image galary/ancientcity.jpg',
                 title: 'Ancient City of Polonnaruwa',
@@ -1203,12 +1190,12 @@
                 description: 'Spend time on the beautiful, golden sands of Mirissa Beach. Enjoy activities such as swimming, sunbathing, and whale-watching tours.'
             },
             {
-                src: 'image galary/yala1.jpg',
+                src: 'image galary/yala3.jpg',
                 title: 'Yala National Park Safari',
                 description: 'Embark on an exciting Jeep safari in Yala National Park, where you can witness diverse wildlife in their natural habitat.'
             },
             {
-                src: 'image galary/NuwaraaEliya.jpg',
+                src: 'image galary/nuwaraeliya1.jpg',
                 title: 'Nuwara Eliya - Little England',
                 description: 'Experience the cool climate and colonial charm of Nuwara Eliya, surrounded by tea plantations and beautiful landscapes.'
             }
@@ -1554,10 +1541,10 @@
             }, 600);
         }
 
-        // Open Ella, Sri Lanka location in Google Maps
-        function openInMaps() {
-            const ellaLocation = "https://www.google.com/maps/search/?api=1&query=Ella,+Sri+Lanka";
-            window.open(ellaLocation, '_blank');
+        // Open Sigiriya in Google Maps
+        function openInMapsSigiriya() {
+            const sigiriyaLocation = "https://www.google.com/maps/search/?api=1&query=Sigiriya,+Sri+Lanka";
+            window.open(sigiriyaLocation, '_blank');
         }
 
         // Toggle fullscreen for map
