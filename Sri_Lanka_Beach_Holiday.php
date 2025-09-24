@@ -117,7 +117,7 @@
                 <div class="tour-gallery-grid">
                     <!-- Featured Main Image -->
                     <div class="gallery-main-image" onclick="openGalleryLightbox()">
-                        <img src="image galary/sigiriya.jpg" alt="Sri Lanka Adventure" id="mainGalleryImage">
+                        <img src="image galary/beach_images/mirissa.jpg" alt="Mirissa Beach" id="mainGalleryImage">
                         <div class="image-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">
@@ -130,29 +130,29 @@
 
                     <!-- Gallery Grid Sidebar -->
                     <div class="gallery-grid-sidebar">
-                        <div class="grid-image" onclick="changeMainImage(this, 'image galary/kandyy.jpg')">
-                            <img src="image galary/kandyy.jpg" alt="Temple of Sacred Tooth Relic">
+                        <div class="grid-image" onclick="changeMainImage(this, 'image galary/beach_images/galle-fort-1050x700-1.jpg')">
+                            <img src="image galary/beach_images/galle-fort-1050x700-1.jpg" alt="Galle Fort & Coast">
                             <div class="grid-overlay">
                                 <i class="fas fa-dharmachakra"></i>
                             </div>
                         </div>
 
-                        <div class="grid-image" onclick="changeMainImage(this, 'image galary/ella.jpg')">
-                            <img src="image galary/ella.jpg" alt="Ella Nine Arch Bridge">
+                        <div class="grid-image" onclick="changeMainImage(this, 'image galary/beach_images/lotus-tower-tour1.jpg')">
+                            <img src="image galary/beach_images/lotus-tower-tour1.jpg" alt="Landmark View">
                             <div class="grid-overlay">
                                 <i class="fas fa-mountain"></i>
                             </div>
                         </div>
 
-                        <div class="grid-image" onclick="changeMainImage(this, 'image galary/neteapl.jpg')">
-                            <img src="image galary/neteapl.jpg" alt="Tea Plantations">
+                        <div class="grid-image" onclick="changeMainImage(this, 'image galary/beach_images/tea-aromatic-plantation-1.webp')">
+                            <img src="image galary/beach_images/tea-aromatic-plantation-1.webp" alt="Tea Plantations">
                             <div class="grid-overlay">
                                 <i class="fas fa-leaf"></i>
                             </div>
                         </div>
 
                         <div class="grid-image more-photos" onclick="openGalleryLightbox()">
-                            <img src="image galary/yala-beach.jpg" alt="View More">
+                            <img src="image galary/beach_images/pinnawala.jpg" alt="Pinnawala Elephant Orphanage">
                             <div class="more-overlay">
                                 <div class="more-content">
                                     <i class="fas fa-images"></i>
@@ -169,7 +169,7 @@
                     <div class="feature-left">
                         <div class="photo-count">
                             <i class="fas fa-camera"></i>
-                            <span>8 professional photos</span>
+                            <span>6 professional photos</span>
                         </div>
                         <div class="quality-badge">
                             <i class="fas fa-award"></i>
@@ -205,7 +205,7 @@
                     <!-- Main Lightbox Image -->
                     <div class="lightbox-main">
                         <div class="main-image-wrapper">
-                            <img src="image galary/sigiriya.jpg" alt="Gallery Image" id="lightboxMainImage">
+                            <img src="image galary/beach_images/mirissa.jpg" alt="Gallery Image" id="lightboxMainImage">
                             <button class="nav-arrow nav-prev" onclick="navigateLightbox(-1)">
                                 <i class="fas fa-chevron-left"></i>
                             </button>
@@ -229,29 +229,24 @@
                     <!-- Thumbnail Navigation -->
                     <div class="lightbox-thumbnails">
                         <div class="thumbnail-item active" onclick="selectLightboxImage(0)">
-                            <img src="image galary/sigiriya.jpg" alt="Sigiriya Rock Fortress">
+                            <img src="image galary/beach_images/mirissa.jpg" alt="Mirissa Beach">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(1)">
-                            <img src="image galary/kandyy.jpg" alt="Temple of Sacred Tooth Relic">
+                            <img src="image galary/beach_images/galle-fort-1050x700-1.jpg" alt="Galle Fort & Coast">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(2)">
-                            <img src="image galary/ella.jpg" alt="Ella Nine Arch Bridge">
+                            <img src="image galary/beach_images/lotus-tower-tour1.jpg" alt="Landmark View">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(3)">
-                            <img src="image galary/neteapl.jpg" alt="Tea Plantations">
+                            <img src="image galary/beach_images/tea-aromatic-plantation-1.webp" alt="Tea Plantations">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(4)">
-                            <img src="image galary/yala-beach.jpg" alt="Yala & Beach">
+                            <img src="image galary/beach_images/pinnawala.jpg" alt="Pinnawala Elephant Orphanage">
                         </div>
                         <div class="thumbnail-item" onclick="selectLightboxImage(5)">
-                            <img src="image galary/yalanat.jpg" alt="Yala National Park">
+                            <img src="image galary/beach_images/Temple of the tooth.jpg" alt="Temple of the Tooth">
                         </div>
-                        <div class="thumbnail-item" onclick="selectLightboxImage(6)">
-                            <img src="image galary/temp.jpg" alt="Buddhist Temples">
-                        </div>
-                        <div class="thumbnail-item" onclick="selectLightboxImage(7)">
-                            <img src="image galary/Breathtaking_Mountain_Views.jpg" alt="Mountain Views">
-                        </div>
+                        <!-- Seaside Sunset removed as requested -->
                     </div>
                 </div>
             </div>
@@ -1087,12 +1082,12 @@
         <div class="container">
             <div class="location-header">
                 <h2>Where you'll be</h2>
-                <p class="location-name">Sri Lanka, Pearl of the Indian Ocean</p>
+                <p class="location-name">Mirissa, Sri Lanka</p>
             </div>
 
             <div class="map-container">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.636429084537!2d81.04621631478391!3d6.863074494988844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4618a1a9b7ad7%3A0x5a3b9a1b0c2d3e4f!2sElla%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1634567890123!5m2!1sen!2slk"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.123456789012!2d80.4623456!3d5.9487654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae676a1b2c3d4e5%3A0xabcdef1234567890!2sMirissa%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk"
                     width="100%"
                     height="100%"
                     style="border:0;"
@@ -1122,11 +1117,15 @@
                 </div>
             </div>
 
-            <div class="location-description">
+                <div class="location-description">
                 <h3>About the area</h3>
-                <p>Experience the breathtaking beauty of Sri Lanka, the Pearl of the Indian Ocean. This tropical paradise offers stunning beaches, ancient temples, lush tea plantations, and incredible wildlife. From the cultural triangle of Sigiriya to the pristine beaches of Mirissa, Sri Lanka is the perfect destination for culture enthusiasts and nature lovers alike.</p>
+                <p>Mirissa is a small seaside town on the south coast of Sri Lanka known for its golden sand beaches, clear blue waters, and excellent whale-watching opportunities. It offers relaxed beachside cafes, fresh seafood, and easy access to nearby surf spots and coastal attractions.</p>
 
-                <a href="https://en.wikipedia.org/wiki/Ella,_Sri_Lanka" target="_blank" class="show-more-btn">
+                <div id="mirissaMore" class="expanded-blurb" style="display:none; margin-top:0.75rem;">
+                    <!-- Expanded details removed as requested -->
+                </div>
+
+                <a href="https://en.wikipedia.org/wiki/Mirissa" target="_blank" class="show-more-btn" rel="noopener noreferrer">
                     <span>Show more</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
                         <path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path>
@@ -1184,61 +1183,64 @@
             event.preventDefault();
             const bookingSection = document.getElementById('booking');
             if (bookingSection) {
-                bookingSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+                const headerOffset = document.querySelector('.header') ? document.querySelector('.header').offsetHeight + 16 : 0;
+                const elementPosition = bookingSection.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - headerOffset;
+                window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
 
                 // Add a visual highlight effect
                 bookingSection.style.animation = 'highlightSection 2s ease-in-out';
                 setTimeout(() => {
                     bookingSection.style.animation = '';
                 }, 2000);
+                // After scrolling, focus the first input in the booking form
+                setTimeout(() => {
+                    // Pre-select the package for this page
+                    const packageSelect = document.getElementById('packageSelect');
+                    if (packageSelect) {
+                        packageSelect.value = 'Sri Lanka Beach Holiday';
+                        // Trigger any change listeners to update price summary
+                        packageSelect.dispatchEvent(new Event('change', { bubbles: true }));
+                    }
+                    const firstInput = bookingSection.querySelector('input, select, textarea');
+                    if (firstInput) firstInput.focus({ preventScroll: true });
+                }, 600);
             }
         }
 
         // Modern Tour Gallery Functions
         let currentLightboxIndex = 0;
 
-        const galleryData = [{
-                src: 'image galary/mirissaBeach.jpg',
-                title: 'Mirissa Beach Paradise',
-                description: 'Relax on the pristine golden beaches of Mirissa, perfect for whale watching and beach activities.'
+        const galleryData = [
+            {
+                src: 'image galary/beach_images/mirissa.jpg',
+                title: 'Mirissa Beach',
+                description: 'Powder‑soft sand and crystal waters; prime spot for whale watching and relaxed beach days.'
             },
             {
-                src: 'image galary/Mirissa.jpg',
-                title: 'Mirissa Coastal Views',
-                description: 'Enjoy stunning coastal views and water sports activities in the beautiful Mirissa bay area.'
+                src: 'image galary/beach_images/galle-fort-1050x700-1.jpg',
+                title: 'Galle Fort & Coast',
+                description: 'A UNESCO-listed fort with cobbled streets, colonial facades and sweeping coastal views.'
             },
             {
-                src: 'image galary/kandy1.jpg',
-                title: 'Historic Kandy City',
-                description: 'Explore the cultural capital of Sri Lanka with its beautiful lake and surrounding hills.'
+                src: 'image galary/beach_images/lotus-tower-tour1.jpg',
+                title: 'Coastal Landmark Views',
+                description: 'Iconic architecture and panoramic viewpoints that frame Sri Lanka’s coastline.'
             },
             {
-                src: 'image galary/Temple of the tooth.jpg',
-                title: 'Sacred Temple of Tooth Relic',
-                description: 'Visit the most sacred Buddhist temple in Kandy, home to the tooth relic of Lord Buddha.'
+                src: 'image galary/beach_images/tea-aromatic-plantation-1.webp',
+                title: 'Tea Plantations',
+                description: 'Rolling emerald terraces and aromatic tea estates — a refreshing contrast to the beaches.'
             },
             {
-                src: 'image galary/NuwaraEliyaa.jpg',
-                title: 'Nuwara Eliya Hill Station',
-                description: 'Experience the cool climate and beautiful landscapes of Sri Lanka\'s premier hill station.'
+                src: 'image galary/beach_images/pinnawala.jpg',
+                title: 'Pinnawala Elephant Orphanage',
+                description: 'Meet rescued elephants and watch their riverside bathing — a family favourite.'
             },
             {
-                src: 'image galary/Tea plantation.jpg',
-                title: 'Tea Plantation Paradise',
-                description: 'Journey through aromatic tea gardens and witness the traditional tea-making process.'
-            },
-            {
-                src: 'image galary/Galle Fort.jpg',
-                title: 'Historic Galle Dutch Fort',
-                description: 'Explore the 17th-century Dutch colonial fortifications overlooking the Indian Ocean.'
-            },
-            {
-                src: 'image galary/Galle Fort & Unawatuna Beach.jpg',
-                title: 'Galle Fort & Unawatuna Beach',
-                description: 'Combine history and beach relaxation at this UNESCO World Heritage Site and nearby beach paradise.'
+                src: 'image galary/beach_images/Temple of the tooth.jpg',
+                title: 'Temple of the Tooth',
+                description: 'Sacred cultural landmark offering insight into Sri Lanka’s rich religious heritage.'
             }
         ];
 
@@ -1249,6 +1251,8 @@
                 img.src = imageData.src;
             });
         }
+        
+    // (toggleMirissaMore removed — Show more now links to Wikipedia)
 
         // Run preload on page load
         window.addEventListener('load', preloadGalleryImages);
@@ -1683,6 +1687,16 @@
                     }
                 });
             }
+
+            // Ensure all booking triggers reliably call scrollToBooking
+            const bookTriggers = document.querySelectorAll('.book-now-btn, .floating-book-btn, a[href="#booking"]');
+            bookTriggers.forEach(trigger => {
+                // Avoid double-binding if inline onclick exists; use capture to prioritize
+                trigger.addEventListener('click', function(e) {
+                    // Let scrollToBooking handle preventDefault and selection
+                    scrollToBooking(e);
+                });
+            });
         });
         
         // Function to navigate to feedback page
