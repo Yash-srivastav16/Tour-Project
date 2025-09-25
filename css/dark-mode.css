@@ -1,0 +1,275 @@
+/* Dark Mode Styles */
+
+/* Dark Mode Toggle Button */
+#dark-mode-btn {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+#dark-mode-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+/* Dark mode variables */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+    --header-bg: rgba(255, 255, 255, 0.95);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --border-color: #e0e0e0;
+    --input-bg: #f8f9fa;
+    --footer-bg: #f8f9fa;
+}
+
+/* Dark mode color scheme */
+body.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --card-bg: #2d2d2d;
+    --header-bg: rgba(45, 45, 45, 0.95);
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --border-color: #404040;
+    --input-bg: #3a3a3a;
+    --footer-bg: #2d2d2d;
+}
+
+/* Apply dark mode styles */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header dark mode */
+body.dark-mode .header {
+    background: var(--header-bg);
+    box-shadow: 0 0.5rem 1rem var(--shadow-color);
+}
+
+body.dark-mode .header.active {
+    background: var(--header-bg);
+}
+
+body.dark-mode .header .logo,
+body.dark-mode .header .navbar a {
+    color: var(--text-color);
+}
+
+body.dark-mode .header .icons div {
+    color: var(--text-color);
+}
+
+/* Search form dark mode */
+body.dark-mode .search-form {
+    background: var(--card-bg);
+}
+
+body.dark-mode .search-form input {
+    background: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+/* Home section dark mode */
+body.dark-mode .home .content {
+    color: white; /* Keep white for readability over background image */
+}
+
+/* Category/Adventure section dark mode */
+body.dark-mode .category .box {
+    background: var(--card-bg);
+    box-shadow: 0 0.5rem 1rem var(--shadow-color);
+    border: 1px solid var(--border-color);
+}
+
+body.dark-mode .category .box h3 {
+    color: var(--text-color);
+}
+
+body.dark-mode .category .box p {
+    color: #b0b0b0;
+}
+
+/* Packages section dark mode */
+body.dark-mode .packages .box {
+    background: var(--card-bg);
+    box-shadow: 0 0.5rem 1rem var(--shadow-color);
+    border: 1px solid var(--border-color);
+}
+
+body.dark-mode .packages .box .content h3 {
+    color: var(--text-color);
+}
+
+body.dark-mode .packages .box .content p {
+    color: #b0b0b0;
+}
+
+body.dark-mode .packages .box .content .price {
+    color: #27ae60;
+}
+
+/* Contact section dark mode */
+body.dark-mode .contact {
+    background: var(--bg-color);
+}
+
+body.dark-mode .contact-container {
+    background: var(--bg-color);
+}
+
+body.dark-mode .contact-title {
+    color: var(--text-color);
+}
+
+body.dark-mode .contact-subtitle {
+    color: #b0b0b0;
+}
+
+body.dark-mode .info-card {
+    background: var(--card-bg);
+    box-shadow: 0 0.5rem 1rem var(--shadow-color);
+    border: 1px solid var(--border-color);
+}
+
+body.dark-mode .info-details h3 {
+    color: var(--text-color);
+}
+
+body.dark-mode .info-details p,
+body.dark-mode .info-details a {
+    color: #b0b0b0;
+}
+
+body.dark-mode .info-details a:hover {
+    color: #27ae60;
+}
+
+/* Contact form dark mode */
+body.dark-mode .contact-form-wrapper {
+    background: var(--card-bg);
+    box-shadow: 0 0.5rem 1rem var(--shadow-color);
+    border: 1px solid var(--border-color);
+}
+
+body.dark-mode .form-header h2 {
+    color: var(--text-color);
+}
+
+body.dark-mode .form-header p {
+    color: #b0b0b0;
+}
+
+body.dark-mode .form-group label {
+    color: var(--text-color);
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group select,
+body.dark-mode .form-group textarea {
+    background: var(--input-bg);
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group select:focus,
+body.dark-mode .form-group textarea:focus {
+    background: var(--card-bg);
+    border-color: #27ae60;
+}
+
+body.dark-mode .form-group input::placeholder,
+body.dark-mode .form-group textarea::placeholder {
+    color: #888;
+}
+
+body.dark-mode .checkbox-label {
+    color: #b0b0b0;
+}
+
+/* Footer dark mode */
+body.dark-mode .footer {
+    background: var(--footer-bg);
+    border-top: 1px solid var(--border-color);
+}
+
+body.dark-mode .footer .box h3 {
+    color: var(--text-color);
+}
+
+body.dark-mode .footer .box a,
+body.dark-mode .footer .box p {
+    color: #b0b0b0;
+}
+
+body.dark-mode .footer .box a:hover {
+    color: #27ae60;
+}
+
+body.dark-mode .footer .credit {
+    color: #888;
+    border-top: 1px solid var(--border-color);
+}
+
+body.dark-mode .footer .credit span {
+    color: #27ae60;
+}
+
+body.dark-mode .footer-intro p {
+    color: #b0b0b0;
+}
+
+/* Button styles for dark mode */
+body.dark-mode .btn {
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+body.dark-mode .btn:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+/* Heading styles for dark mode */
+body.dark-mode .heading {
+    color: var(--text-color);
+}
+
+/* Dark mode toggle icon animation */
+body.dark-mode #dark-mode-btn {
+    transform: rotate(180deg);
+}
+
+body.dark-mode #dark-mode-btn::before {
+    content: "\f185"; /* fa-sun icon */
+}
+
+/* Smooth transitions for all elements */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Special handling for images in dark mode */
+body.dark-mode img {
+    filter: brightness(0.9);
+}
+
+body.dark-mode .packages .box .image img,
+body.dark-mode .category .box img {
+    filter: brightness(0.8) contrast(1.1);
+}
+
+/* Responsive dark mode adjustments */
+@media (max-width: 768px) {
+    #dark-mode-btn {
+        font-size: 1.8rem;
+        margin-left: 0.5rem;
+    }
+}

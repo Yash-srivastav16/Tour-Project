@@ -7,6 +7,9 @@
     <title>Tour & Travel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-enhanced.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/search-styles.css">
     <!-- Iconscout Link  -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
 
@@ -25,7 +28,7 @@
         <div class="icons">
             <div id="menu-btn" class="fas fa-bars"></div>
             <div id="search-btn" class="fas fa-search"></div>
-
+            <div id="dark-mode-btn" class="fas fa-moon" title="Toggle Dark Mode"></div>
         </div>
     </header>
     <!-- HTML Updated -->
@@ -176,31 +179,125 @@
         </div>
 
     </section>
-    <section class="contact" id="contact">
+  <!-- Enhanced Contact Section -->
+<section class="contact" id="contact">
+  <div class="contact-container">
+    <div class="contact-header">
+      <h1 class="contact-title">Get In Touch</h1>
+      <p class="contact-subtitle">
+        Ready to start your Sri Lankan adventure? Contact us today and let's create memories that will last a lifetime!
+      </p>
+    </div>
 
-        <div class="wrapper1">
-            <div class="title1">
-                <h1>Contact us</h1>
-            </div>
-            <div class="contact-form">
-                <form method="post" action="contact_us.php">
-                    <div class="input-fields">
-
-                        <input type="text" class="input" placeholder="Name" name="name">
-                        <input type="email" class="input" placeholder="Email Address" name="email"
-                            pattern=".+@gmail\.com">
-                        <input type="phone" class="input" placeholder="Phone" name="phone">
-                        <input type="text" class="input" placeholder="Subject" name="subject">
-                    </div>
-                    <div class="msg">
-                        <textarea placeholder="Message" name="message"></textarea> <br>
-                        <div class="btn1"><button type="submit">send <i class="uil uil-message"></i></div>
-                    </div>
-                </form>
-            </div>
+    <div class="contact-content">
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="info-details">
+            <h3>Visit Our Office</h3>
+            <p>59/58 Hanthana Gemunu Mawatha<br>Kandy, Sri Lanka</p>
+          </div>
         </div>
 
-    </section>
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-phone"></i></div>
+          <div class="info-details">
+            <h3>Call Us</h3>
+            <p>
+              <a href="tel:+94763936557">+94 76 393 6557</a><br>
+              <a href="tel:+353873839726">+353 87 383 9726</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-envelope"></i></div>
+          <div class="info-details">
+            <h3>Email Us</h3>
+            <p>
+              <a href="mailto:info@ceylonclassictours.com">info@ceylonclassictours.com</a><br>
+              <a href="mailto:lishan@ceylonclassictours.com">lishan@ceylonclassictours.com</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-clock"></i></div>
+          <div class="info-details">
+            <h3>Working Hours</h3>
+            <p>
+              Mon - Fri: 9:00 AM - 6:00 PM<br>
+              Sat - Sun: 10:00 AM - 4:00 PM
+            </p>
+          </div>
+        </div>
+      </div>
+
+<!-- Contact Form -->
+<div class="contact-form-wrapper">
+  <div class="form-header">
+    <h2>Send Us a Message</h2>
+    <p>Fill out the form below and we'll get back to you within 24 hours</p>
+  </div>
+
+  <form method="post" action="cont.php" class="modern-contact-form">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone"
+               pattern="^0[0-9]{9}$"
+               maxlength="10"
+               placeholder="0778759658"
+               title="Enter a valid Sri Lankan phone number (10 digits starting with 0)">
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+          <option value="">Select a topic</option>
+          <option value="tour-inquiry">Tour Inquiry</option>
+          <option value="booking">Booking</option>
+          <option value="custom-tour">Custom Tour Package</option>
+          <option value="support">Support</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group full-width">
+      <label for="message">Your Message *</label>
+      <textarea id="message" name="message" rows="6" required placeholder="Tell us about your dream Sri Lankan adventure..."></textarea>
+    </div>
+
+    <div class="form-group checkbox-group">
+      <input type="checkbox" id="newsletter" name="newsletter">
+      <label for="newsletter" class="checkbox-label">Subscribe to our newsletter for latest tour updates</label>
+    </div>
+
+    <button type="submit" class="modern-submit-btn">
+      <span class="btn-text">Send Message</span>
+      <i class="fas fa-paper-plane"></i>
+    </button>
+  </form>
+</div>
+</div>
+    </div>
+  </div>
+</section>
+
     <section class="footer">
         <div class="footer-intro">
             <p>Experience the luxuries of Sri Lanka with our specially crafted luxury tours and indulge in its quintessential charms.</p>   
@@ -241,6 +338,9 @@
     </section>
     <!-- footer section ends -->
     <script src="js/script.js"></script>
+    <script src="js/contact-enhanced.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/working-search.js"></script>
 </body>
 
 </html>
