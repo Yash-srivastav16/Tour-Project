@@ -135,8 +135,12 @@
                     <p>We organise Jaipur &amp; Rajasthan tours that offer incredible attractions like Forts and Palaces, Deserts, Traditional Villages, colorful cattle fairs, sacred places, camel safaris, beautiful lakes, hill stations and the people. </p>
                     <div class="price">Rs 11,999 - Rs15,999</div>
 
-                    <p>We organise Jaipur & Rajasthan tours that offer incredible attractions like Forts and Palaces, Deserts, Traditional Villages, colorful cattle fairs, sacred places, camel safaris, beautiful lakes, hill stations and the people. </p>
-                    <div class="price">Rs 11,999 - Rs 15,999</div>
+                    <!-- Remove this line it's making unprofessional -->
+                    <!-- <p>We organise Jaipur & Rajasthan tours that offer incredible attractions like Forts and Palaces, Deserts, Traditional Villages, colorful cattle fairs, sacred places, camel safaris, beautiful lakes, hill stations and the people. </p>
+                    <div class="price">Rs 11,999 - Rs 15,999</div> -->
+                    
+                    <!-- Contribution -->
+                    <a href="#contact" class="btn" style="background: #333;">Plan Custom Trip</a>
 
                     <a href="#contact" class="btn">explore now</a>
                 </div>
@@ -230,5 +234,12 @@
     </section>
     <!-- footer section ends -->
     <script src="js/script.js"></script>
+    <!-- Contribution -->
+    <script>
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector(".header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
 </body>
 </html>
