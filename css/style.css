@@ -155,6 +155,11 @@ i {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
 }
+/* Contribution */
+.header .logo i {
+    color: #10221b;
+    padding-right: .5rem;
+}
 
 .header .navbar #nav-close {
   font-size: 5rem;
