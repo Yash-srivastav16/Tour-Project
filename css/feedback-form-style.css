@@ -1,0 +1,1046 @@
+/* Feedback Form Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  line-height: 1.6;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../image galary/Breathtaking_Mountain_Views.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--dark-text);
+}
+
+:root {
+  --primary-color: #2c5530;  /* Dark green to match existing site color */
+  --secondary-color: #ff6b35; /* Orange accent color */
+  --light-green: #e8f5e8;
+  --background-color: rgba(248, 249, 250, 0.9);
+  --dark-text: #333;
+  --light-text: #666;
+  --white: #fff;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --border-radius: 1rem;
+}
+
+/* Header and Navbar Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background: transparent;
+}
+
+.header.active {
+    background: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.header .logo {
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* Navbar Styles */
+.header .navbar a {
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.header .navbar a:hover {
+    background-color: #ff6347;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.header .navbar #nav-close {
+    font-size: 5rem;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.header .icons a,
+.header .icons div {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.header .icons a:hover,
+.header .icons div:hover {
+    color: var(--primary-color);
+}
+
+/* When header becomes active (scrolled), switch to dark/black colors */
+.header.active .logo {
+    color: #000;
+}
+
+.header.active .navbar a {
+    color: #000;
+}
+
+.header.active .navbar #nav-close {
+    color: #000;
+}
+
+.header.active .icons a,
+.header.active .icons div {
+    color: #000;
+}
+
+.header #menu-btn {
+    display: none;
+}
+
+/* Mobile navbar when opened should show dark links on its white background */
+.header .navbar.active a {
+    color: #000;
+}
+
+.header .navbar.active #nav-close {
+    color: #000;
+}
+
+/* Search Form Styles */
+.search-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+
+.search-form.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.search-form form {
+    width: 80%;
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="search"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+    color: #0056b3;
+}
+
+.search-form label {
+    color: #007BFF;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.search-form label:hover {
+    color: #0056b3;
+}
+
+.search-form #close-search {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.search-form #close-search:hover {
+    color: #ff6347;
+}
+
+.header .icons a:hover,
+.header .icons div:hover {
+    color: var(--primary-color);
+}
+
+.header #menu-btn {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header #menu-btn {
+        display: inline-block;
+    }
+    
+    .header .navbar {
+        position: fixed;
+        top: 0;
+        left: -110%;
+        background: white;
+        z-index: 10000;
+        width: 35rem;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header .navbar.active {
+        left: 0;
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    }
+    
+    .header .navbar a {
+        margin: 1rem 0;
+        font-size: 3rem;
+        color: #000;
+    }
+    
+    .header .navbar #nav-close {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+    }
+}
+
+/* Main content */
+section {
+    padding: 5rem 9%;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.feedback-container {
+    width: 100%;
+    max-width: 100rem;
+    margin: 12rem auto 5rem;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.booking-form-wrapper {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 1.5rem;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    padding: 4rem;
+    position: relative;
+    max-width: 100rem;
+    margin: 0 auto;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.booking-form-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.booking-form-header h2 {
+    color: var(--primary-color);
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.booking-form-header p {
+    color: var(--light-text);
+    font-size: 1.6rem;
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.feedback-header .logo-icon {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.feedback-header h1 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin: 0 0 15px;
+}
+
+.feedback-header p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-size: 1.6rem;
+    color: var(--dark-text);
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-group label i {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border: 2px solid #ddd;
+    border-radius: 0.8rem;
+    background: var(--white);
+    color: var(--dark-text);
+    transition: 0.3s ease;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 12rem;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.rating-group {
+    text-align: center;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.2);
+}
+
+.custom-checkbox {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-checkbox label {
+    position: relative;
+    padding-left: 3.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--dark-text);
+    line-height: 1.6;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.custom-checkbox label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border: 2px solid #ddd;
+    border-radius: 0.4rem;
+    background: var(--white);
+    transition: all 0.3s ease;
+}
+
+.custom-checkbox input:checked + label:before {
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+}
+
+.custom-checkbox label:after {
+    content: '✓';
+    position: absolute;
+    top: 0.2rem;
+    left: 0.7rem;
+    font-size: 1.4rem;
+    color: white;
+    line-height: 2.2rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.custom-checkbox input:checked + label:after {
+    opacity: 1;
+}
+
+/* Star Rating */
+.rating-container {
+    display: flex;
+
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+.star-rating input[type="radio"] { 
+    display: none; 
+}
+
+.star-rating label {
+    font-size: 2.5rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.star-rating label:before { 
+    content: '★'; 
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+    color: #ff9800;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #ffb74d;
+}
+
+/* Category Ratings */
+.rating-summary {
+    background: rgba(249, 250, 252, 0.9);
+    border: 2px solid #e0e6ed;
+    border-radius: 1.2rem;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.rating-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.rating-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-category-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    margin-bottom: 1rem;
+}
+
+.category-stars {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.category-stars i {
+    font-size: 2.2rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.category-stars i.fas {
+    color: #ff9800;
+}
+
+.form-actions {
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-feedback {
+    background: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: 1.8rem 4rem;
+    font-size: 1.8rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+    width: auto;
+    min-width: 280px;
+    justify-content: center;
+}
+
+.submit-feedback:hover {
+    background: #e55a2e;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(255, 107, 53, 0.3);
+}
+
+/* Custom Checkbox */
+.custom-checkbox {
+    margin: 2rem 0;
+    position: relative;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-checkbox label {
+    position: relative;
+    padding-left: 3.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--dark-text);
+    line-height: 1.6;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.custom-checkbox label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border: 2px solid #ddd;
+    border-radius: 0.4rem;
+    background: var(--white);
+    transition: all 0.3s ease;
+}
+
+.custom-checkbox input:checked + label:before {
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+}
+
+.custom-checkbox label:after {
+    content: '✓';
+    position: absolute;
+    top: 0.2rem;
+    left: 0.7rem;
+    font-size: 1.4rem;
+    color: white;
+    line-height: 2.2rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.custom-checkbox input:checked + label:after {
+    opacity: 1;
+}
+
+/* Success Message */
+.feedback-success {
+    display: none;
+    text-align: center;
+    padding: 4rem 0;
+    animation: fadeIn 0.5s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 1.5rem;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.feedback-success.visible {
+    display: block;
+}
+
+.success-icon {
+    font-size: 6rem;
+    color: #2ecc71;
+    margin-bottom: 2rem;
+}
+
+.success-title {
+    font-size: 2.4rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.success-message {
+    font-size: 1.6rem;
+    color: var(--light-text);
+    margin-bottom: 3rem;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.return-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.6rem 3rem;
+    border-radius: 5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+.return-button:hover {
+    background-color: #214025;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(44, 85, 48, 0.3);
+}
+
+/* Floating Feedback Button */
+.floating-feedback-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.floating-feedback-btn.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.floating-feedback-btn i {
+    font-size: 1.2rem;
+}
+
+.floating-feedback-btn:hover {
+    background-color: #e05a2e;
+    transform: translateY(-5px);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .booking-form-wrapper {
+        padding: 3rem;
+    }
+    
+    .booking-form-header h2 {
+        font-size: 2.8rem;
+    }
+    
+    .booking-form-header p {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .feedback-container {
+        margin: 10rem auto 5rem;
+        padding: 0 1.5rem;
+    }
+    
+    .booking-form-wrapper {
+        padding: 2.5rem 2rem;
+    }
+    
+    .booking-form-header h2 {
+        font-size: 2.4rem;
+    }
+    
+    .booking-form-header p {
+        font-size: 1.5rem;
+        max-width: 100%;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .form-group label {
+        font-size: 1.5rem;
+    }
+    
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+        padding: 1.2rem;
+        font-size: 1.5rem;
+    }
+    
+    .rating-categories {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .star-rating label {
+        font-size: 2.2rem;
+    }
+}
+
+/* Footer styles */
+.footer {
+    background: url(../images/footer3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.footer .box-container, 
+.footer .credit {
+    position: relative;
+    z-index: 1;
+}
+  
+.footer .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+  
+.footer .box-container .box p {
+    width: 100%;
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2rem;
+    padding: 1.5rem 0;
+    color: #fff;
+}
+  
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+  
+.footer .box-container .box a i {
+    color: #45ed83;
+    padding-right: 0.5rem;
+}
+  
+.footer .box-container .box a:hover {
+    color: #87d065;
+    padding-right: 2.2rem;
+    font-weight: bolder;
+}
+  
+.footer .credit {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #fff;
+}
+  
+.footer .credit span:hover {
+    color: #87d065;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Responsive styles for footer and navbar */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+/* Removed duplicate media query */
+    
+    .submit-feedback {
+        width: 100%;
+        padding: 1.6rem;
+        font-size: 1.6rem;
+    }
+
+
+@media (max-width: 480px) {
+    .booking-form-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .custom-checkbox label {
+        padding-left: 3rem;
+        font-size: 1.4rem;
+    }
+    
+    .return-button {
+        padding: 1.4rem 2.5rem;
+        font-size: 1.4rem;
+    }
+    
+    .success-title {
+        font-size: 2rem;
+    }
+    
+    .success-message {
+        font-size: 1.4rem;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/footer3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 5rem 9%;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2rem;
+    padding: 1.5rem 0;
+    color: #fff;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 1rem 0;
+    text-transform: none;
+}
+
+.footer .box-container .box a i {
+    color: #45ed83;
+    padding-right: 0.5rem;
+}
+
+.footer .box-container .box a:hover {
+    color: #87d065;
+    padding-right: 2.2rem;
+    font-weight: bolder;
+}
+
+.footer .box-container .box p {
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #fff;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+}
+
+.footer .credit span {
+    color: #45ed83;
+}
+
+.footer .credit span:hover {
+    color: #87d065;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 3rem 4%;
+    }
+    
+    .footer .box-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer .box-container .box h3 {
+        font-size: 1.8rem;
+    }
+    
+    .footer .box-container .box a,
+    .footer .box-container .box p {
+        font-size: 1.4rem;
+    }
+    
+    .footer .credit {
+        font-size: 1.6rem;
+    }
+}

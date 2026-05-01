@@ -1,0 +1,79 @@
+/* Feedback Button Styles */
+
+/* Floating Feedback Button */
+.floating-feedback-btn {
+  position: fixed;
+  bottom: 3rem;
+  right: 20rem;
+  background: linear-gradient(135deg, #2c5530, #3a7041);
+  color: #fff;
+  border: none;
+  padding: 1.5rem 2rem;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 0.8rem 2rem rgba(44, 85, 48, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(2rem) scale(0.8);
+  text-transform: none;
+}
+
+.floating-feedback-btn.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.floating-feedback-btn:hover {
+  transform: translateY(-0.3rem) scale(1.05);
+  box-shadow: 0 1.2rem 3rem rgba(44, 85, 48, 0.5);
+  background: linear-gradient(135deg, #3a7041, #2c5530);
+}
+
+.floating-feedback-btn i {
+  font-size: 1.8rem;
+  animation: pulse 2s infinite;
+}
+
+/* Animation for pulsing effect */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .floating-feedback-btn {
+    bottom: 2rem;
+    right: 8rem;
+    padding: 1.2rem 1.8rem;
+    font-size: 1.4rem;
+  }
+  
+  .floating-feedback-btn span {
+    display: none;
+  }
+  
+  .floating-feedback-btn i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-feedback-btn {
+    bottom: 1.5rem;
+    right: 7rem;
+    padding: 1rem 1.5rem;
+  }
+}
