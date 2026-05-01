@@ -18,6 +18,39 @@ html {
   scroll-padding-top: 5rem;
 }
 
+/* back to top cta */
+.cta-top {
+  position: fixed;
+  z-index: 99;
+  bottom: 32px;
+  right: 32px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 255, 73, 0.9);
+  color: #222;
+  animation: top .7s infinite alternate;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes top {
+  from {
+    transform: translateY(0);
+  }
+  
+  to {
+    transform: translateY(-8px);
+  }
+}
+
+.cta-top.show {
+  visibility: visible;
+  opacity: 1;
+}
+
 section {
   padding: 5rem 9%;
 }
@@ -106,7 +139,7 @@ section {
   margin: 10px 0;
   background: transparent;
   border: 0px;
-  border-bottom: 2px solid #5f66618f;
+  border-bottom: 2px solid #5F66618F;
   padding: 10px;
   color: black;
   width: 100%;
@@ -569,7 +602,12 @@ form label:hover {
   .heading {
     font-size: 3rem;
   }
-    .input, textarea {
+  .header .navbar a {
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .input, textarea {
     width: 70vw !important;
   }
   form {

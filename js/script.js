@@ -36,3 +36,30 @@ window.onload=()=>{
     }
 };
 
+
+// back to top cta
+const ctaTop = document.querySelector('#ctaTop');
+
+// debounce helper to improve scroll performance
+function debounce(fn, delay) {
+    let timer;
+    return function () {
+        clearTimeout(timer);
+        timer = setTimeout(fn, delay);
+    };
+}
+
+window.addEventListener("scroll", debounce(() => {
+    if (window.scrollY > 300) {
+        ctaTop.classList.add("show");
+    } else {
+        ctaTop.classList.remove("show");
+    }
+}, 100));
+
+ctaTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
